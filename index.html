@@ -2,8 +2,63 @@
  <html>
   <head>
    <title>木晞i的资源汇总</title>
-   </head>
+   <style>
+/* 回到顶部css */
+.backtop{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1000;	
+}
+a>.btnbacktop{
+    font-size: 2rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    width: 3.33rem;
+    height: 3.33rem;
+    line-height: 0;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #e3e8ee;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.05);
+}
+</style>
+
+<div id="hqestop"></div>
+<div class="backtop">
+<!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
+<a href="#hqestop" target="_self" onfocus="this.blur();">
+<button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
+  <i class="fa fa-caret-up"></i>
+</button>
+</a>
+</div>
+    
+    <script>
+	$(document).ready(function(){  
+	    $(".backtop").hide();  
+	    $(function () {  
+	        //检测屏幕高度  
+	        var height=$(window).height();  
+	        //scroll() 方法为滚动事件  
+	        $(window).scroll(function(){  
+	            if ($(window).scrollTop()>height){  
+	                $(".backtop").fadeIn(500);  
+	            }else{  
+	                $(".backtop").fadeOut(500);  
+	                }  
+	        });  
+	        $(".backtop").click(function(){  
+	            $('body,html').animate({scrollTop:0},100);  
+	            return false;  
+	        });  
+	    });  
+	});  
+   </script>
+</head>
 <link rel="https://files.catbox.moe/hlf140.png" href="" type="" />
+
 <body>
 <p><h2><a href=https://yftdtddh.github.io/muxizyhz>资源汇总</a></h2></p>
 持续更新，正在搬运收藏夹里面的资源。
@@ -257,62 +312,3 @@
 	<span id="busuanzi_container_site_pv" style='display:none'> 此页总浏览<span id="busuanzi_value_site_pv"></span>次</span>
 </div>
 
-<style>
-/* 回到顶部css */
-.backtop{
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 1000;	
-}
-a>.btnbacktop{
-    font-size: 2rem;
-    margin: 1rem 0 0;
-    padding: 0;
-    width: 3.33rem;
-    height: 3.33rem;
-    line-height: 0;
-    color: #333;
-    background-color: #ffffff;
-    border: 1px solid #e3e8ee;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,.05);
-}
-</style>
-
-<div id="hqestop"></div>
-<div class="backtop">
-<!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
-<a href="#hqestop" target="_self" onfocus="this.blur();">
-<button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
-  <i class="fa fa-caret-up"></i>
-</button>
-</a>
-</div>
-    
-    <script>
-	$(document).ready(function(){  
-	    $(".backtop").hide();  
-	    $(function () {  
-	        //检测屏幕高度  
-	        var height=$(window).height();  
-	        //scroll() 方法为滚动事件  
-	        $(window).scroll(function(){  
-	            if ($(window).scrollTop()>height){  
-	                $(".backtop").fadeIn(500);  
-	            }else{  
-	                $(".backtop").fadeOut(500);  
-	                }  
-	        });  
-	        $(".backtop").click(function(){  
-	            $('body,html').animate({scrollTop:0},100);  
-	            return false;  
-	        });  
-	    });  
-	});  
-   </script>
-</footer>
-
-
-</body>
-</html>
