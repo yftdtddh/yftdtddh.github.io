@@ -65,62 +65,6 @@ a>.btnbacktop{
 ">网页慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！bilibilimuxi@126.com</div><a style="display: block;background: #98a3ff;color: #FFF;text-align: center;font-weight: bold;font-size: 19px;line-height: 60px;margin: 0 auto;margin-top: 45px;border-radius: 32px;width: 80%;" onclick="javascript:document.querySelector('.web_notice').remove()">我知了</ a></div></div>
 <!-- 弹窗代码结束 -->
 
-function openpopup(){
-
-document.writeln("
-
-document.writeln("window.open('https://yftdtddh.github.io/muxizyhz/')");
-
-document.writeln("");
-
-}
-
-function get_cookie(Name) {
-
-var search = Name + "="
-
-var returnvalue = "";
-
-if (documents.cookie.length > 0) {
-
-offset = documents.cookie.indexOf(search)
-
-if (offset != -1) {
-
-offset += search.length
-
-end = documents.cookie.indexOf(";", offset);
-
-if (end == -1)
-
-end = documents.cookie.length;
-
-returnvalue="/(documents.cookie.substring(offset,"
-
-end))
-
-}
-
-}
-
-return returnvalue;
-
-}
-
-function helpor_net(){
-
-if (get_cookie('popped')==''){
-
-openpopup()
-
-documents.cookie="popped=yes"
-
-}
-
-}
-
-helpor_net()
-
 </head>
 
  <body>
