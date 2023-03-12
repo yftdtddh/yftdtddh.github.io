@@ -195,7 +195,19 @@ p {
 
 
 <h2><a href=https://yftdtddh.github.io/muxizyhz>资源汇总</a></h2>
-此页创建时间：2022.12.19&nbsp;&nbsp;最后更新：2023.3.12<br>
+此页创建时间：2022/12/19&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
+<script src="app.js"></script>
+  <script>
+ const lastUpdatedElement = document.getElementById('lastUpdated');
+const lastUpdatedDate = new Date(document.lastModified);
+const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+
+lastUpdatedElement.innerHTML = formattedDate
+
+ </script>
+
+<br>
 慢速更新，正在搬运收藏夹里面的资源。
 <a href=http://www.gezhongji.com/note/show/9000779>>>点击跳转</a> 密码1234
 <br>
