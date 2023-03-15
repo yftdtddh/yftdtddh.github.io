@@ -1,11 +1,7 @@
 <!doctype html>
  <html>
-    <head>
-        <title>木晞i的资源汇总</title>
-	    
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	    
+<head> 
+     <title>木晞i的资源汇总</title>       
   <script>
 		function showPopup() {
 			document.getElementById("popup").style.display = "block";
@@ -14,136 +10,186 @@
 		function hidePopup() {
 			document.getElementById("popup").style.display = "none";
 		}
-	</script>
-<style>
+  </script>
 
-/* 回到顶部css */
-.backtop{
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 1000;	
-}
-a>.btnbacktop{
-    font-size: 2rem;
-    margin: 1rem 0 0;
-    padding: 0;
-    width: 3.33rem;
-    height: 3.33rem;
-    line-height: 0;
-    color: #333;
-    background-color: #EEA5A5;
-    border: 1px solid #e3e8ee;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,.05);
-}
+ <style> 
+  
+   /* 回到顶部css */ 
+     .backtop{ 
+         position: fixed; 
+         right: 2rem; 
+         bottom: 2rem; 
+         z-index: 1000;         
+     } 
+     a>.btnbacktop{ 
+         font-size: 2rem; 
+         margin: 1rem 0 0; 
+         padding: 0; 
+         width: 3.33rem; 
+         height: 3.33rem; 
+         line-height: 0; 
+         color: #333; 
+         background-color: #EEA5A5; 
+         border: 1px solid #e3e8ee; 
+         border-radius: 50%; 
+         box-shadow: 0 0 5px rgba(0,0,0,.05); 
+     } 
+  
+    
+   /* Add some anime-style styling */ 
+     body { 
+         background-color: ; 
+         font-family: ; 
+     } 
+  
+     h2, 
+     h3 { 
+         text-align: ; 
+         color: ; 
+     } 
+  
+     h2 { 
+         font-size: ; 
+         margin-top: ; 
+     } 
+  
+     h3 { 
+         font-size: ; 
+         margin: ; 
+     } 
+  
+     ul { 
+         display: flex; 
+         flex-wrap: wrap; 
+         justify-content: center; 
+         list-style: none; 
+         margin: 0; 
+         padding: 0; 
+     } 
+  
+     li { 
+         background-color: ; 
+         border-radius: 5px; 
+         box-shadow: 0px 0px 10px ; 
+         margin: 20px; 
+         padding: 20px; 
+         text-align: center; 
+         width: 400px; 
+     } 
+  
+     a { 
+         color:; 
+         font-size: 1.3em; 
+         text-decoration: none; 
+     }
 
-/* Add some anime-style styling */
-        body {
-            background-color: ;
-            font-family: ;
-        }
 
-        h2,
-        h3 {
-            text-align: ;
-            color: ;
-        }
+    /* 添加一个简单的弹窗公告 */ 
+     body { 
+         background-color: #f1f1f1; 
+         font-family: Arial, sans-serif; 
+         } 
+     #popup { 
+         display: none; 
+         position: fixed; 
+         top: 50%; 
+         left: 50%; 
+         transform: translate(-50%, -50%); 
+         width: 400px; 
+         padding: 20px; 
+         background-color: #fff; 
+         border-radius: 10px; 
+         box-shadow: 0 0 10px rgba(0,0,0,.5); 
+         z-index: 9999; 
+         } 
+                  
+         h2 { 
+                 margin-top: 0; 
+                 font-size: 24px; 
+                 color: #333; 
+         } 
+     p { 
+                 margin-bottom: 20px; 
+                 font-size: 16px; 
+                 line-height: 1.5; 
+                 color: #666; 
+         } 
+                  
+     button { 
+         display: block; 
+         margin: 0 auto; 
+         padding: 10px 20px; 
+         background-color: #0077cc; 
+         color: #fff; 
+         border: none; 
+         border-radius: 5px; 
+         font-size: 16px; 
+         cursor: pointer; 
+         transition: background-color .3s ease-in-out; 
+     } 
+  
+     button:hover { 
+                         background-color: #005fa3; 
+         }
+        h2 { 
+         font-size: 25px; 
+     } 
+  
+     p { 
+         color: #ff0000; 
+     } 
+     </style> 
+  
+     <style> 
+         a { 
+             transition: all 0.2s ease-in; 
+             padding: .3rem; 
+         } 
+         a:hover { 
+             background: blue; 
+             border-radius: .3rem; 
+             color: white; 
+         } 
+         h2 a, h3 a { 
+             padding: none; 
+             color: black; 
+             font-size: 1.2em; 
+         } 
+         h2 a:hover,  
+         h3 a:hover { 
+             border-radius: none; 
+         } 
+         .backtop a:hover { 
+             background: none; 
+          } 
+ 
+ 
+ h2 {
+            border-bottom: solid 1px black; 
+             margin-top: 1em; 
+          }
+h3 {
+            margin-top: 1em; 
+          }
+        body { 
+             /* 
+             background-image: url("https://api.ghser.com/random/bg.php"); 
+             background-size: cover; 
+             background-attachment: fixed; 
+             */ 
+             padding: 1em; 
+          }
+        .site-container { 
+             flex-flow: row wrap; 
+          } 
+   </style>
 
-        h2 {
-            font-size: ;
-            margin-top: ;
-        }
-
-        h3 {
-            font-size: ;
-            margin: ;
-        }
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            background-color: ;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px ;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            width: 400px;
-        }
-
-        a {
-            color:;
-            font-size: 1.3em;
-            text-decoration: none;
-        }
 
 
 
-/* 添加一个简单的弹窗公告 */
 
-body {
-			background-color: #f1f1f1;
-			font-family: Arial, sans-serif;
-		}
-   #popup {
-			display: none;
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 400px;
-			padding: 20px;
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,.5);
-			z-index: 9999;
-		}
-		
-		h2 {
-			margin-top: 0;
-			font-size: 24px;
-			color: #333;
-		}
-   p {
-			margin-bottom: 20px;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #666;
-		}
-		
-		button {
-			display: block;
-			margin: 0 auto;
-			padding: 10px 20px;
-			background-color: #0077cc;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-			transition: background-color .3s ease-in-out;
-		}
-   button:hover {
-			background-color: #005fa3;
-		}
-	h2 {
-    font-size: 25px;
-}
-p {
-    color: #ff0000;
-  }
-  button {
-    font-size: 15px;
-    color: blue;
-}
+
+
 
 </style>
 
@@ -185,17 +231,13 @@ p {
 <body onload="showPopup()">
 	<div id="popup">
 		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
-		<p><h3>更新内容: 删除了关于h的网站，请访问<a href=https://yftdtddh.github.io/lun/>新网页</a></h2>
-      慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！</p>
-		<button onclick="hidePopup()">关闭</button>
-	</div>
-
+		                <b style="font-size: large;">更新内容: 删除了关于h的网站，请访问<a href=https://yftdtddh.github.io/lun/>新网页</a></b> 
+        慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！</p> 
+ <button onclick="hidePopup()">关闭</button> 
+</div>
 
 <div id="mySidenav" class="sidenav">
 	
-
-
-
 
 <h2><a href=https://yftdtddh.github.io/muxizyhz>资源汇总</a></h2>
 此页创建时间：2022/12/19&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
