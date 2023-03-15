@@ -1,12 +1,9 @@
 <!doctype html>
- <html>
-    <head>
-        <title>木晞i的资源汇总</title>
-	    
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	    
-  <script>
+<html>
+<head>
+    <title>木晞i的资源汇总</title>
+  
+    <script>
 		function showPopup() {
 			document.getElementById("popup").style.display = "block";
 		}
@@ -15,150 +12,184 @@
 			document.getElementById("popup").style.display = "none";
 		}
 	</script>
-<style>
+    <style>
 
-/* 回到顶部css */
-.backtop{
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    z-index: 1000;	
-}
-a>.btnbacktop{
-    font-size: 2rem;
-    margin: 1rem 0 0;
-    padding: 0;
-    width: 3.33rem;
-    height: 3.33rem;
-    line-height: 0;
-    color: #333;
-    background-color: #EEA5A5;
-    border: 1px solid #e3e8ee;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,.05);
-}
+    /* 回到顶部css */
+    .backtop{
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        z-index: 1000;	
+    }
+    a>.btnbacktop{
+        font-size: 2rem;
+        margin: 1rem 0 0;
+        padding: 0;
+        width: 3.33rem;
+        height: 3.33rem;
+        line-height: 0;
+        color: #333;
+        background-color: #EEA5A5;
+        border: 1px solid #e3e8ee;
+        border-radius: 50%;
+        box-shadow: 0 0 5px rgba(0,0,0,.05);
+    }
 
-/* Add some anime-style styling */
-        body {
-            background-color: ;
-            font-family: ;
+    /* Add some anime-style styling */
+    body {
+        background-color: ;
+        font-family: ;
+    }
+
+    h2,
+    h3 {
+        text-align: ;
+        color: ;
+    }
+
+    h2 {
+        font-size: ;
+        margin-top: ;
+    }
+
+    h3 {
+        font-size: ;
+        margin: ;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        background-color: ;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px ;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 400px;
+    }
+
+    a {
+        color:;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+
+
+    /* 添加一个简单的弹窗公告 */
+    body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+	}
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        z-index: 9999;
+	}
+		
+	h2 {
+		margin-top: 0;
+		font-size: 24px;
+		color: #333;
+	}
+    p {
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #666;
+	}
+		
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+    }
+
+    button:hover {
+			background-color: #005fa3;
+	}
+
+	h2 {
+        font-size: 25px;
+    }
+
+    p {
+        color: #ff0000;
+    }
+    </style>
+
+    <style>
+        a {
+            transition: all 0.2s ease-in;
+            padding: .3rem;
         }
-
-        h2,
-        h3 {
-            text-align: ;
-            color: ;
+        a:hover {
+            background: blue;
+            border-radius: .3rem;
+            color: white;
+        }
+        h2 a, h3 a {
+            padding: none;
+            color: black;
+            font-size: 1.2em;
+        }
+        h2 a:hover, 
+        h3 a:hover {
+            border-radius: none;
+        }
+        .backtop a:hover {
+            background: none;
         }
 
         h2 {
-            font-size: ;
-            margin-top: ;
+            border-bottom: solid 1px black;
+            margin-top: 1em;
         }
-
         h3 {
-            font-size: ;
-            margin: ;
+            margin-top: 1em;
         }
 
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        body {
+            /*
+            background-image: url("https://api.ghser.com/random/bg.php");
+            background-size: cover;
+            background-attachment: fixed;
+            */
+            padding: 1em;
         }
 
-        li {
-            background-color: ;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px ;
-            margin: 20px;
-            padding: 20px;
-            text-align: center;
-            width: 400px;
+        .site-container {
+            flex-flow: row wrap;
         }
+    </style>
 
-        a {
-            color:;
-            font-size: 1.3em;
-            text-decoration: none;
-        }
-
-
-
-/* 添加一个简单的弹窗公告 */
-
-body {
-			background-color: #f1f1f1;
-			font-family: Arial, sans-serif;
-		}
-   #popup {
-			display: none;
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 400px;
-			padding: 20px;
-			background-color: #fff;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,0,0,.5);
-			z-index: 9999;
-		}
-		
-		h2 {
-			margin-top: 0;
-			font-size: 24px;
-			color: #333;
-		}
-   p {
-			margin-bottom: 20px;
-			font-size: 16px;
-			line-height: 1.5;
-			color: #666;
-		}
-		
-		button {
-			display: block;
-			margin: 0 auto;
-			padding: 10px 20px;
-			background-color: #0077cc;
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-			transition: background-color .3s ease-in-out;
-		}
-   button:hover {
-			background-color: #005fa3;
-		}
-	h2 {
-    font-size: 25px;
-}
-p {
-    color: #ff0000;
-  }
-  button {
-    font-size: 15px;
-    color: blue;
-}
-
-</style>
-
-<div id="hqestop"></div>
-<div class="backtop">
-<!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
-<a href="#hqestop" target="_self" onfocus="this.blur();">
-<button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
-  <i class="fa fa-caret-up"></i>
- </button>
- </a>
- </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script>
-	$(document).ready(function(){  
+	$( document ).ready( function(){
 	    $(".backtop").hide();  
 	    $(function () {  
 	        //检测屏幕高度  
@@ -179,484 +210,458 @@ p {
 	});  
    </script>
 
-
 </head>
 
+
 <body onload="showPopup()">
+
+    <div id="hqestop"></div>
+
+    <div class="backtop">
+        <!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
+        <a href="#hqestop" target="_self" onfocus="this.blur();">
+            <button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
+                <i class="fa fa-caret-up"></i>
+            </button>
+        </a>
+    </div>
+    
+
 	<div id="popup">
 		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
-		<p><h3>更新内容: 删除了关于h的网站，请访问<a href=https://yftdtddh.github.io/lun/>新网页</a></h2>
-      慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！</p>
+		<p><h3>更新内容: 添加了若干网站</h2>
+        慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！</p>
 		<button onclick="hidePopup()">关闭</button>
 	</div>
 
 
-<div id="mySidenav" class="sidenav">
-	
+    <div id="mySidenav" class="sidenav">
+
+    <h1><a href=https://yftdtddh.github.io/muxizyhz>资源汇总</a></h1>
+    此页创建时间：2022/12/19&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
+
+    <script>
+        const lastUpdatedElement = document.getElementById('lastUpdated');
+        const lastUpdatedDate = new Date(document.lastModified);
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+        const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+        lastUpdatedElement.innerHTML = formattedDate
+    </script>
+
+    <br>
+    慢速更新，正在搬运收藏夹里面的资源。
+    <a href=http://www.gezhongji.com/note/show/9000779>>>点击跳转</a> 密码1234
+    <br>
+    以下网站难免会出现弹窗广告，综合情况使用。
+
+    <a href=mailto:bilibilimuxi@126.com>邮箱联系</a>
+    <br>
+    目录跳转: <a href="#animation">动画</a> <a href="#manga">漫画</a> <a href="#game">游戏</a> <a href="#novel">轻小说</a> <a href="#music">音乐</a>｜<a href="#bt">BT 网盘 字幕组</a>｜<a href="#acgnlive">ACGN资讯</a>｜<a href="#ACGNweb">ACGN网络</a>
+    <br>
+    <p style="color:blue;">资源共享请点<a href=https://docs.qq.com/form/page/DZUljelhVSERpdVZw><b>这里</b></a>填表，红豆泥阿力嘎多！</p>
+
+    <a href="http://chii.in/user/bangumi_muxi/timeline"><img src="http://chii.in/chart/img/641497" border="0" alt="木晞i的时空管理局" /></a>
+
+
+    <hr style="border: solid 1px black;">
+
+    <h2>①动画</h2>
+    <br>
+    <h3 align="center">十个精选站</h3>
+    <br>                                       
+    <ul>
+    <p> <li><a href="https://www.agemys.net">age动漫</a><br>【适合补番】画质算高清，加载速度快，个人也经常使用。<br> </li> 
+        <li><a href="https://dick.xfani.com">稀饭动漫</a><br>【适合追番】<strong>上传的资源画质高加载快，只不过缺少很多旧番。</strong> </li>
+    </p>
+    </ul>
+
+    <ul>
+    <p> 
+        <li><a href=https://www.qkan8.com/>去看吧</a> <br>【适合补番】<b>上述两个站点没有的老番可以在该站搜一搜，站长也很认真负责。</b></li> 
+        <li><a href=https://www.gqdm.net/>異世界動畫</a><br>【适合补番】<b>异世界动漫分站，广告少了不少，使用体验差不多吧。</b>
+    </p>
+    </ul>
+    <br>
+
+    <ul>
+    <p> <li><a href=https://bangumi.online>新番组</a>
+    <br>【适合追番】<b>该站与bangumi无运营关系！主要用来追番，部分手机浏览器不能播放。</b></li> <li><a href=https://www.edddh4.com/>edd动漫</a><br>【适合补番】<b>解决问题快，播放流畅。<b></p>
+    </ul>
+    
+    <ul>
+    <p> <li><a href=https://www.cycdm01.top/>次元城动漫</a>
+        <br>【适合追番】<b>流畅播放，附有动画评论，与一般小站不同。</b></li> <li><a href=https://www.mgnacg.com>橘子动漫</a><br>【适合追番】<b>主要更新番，当然稍旧番也有，播放体验不错。</b></p>
+    </ul>
+    
+    <ul>
+    <p> <li><a href=https://www.quqidm.com/>曲奇动漫</a>
+    <br>【适合追番】<b>播放速度快，画质良好。</b></li> <li><a href=https://www.tucao.cam/>吐槽弹幕网</a><br>【适合追番】<b>以前的动画懂得都懂，主要还是追新番</b></p>
+    </ul>
+
+
+    
+    <h3><a id="animation">1.1  在线动画推荐</a></h3>
+    <a href=https://anime1.pw/>Anime1</a>
+    <a href=https://www.anfuns.cc/>ANFUNS动漫</a>
+    <a href=http://ci.moefz.cc/>萌语动漫①</a>
+    <a href=http://www.moefz.cc/>萌语动漫②</a>
+    <a href=http://www.eacg.net/>E-ACG</a>
+    <a href=https://www.relamanhua.com/cartoonsfree>热辣漫畫</a>
+    <a href=http://www.acgnya.com/>ACGnya</a>
+    <a href=https://dmbases.cc/>DMBASES</a>
+    <a href=https://www.yydm1.cc//>丫丫动漫</a>
+    <br>
+    <a href=https://akdm.cc/>爱看动漫</a>
+    <a href=http://07vod.fun/>柒之社</a>
+    <a href=https://arlnigdm.com/>宫下动漫</a>
+    <a href=https://www.xn--79q440a.xyz/>出差屋</a>
+    <a href=https://www.silisili.tv/>嘶哩嘶哩</a>
+    <a href=https://www.acgndmku.com/>Acg动漫库</a>
+    <a href=https://www.maigo.cc/>樱舞动漫</a>
+    <a href=https://www.mutefun.com/>mutefun</a>
+    <a href=https://www.i0m0i.com/>次元窝</a>
+    <a href=http://www.zzzfun.com/>zzzfun动漫</a>
+    <br>
+    <a href=https://www.tinaacg.net/>Tinaacg番剧网</a>
+    <a href=https://www.5dm.app/>5弹幕</a>
+    <a href=http://www.mxdm.cc>mx动漫</a>
+    <a href=https://m.bbddm.com/>百宝袋动漫</a>
+    <a href=http://www.xxmanmi.com/>小小漫迷</a>
+    <a href=https://cyfz.vip/>次元方舟动漫网</a>
+    <a href=http://www.icwe.work/>CWCw动漫网</a>
+    <a href=https://www.dqsj.top/>打驴动漫</a>
+    <a href=https://acgfantuan.com/>acg饭团</a>
+    <a href=https://ebb.io/>ebb动漫</a>
+    <a href=https://acgcn.ml/>不可视境界线</a>
+    <a href=https://www.qdmsh.com/>趣动漫</a>
+    <a href=https://www.7sefun.top/>七色番</a>
+
+    <h3><a>1.2  次用</a></h3>
+    <a href=https://www.cydmfl.com/>次元福利动漫网</a>
+    <a href=http://www.nicotv.club/>妮可动漫</a>
+    <a href=http://www.995dm.com/>久久动漫</a>
+    <a href=https://www.dmfuli.com/>动漫福利</a>
+    <a href=https://www.ktkkt.top/>卡通站</a>
+    <a href=http://www.dmd85.com/>动漫岛</a>
+    <a href=https://dm84.tv/>动漫巴士</a>
+    <a href=https://www.yxdmlove.com/>怡萱动漫</a>
+    <a href=http://m.yinghuacd.com/>樱花动漫①</a>
+    <br>
+    <a href=http://www.qimiqimi.net/>奇米奇米</a>
+    <a href=http://www.acglala.cc/>拉拉动漫</a>
+    <a href=http://www.ntyou.cc/>nt动漫</a>
+    <a href=https://www.92cj.com/>路漫漫</a>
+    <a href=http://www.milimili.tv/>咪哩咪哩</a>
+    <a href=https://www.dmdm0.com/>动漫蛋</a>
+    <a href=https://iafuns.com/>八重樱动漫</a>
+    <a href=http://acgdm6.com/>age动漫(备)</a>
+    <a href=http://agefans.top/>age动漫(备)</a>
+    <a href=http://www.dmlaa.com/>风车动漫①</a>
+    <a href=http://www.dm3.cc/>风车动漫②</a>
+    <a href=https://www.fengche530.com/>风车动漫③</a>
+    <a href=http://halihali1.com/>哈哩哈哩</a>
+
+
+    <h3><a>1.3  本地正版版权动画平台</a></h3>
+    <a href=https://www.bilibili.com/anime/>bilibili动画</a>
+    <a href=https://www.acfun.cn/bangumilist>acfun番剧</a>
+    <a href=http://comic.le.com/>乐视动画</a>
+    <a href=http://tv.sohu.com/comic/>搜狐动漫</a>
+    <a href=https://www.iqiyi.com/dongman/>爱奇艺动漫</a>
+    <a href=https://comic.youku.com/channel/webcomic>优酷动漫</a>
+    <a href=http://cartoon.pptv.com/>pp动漫</a>
+    <a href=https://www.mgtv.com/cartoon/>芒果动漫</a>
+
+    <h3><a>1.4  动画软件</a></h3>
+    <a href=https://dick.xfani.com/index.php/label/down.html>稀饭动漫</a>
+    <a href=https://omofun.tv/>omofun动画弹幕网</a>
+    <a href=https://www.zzzdm.cc/>Z动漫</a>
+    <a href=https://www.hfdm.xyz/app/>横风动漫</a>
+    <a href=https://www.tucao.cam/app/>吐槽弹幕网</a>
+    <a href=https://cyfz.vip/index.php/label/down.html>次元方舟动漫网</a>
+    <a href=https://zzz-1251249846.file.myqcloud.com/index.html>ZZZfun</a>
+
+
+    <h3><a id="bt">1.5  BT,网盘,字幕组</a></h3>
+    <a href=https://bangumi.moe/>萌番组</a>
+    <a href=https://fitacg.com/>菲特动漫</a>
+    <a href=http://miobt.com/>*miobt*</a>
+    <a href=https://dmhy.org/>动漫花园</a>
+    <a href=https://mikanani.me/>蜜桔计划</a>
+    <a href=https://acg.rip/>acg.rip</a>
+    <a href=https://www.acg23.com/>acg23</a>
+    <a href=https://www.tokyotosho.info/>東京図書館</a>
+    <a href=https://www.dongmanhuayuan.com/>dmhy镜像站</a>
+    <a href=http://www.36dm.club/>简单动漫</a>
+    <a href=https://acg02.cc/>次元計劃</a>
+    <br>
+    <a href=https://fulifuli.me/>呋哩呋哩</a>
+    <a href=https://dmly.me/>动漫领域</a>
+    <a href=http://u.gitcafe.net/>小纸条</a>
+    <a href=https://nyaa.iss.ink/>nyaa</a>
+    <a href=https://dmhy.anoneko.com/>动漫花园资源网</a>
+    <a href=https://vcb-s.com/>vcb-studio</a>
+    <a href=https://assrt.net/>伪射手</a>
+    <a href=https://subhd.tv/>SubHD</a>
+    <a href=http://mlsub.net/>梦蓝字幕组</a>
+    <a href=https://www.dmguo.org/forum.php>动漫国字幕组</a>
+    <br>
+    <a href=http://www.iskytree.net/>天空树</a>
+    <a href=https://www.airota.net/bbs/>千夏町</a>
+    <a href=https://www.acgsen.com/>森之屋动漫</a>
+
+
+    <h2><a id="manga">②漫画</a></h2>
+    <h3 align="center">四个精选站</h3>
+
+    <ul>
+        <p> <li><a href=https://www.soman.com/>搜漫</a>
+        <br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b></li> 
+        <li><a href=http://www.mangabz.com/>mangabz</a><br>该站与xmanhua是同源，观看漫画上基本能用。<b></p>
+    </ul>
+
+    <ul>
+        <p>
+            <li><a href=http://www.zerobyw1060.com/>zero搬运网</a><br><b>即有生肉，也有熟肉，满足基本漫画阅览需求！</b></li>
+            <li><a href=http://vol.moe/>mox</a><br><b>专门的漫画下载网站！支持kindle自带浏览器下载</b></p>
+    </ul>
+    
+    <h3 ><a>2.1  在线漫画网</a></h3>
+    <a href=https://www.dongman.la/>动漫啦</a>
+    <a href=http://www.1kkk.com/>极速漫画</a>
+    <a href=https://www.xmanhua.com/>xmanhua</a>
+    <a href=http://kanbook.net/>快岸漫画</a>
+    <a href=https://www.maofly.com/>漫画猫</a>
+    <a href=https://www.dmzj.com/index.html>动漫之家</a>
+    <a href=https://www.dm5.com/>漫画人</a>
+    <a href=https://www.copymanga.org/>拷贝漫画</a>
+    <a href=https://www.manhuadb.com/>漫画DB</a>
+    <a href=http://m.gugu5.com/>古古漫画</a>
+    <a href=http://cambiaip.org/18comic-app.apk>禁漫天堂</a>
+    <a href=https://www.fffdm.com/>风之动漫</a>
+    <br>
+    <a href=http://www.imitui.com/>米推漫画</a>
+    <a href=http://www.ykmh.com/>优酷漫画</a>
+    <a href=http://www.manhualou.com/>漫画楼</a>
+    <a href=https://www.77mh.nl/>新新漫画</a>
+    <a href=https://dogemanga.com/>漫画狗</a>
+    <a href=https://rimanb.com/>日漫吧</a>
+    <a href=https://moeshare.cc/>萌享</a>
+    <a href=https://acgnmh.com/>ACGN漫画网</a>
+    <a href=https://www.wnacg.org/>绅士漫画</a>
+    <a href=https://app.noy.asia/>NoyAcg</a>
+    <a href=https://boylove.cc/>香香腐宅</a>
+    <br>
+    <a href=https://manhuabika.com/>哔咔漫画</a>
+
+    
+    <h3 ><a>2.2  引进正版与国创漫画平台</a></h3>
+    <a href=https://manga.bilibili.com/>哔哩哔哩漫画</a>
+    <a href=https://ac.qq.com/>腾讯漫画</a>
+    <a href=https://manmanapp.com/>漫漫漫画</a>
+    <a href=https://www.kanman.com/>看漫画</a>
+    <a href=https://www.kuaikanmanhua.com/>快看漫画</a>
+    <a href=https://manhua.docin.com/>豆丁漫画</a>
+    <a href=https://www.zymk.cn/>知音漫客网</a>
+    <a href=https://www.bkneng.com/>不可能的世界-漫画</a>
+    <a href=https://www.manhuatai.com/>漫画台</a>
+    <a href=http://www.baozoumanhua.com/>暴走漫画</a>
+    <br>
+    <a href=https://www.mkzhan.com/>漫画栈</a>
+    <a href=https://www.dongmanmanhua.cn/>咚漫</a>
+    <a href=https://www.migudm.cn/>咪咕动漫</a>
+    <a href=http://qiximh3.com/>七夕漫画</a>
+    <a href=https://www.colamanhua.com/>cola漫画</a>
+    <a href=https://manhua.iqiyi.com/comic/>叭嗒漫画</a>
+    <a href=https://www.baozimh.com/>包子漫画</a>
+
+
+    <h3 ><a>2.3  漫画相关软件</a></h3>
+
+    看漫画:
+    <a href=https://www.36mh.app/>36漫画</a>
+    <a href=https://www.msmh.site/>喵上漫画</a>
+    <a href=https://github.com/niuhuan/daisy/>daisy</a>
+    <br>
+
+    阅读器【需要自行导入源】:
+    <a href=https://tachiyomi.org/download/>Tachiyomi</a>
+    <a href=https://fairyflower.github.io/>异次元</a>
+    <a href=https://github.com/xiaoyaocz/flutter_dmzj>flutter_dmzj</a>
+    <a href=https://github.com/Haleydu/Cimoc>Cimoc</a>
+
+    <a href=https://jmcomic.rocks/stray/>禁漫天堂</a>
+    <a href=https://www.36mh.app/>36漫画</a>
+    <a href=https://github.com/niuhuan/pikapika/>pikapika</a>
+    <a href=https://www.msmh.site/>喵上漫画</a>
+    <a href=https://picacg2022.com/>哔咔漫画</a>
+
+    <h2><a id="novel">③轻小说及电子书等</a></h2>
+    <a href=https://www.linovelib.com/>哔哩轻小说</a>
+    <a href=https://www.wenku8.net/index.php>轻小说文库</a>
+    <a href=https://www.lightnovel.app/>轻书架</a>
+    <a href=https://www.23qb.net/lightnovel/>铅笔小说</a>
+    <a href=https://www.mobinovels.com/>魔笔小说</a>
+    <a href=https://masiro.me/admin>真白萌</a>
+    <a href=http://ritdon.com/>深夜读书会</a>
+    <a href=https://www.esjzone.cc/>ESJZone</a>
+    <a href=https://clibrary.top/>clibrary</a>
+    <br>
+    <a href=https://www.52doc.com/>我爱电子书</a>
+    <a href=https://epub.love/wp/>图书馆的无限回廊</a>
+
+    <h3 ><a>3.1  本地原创轻小说</a></h3>
+    <a href=https://book.sfacg.com/>SF轻小说</a>
+    <a href=https://www.linovel.net/>轻之文库</a>
+    <a href=https://www.ciweimao.com/>刺猬猫</a>
+    <a href=https://www.8kana.com/>不可能de世界</a>
+    <a href=http://www.iciyuan.com/>趣阅异世界</a>
+    <h3 ><a>3.2  小说相关软件</a></h3>
+    <a href=https://lib-37i6why4iwwarkgy5zo7vwik.1lib.cz/android>ZLibry图书馆</a>
+    <a href=https://sfacg.com/>菠萝包轻小说</a>
+    <a href=https://www.moondownload.com/chinese.html>静读天下</a>
+
+    <h2><a id="music">④次元音乐</a></h2>
+    <a href=https://biu.moe/>Biu~</a>
+    <a href=https://www.beatstage.com/>Beatstage</a>
+    <a href=http://www.acgjc.com/>ACG漫音社</a>
+    <a href=https://www.cdbao.net/forum-173-1.html>CD包音乐网</a>
+    <a href=https://www.hifini.com/>音乐磁场</a>
+
+    <h3 ><a>4.1  本地正版音娱平台</a></h3>
+    <a href=https://www.bilibili.com/audio/home>哔哩哔哩音乐</a>
+    <a href=https://music.163.com/>网易云音乐</a>
+    <a href=https://y.qq.com/>QQ音乐</a>
+    <a href=https://www.kugou.com>酷狗音乐</a>
+    <a href=https://kuwo.cn/>酷我音乐</a>
+    <a href=https://music.douban.com/>豆瓣音乐</a>
+    <a href=https://www.ximalaya.com/>喜马拉雅</a>
+    <a href=https://qtfm.cn/>蜻蜓FM</a>
+    <a href=https://www.lavaradio.com/>lavaradio收音机</a>
+
+    
+    <h2><a id="game">⑤GAME</a></h2>
+    <a href=https://www.66rpg.com/>橙光</a>
+    <a href=https://www.3000.com/>闪艺</a>
+    <a href=https://www.iwzyx.com/>蝶梦</a>
+    <a href=https://avg.163.com/m/>易次元</a>
+    <a href=http://www.lpengine.cn/>LP文字游戏平台</a>
+    <a href=https://gartic.io/>你画我猜</a>
+    <br>
+    <a href=https://fufugal.com/>初音的青葱</a>
+    <a href=https://shinnku.com/>失落小站</a>
+    <a href=https://9shenmi.com/register.php>绯月</a>
+    <a href=https://www.ttloli.com/>忧郁的弟弟</a>
+    <a href=https://www.haogal8.com/>好GAL</a>
+    <a href=https://www.ymgal.games/>月幕GAL</a>
+    <a href=https://www.galcg.org/>GAL领域</a>
+    <a href=http://78gamego.com/>78游戏GAL</a>
+    <a href=https://galge.fun/>2Dfun</a>
+    <a href=https://ggbases.dlgal.com/>ggbases</a>
+    <a href=https://www.clfans.club/>光坂小镇</a>
+    <br>
+    <a href=https://gallibrary.pw/index.html>GAL图书馆</a>
+    <a href=https://ercygame.com/>GALGAME资源发布</a>
+    <a href=https://www.galzy.eu.org/>紫缘社</a>
+    <a href=https://www.cngal.org>中文galgame</a>
+    <a href=https://www.tianshie.com/zh-tw/>天使二次元</a> 
+    <a href=https://blog.reimu.net/>灵梦御所</a>
+    <a href=https://www.hgalgamemaster.top>目标是h游戏大师</a>
+    <br>
+    <a href=https://acg.qingjuacg.top/>青桔网</a>
+
+    <h2><a id="acgnlive">⑥次元资讯</a></h2>
+    
+    <a href=http://www.animetox.com/>Animetox</a>
+    <a href=http://cxacg.com/>橙心社</a>
+    <a href=https://www.xydm.net/>星音动漫网</a>
+    <a href=https://www.hexieshe.cn>和邪社</a>
+    <a href=https://www.dongmanzx.com>漫资讯</a>
+    <a href=https://www.moejam.com>梦域动漫网</a>
+    <a href=https://www.jpbeta.cc>多元化日本文化资讯站</a>
+    <a href=https://www.acglivefan.com>二次元现场</a>
+    <br>
+    <a href=https://www.anicoga.com>Anicoga</a>
+    <a href=https://moegirl.cyou/Mainpage>萌娘百科镜像</a>
+    <a href=https://acgsecrets.hk/>ACGsecrets.hk</a>
+    <a href=http://yuc.wiki/>YuC's AnimeList</a>
+    <a href=https://bgmlist.com/>番组放送</a>
+    <a href=https://hmacg.cn/bangumi/>动漫新番表</a>
+    <a href=https://www.acgmh.com/>ACGN门户</a>
+    <a href=https://www.yimoe.cc>翼萌动漫</a>
+    <br>
+    <a href=https://2chcn.com/>2ch中文网</a>
+    <a href=https://www.roxylib.com/>洛琪希图书馆</a>
+    <a href=https://acgwiki.tw/>acg百科</a>
+
+    <h2><a id="ACGNweb">⑦ACGN网络</a></h2>
+    <h3><a>7.1  社区与论坛</a></h3>
+    <a href=https://www.mfuns1.cn/>喵御宅</a>
+    <a href=https://acgn.zone/>ACG里世界</a>
+    <a href=https://nga.cn/>NGA玩家社区</a>
+    <a href=https://bbs.saraba1st.com/2b/forum.php>S1论坛</a>
+    <a href=https://www.tsdm39.net/forum.php>天使动漫论坛</a>
+    <a href=http://www.acgnasia.com/discuz/forum.php>二次元亚洲论坛</a>
+    <a href=https://www.53dushu.com/forum.php>读书会</a>
+    <a href=https://www.xinqi8888.com/>次元社</a>
+    <a href=https://bbs.popgo.org/bbs/>漫游论坛</a>
+    <br>
+    <a href=https://hvhbbs.com/threads/10741/>贞德游戏交流论坛</a>
+    <a href=https://www.xinqi088.com/>星期八</a>
+    <a href=https://piliacg.cn/>霹雳动漫社区</a>
+    <a href=https://www.xinqi088.com/>阅次元论坛</a>
+    <a href=https://www.acgke.org/>次元客</a>
+    <a href=https://www.lcyll.com/>零次元社区</a>
+    <a href=https://bbs2.seikuu.com/>星空论坛</a>
+    <a href=https://www.yukict.com/bbs/index.php>YUKI飛雪之城</a>
+    <br>
+    <a href=https://bbs.acgrip.com/>Anime字幕论坛</a>
+    <a href=https://www.keyfc.net/bbs/index.aspx>keyfansclub 我们的梦想</a>
+    <a href=https://iirose.com/>蔷薇花园</a>
+    <a href=https://www.feiyuacg.com/>飞鱼ACG</a>
+    <a href=http://www.sosg.net/>SOGO动漫网</a>
+    <a href=http://bbs2.kdays.net/>keydays论坛</a>
+    <a href=https://bbs.zdfx.net/>终点论坛</a>
+    <br>
+    <a href=https://www.m.schub.top/com/>SC中文社区</a>
+    <a href=https://yhuam.cc/>樱花萌ACG</a>
+    <a href=https://www.gtloli.gay/>哥特动漫王国</a>
+
+    <h3><a>"点·格·子"</a></h3>
+    <a href=http://bgm.tv/>Bangumi番组计划</a>
+    <a href=http://www.dudulu.moe/>嘟嘟嘟二次元理想乡</a>
+    <a href=https://neodb.social/users/login/>neodb</a>
+
+    <h3><a>综合资源站</a></h3>
+    <a href=https://www.wobbay.xyz/>wobbay的资源小屋</a>
+    <a href=http://www.2cycd.com/>二次元虫洞</a>
+    <a href=https://dimtown.com/>次元小镇</a>
+    <a href=https://www.teaqqq.com/>二次元下午茶</a>
+    <a href=https://miaotudmw.com/>漫兔动漫社</a>
+    <a href=https://www.acgndog.com/>次元狗</a>
+    <a href=https://www.mikuclub.win/>初音社</a>
+    <a href=https://www.mengzhan23.com/>萌站</a>
+    <br>
+    <a href=https://www.krloli.com/>氪哩氪哩</a>
+    <a href=http://hgalgame.com/?cat=4>MAY社-宅の资源</a>
+    <a href=https://saber.love/>saber酱的抱枕</a>
+    <a href=https://www.hacg>琉璃神社</a>
+    <a href=https://www.hmoe12.com/>萌幻之乡</a>
+    
+    <h3><a>网站发布页</a></h3>
+    <a href=https://acgttt.com/>二次元下午茶发布页</a>
+    <a href=https://gxdm.org/>宫下动漫发布页</a>
 
 
 
-
-<h2><a href=https://yftdtddh.github.io/muxizyhz>资源汇总</a></h2>
-此页创建时间：2022/12/19&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
-<script src="app.js"></script>
-  <script>
- const lastUpdatedElement = document.getElementById('lastUpdated');
-const lastUpdatedDate = new Date(document.lastModified);
-const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
-const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-
-lastUpdatedElement.innerHTML = formattedDate
-
- </script>
-
-<br>
-慢速更新，正在搬运收藏夹里面的资源。
-<a href=http://www.gezhongji.com/note/show/9000779>>>点击跳转</a> 密码1234
-<br>
-以下网站难免会出现弹窗广告，综合情况使用。
-
-<a href=mailto:bilibilimuxi@126.com>邮箱联系</a>
-<br>
-目录跳转: <a href="#animation">动画</a> <a href="#manga">漫画</a> <a href="#game">游戏</a> <a href="#novel">轻小说</a> <a href="#music">音乐</a>｜<a href="#bt">BT 网盘 字幕组</a>｜<a href="#acgnlive">ACGN资讯</a>｜<a href="#ACGNweb">ACGN网络</a>
-<br>
-<p style="color:blue;">资源共享请点<a href=https://docs.qq.com/form/page/DZUljelhVSERpdVZw><b>这里</b></a>填表，红豆泥阿力嘎多！</p>
-
-<a href="http://chii.in/user/bangumi_muxi/timeline"><img src="http://chii.in/chart/img/641497" border="0" alt="木晞i的时空管理局" /></a>
-
-
- <hr>
-<h2>①动画</h2>
-<br>
-            <h3 align="center">十个精选站</h3>
-<br>                                       
-<ul>
-   <p> <li><a href="https://www.agemys.net">age动漫</a>
-       <br>【适合补番】画质算高清，加载速度快，个人也经常使用。<br> </li> <li><a href="https://dick.xfani.com">稀饭动漫</a><br>【适合追番】<strong>上传的资源画质高加载快，只不过缺少很多旧番。</strong> </li></p>
- </ul>
-
-<ul>
- <p> <li><a href=https://www.qkan8.com/>去看吧</a>
-    <br>【适合补番】<b>上述两个站点没有的老番可以在该站搜一搜，站长也很认真负责。</b></li> <li><a href=https://www.gqdm.net/>異世界動畫</a><br>【适合补番】<b>异世界动漫分站，广告少了不少，使用体验差不多吧。</b></p>
-</ul>
-     <br>
-
- <ul>
- <p> <li><a href=https://bangumi.online>新番组</a>
-  <br>【适合追番】<b>该站与bangumi无运营关系！主要用来追番，部分手机浏览器不能播放。</b></li> <li><a href=https://www.edddh4.com/>edd动漫</a><br>【适合补番】<b>解决问题快，播放流畅。<b></p>
- </ul>
-  
- <ul>
-<p> <li><a href=https://www.cycdm01.top/>次元城动漫</a>
-    <br>【适合追番】<b>流畅播放，附有动画评论，与一般小站不同。</b></li> <li><a href=https://www.mgnacg.com>橘子动漫</a><br>【适合追番】<b>主要更新番，当然稍旧番也有，播放体验不错。</b></p>
-  </ul>
- 
- <ul>
-<p> <li><a href=https://www.quqidm.com/>曲奇动漫</a>
- <br>【适合追番】<b>播放速度快，画质良好。</b></li> <li><a href=https://www.tucao.cam/>吐槽弹幕网</a><br>【适合追番】<b>以前的动画懂得都懂，主要还是追新番</b></p>
- </ul>
-
-<p>&nbsp;</p>
-
-<a id="animation">1.1  在线动画推荐</a>
- <br>
-<a href=https://www.7sefun.top/>七色番</a>
-<a href=https://www.anfuns.cc/>ANFUNS动漫</a>
-<a href=http://ci.moefz.cc/>萌语动漫①</a>
-<a href=http://www.moefz.cc/>萌语动漫②</a>
-<a href=http://www.eacg.net/>E-ACG</a>
-<a href=https://www.relamanhua.com/cartoonsfree>热辣漫畫</a>
-<a href=http://www.acgnya.com/>ACGnya</a>
-<a href=https://dmbases.cc/>DMBASES</a>
-<a href=https://www.yydm1.cc//>丫丫动漫</a>
- <br>
-<a href=https://akdm.cc/>爱看动漫</a>
-<a href=http://07vod.fun/>柒之社</a>
-<a href=https://arlnigdm.com/>宫下动漫</a>
-<a href=https://www.xn--79q440a.xyz/>出差屋</a>
-<a href=https://www.silisili.tv/>嘶哩嘶哩</a>
-<a href=https://www.acgndmku.com/>Acg动漫库</a>
-<a href=https://www.maigo.cc/>樱舞动漫</a>
-<a href=https://www.mutefun.com/>mutefun</a>
-<a href=https://www.i0m0i.com/>次元窝</a>
-<a href=http://www.zzzfun.com/>zzzfun动漫</a>
- <br>
-<a href=https://www.tinaacg.net/>Tinaacg番剧网</a>
-<a href=https://www.5dm.app/>5弹幕</a>
-<a href=http://www.mxdm.cc>mx动漫</a>
-<a href=https://m.bbddm.com/>百宝袋动漫</a>
-<a href=http://www.xxmanmi.com/>小小漫迷</a>
-<a href=https://cyfz.vip/>次元方舟动漫网</a>
-<a href=http://www.icwe.work/>CWCw动漫网</a>
-<a href=https://www.dqsj.top/>打驴动漫</a>
-<br>
-<a href=https://ebb.io/>ebb动漫</a>
-<a href=https://acgcn.ml/>不可视境界线</a>
-<a href=https://www.qdmsh.com/>趣动漫</a>
-<a href=https://acgfantuan.com/>acg饭团</a>
-<br>
-<br>
-1.2  次用
-<br>
-<a href=https://www.cydmfl.com/>次元福利动漫网</a>
-<a href=http://www.nicotv.club/>妮可动漫</a>
-<a href=http://www.995dm.com/>久久动漫</a>
-<a href=https://www.dmfuli.com/>动漫福利</a>
-<a href=https://www.ktkkt.top/>卡通站</a>
-<a href=http://www.dmd85.com/>动漫岛</a>
-<a href=https://dm84.tv/>动漫巴士</a>
-<a href=https://www.yxdmlove.com/>怡萱动漫</a>
-<a href=http://m.yinghuacd.com/>樱花动漫①</a>
-<br>
-<a href=http://www.qimiqimi.net/>奇米奇米</a>
-<a href=http://www.acglala.cc/>拉拉动漫</a>
-<a href=http://www.ntyou.cc/>nt动漫</a>
-<a href=https://www.92cj.com/>路漫漫</a>
-<a href=http://www.milimili.tv/>咪哩咪哩</a>
-<a href=https://www.dmdm0.com/>动漫蛋</a>
-<a href=https://iafuns.com/>八重樱动漫</a>
-<a href=http://acgdm6.com/>age动漫(备)</a>
-<a href=http://agefans.top/>age动漫(备)</a>
-<br>
-<a href=http://www.dmlaa.com/>风车动漫①</a>
-<a href=http://www.dm3.cc/>风车动漫②</a>
-<a href=https://www.fengche530.com/>风车动漫③</a>
-<a href=http://halihali1.com/>哈哩哈哩</a>
- <br>
-<br>
-1.3  本地正版版权动画平台
- <br>
-<a href=https://www.bilibili.com/anime/>bilibili动画</a>
-<a href=https://www.acfun.cn/bangumilist>acfun番剧</a>
-<a href=http://comic.le.com/>乐视动画</a>
-<a href=http://tv.sohu.com/comic/>搜狐动漫</a>
-<a href=https://www.iqiyi.com/dongman/>爱奇艺动漫</a>
-<a href=https://comic.youku.com/channel/webcomic>优酷动漫</a>
-<a href=http://cartoon.pptv.com/>pp动漫</a>
-<a href=https://www.mgtv.com/cartoon/>芒果动漫</a>
-<br>
-<br>
-1.4  动画软件
- <br>
-<a href=https://dick.xfani.com/index.php/label/down.html>稀饭动漫</a>
-<a href=https://omofun.tv/>omofun动画弹幕网</a>
-<a href=https://www.zzzdm.cc/>Z动漫</a>
-<a href=https://www.hfdm.xyz/app/>横风动漫</a>
-<a href=https://www.tucao.cam/app/>吐槽弹幕网</a>
-<a href=https://cyfz.vip/index.php/label/down.html>次元方舟动漫网</a>
-<a href=https://zzz-1251249846.file.myqcloud.com/index.html>ZZZfun</a>
-
-<p>&nbsp;</p>
-
-<a id="bt">1.5  BT,网盘,字幕组</a>
- <br>
-<a href=https://bangumi.moe/>萌番组</a>
-<a href=https://fitacg.com/>菲特动漫</a>
-<a href=http://miobt.com/>*miobt*</a>
-<a href=https://dmhy.org/>动漫花园</a>
-<a href=https://mikanani.me/>蜜桔计划</a>
-<a href=https://acg.rip/>acg.rip</a>
-<a href=https://www.acg23.com/>acg23</a>
-<a href=https://www.tokyotosho.info/>東京図書館</a>
-<a href=https://www.dongmanhuayuan.com/>dmhy镜像站</a>
-<a href=http://www.36dm.club/>简单动漫</a>
-<br>
-<a href=https://acg02.cc/>次元計劃</a>
-<a href=https://fulifuli.me/>呋哩呋哩</a>
-<a href=https://dmly.me/>动漫领域</a>
-<a href=http://u.gitcafe.net/>小纸条</a>
-<a href=https://nyaa.iss.ink/>nyaa</a>
-<a href=https://dmhy.anoneko.com/>动漫花园资源网</a>
-<a href=https://www.acgsen.com/>森之屋动漫</a>
-<a href=https://vcb-s.com/>vcb-studio</a>
-<a href=https://assrt.net/>伪射手</a>
-<a href=https://subhd.tv/>SubHD</a>
-<br>
-<a href=http://mlsub.net/>梦蓝字幕组</a>
-<a href=https://www.dmguo.org/forum.php>动漫国字幕组</a>
-<a href=http://www.iskytree.net/>天空树</a>
-<a href=https://www.airota.net/bbs/>千夏町</a>
-
-
-
-
-<p>&nbsp;</p>
-&nbsp;<a id="manga"><h2><b>②漫画</b></h2></a>
- <br>
-        <h3 align="center">四个精选站</h3>
- <br>
-<ul>
- <p> <li><a href=https://www.soman.com/>搜漫</a>
-  <br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b></li> <li><a href=http://www.mangabz.com/>mangabz</a><br>该站与xmanhua是同源，观看漫画上基本能用。<b></p>
- </ul>
-
-<ul>
- <p> <li><a href=http://www.zerobyw1060.com/>zero搬运网</a>
-  <br><b>即有生肉，也有熟肉，满足基本漫画阅览需求！</b></li> <li><a href=http://vol.moe/>mox</a><br><b>专门的漫画下载网站！支持kindle自带浏览器下载</b></p>
- </ul>
- 
-<p>&nbsp;</p>
-<b>2.1  在线漫画网</b>
- <br>
-<a href=https://www.dongman.la/>动漫啦</a>
-<a href=http://www.1kkk.com/>极速漫画</a>
-<a href=https://www.xmanhua.com/>xmanhua</a>
-<a href=http://kanbook.net/>快岸漫画</a>
-<a href=https://www.maofly.com/>漫画猫</a>
-<a href=https://www.dmzj.com/index.html>动漫之家</a>
-<a href=https://www.dm5.com/>漫画人</a>
-<a href=https://www.copymanga.org/>拷贝漫画</a>
-<a href=https://www.manhuadb.com/>漫画DB</a>
-<a href=http://m.gugu5.com/>古古漫画</a>
-<a href=https://www.fffdm.com/>风之动漫</a>
- <br>
-<a href=http://www.imitui.com/>米推漫画</a>
-<a href=http://www.ykmh.com/>优酷漫画</a>
-<a href=http://www.manhualou.com/>漫画楼</a>
-<a href=https://www.77mh.nl/>新新漫画</a>
-<a href=https://dogemanga.com/>漫画狗</a>
-<a href=https://rimanb.com/>日漫吧</a>
-<a href=https://moeshare.cc/>萌享</a>
-<br>
-2.2  引进正版与国创漫画平台
-<br>
-<a href=https://manga.bilibili.com/>哔哩哔哩漫画</a>
-<a href=https://ac.qq.com/>腾讯漫画</a>
-<a href=https://manmanapp.com/>漫漫漫画</a>
-<a href=https://www.kanman.com/>看漫画</a>
-<a href=https://www.kuaikanmanhua.com/>快看漫画</a>
-<a href=https://manhua.docin.com/>豆丁漫画</a>
-<a href=https://www.zymk.cn/>知音漫客网</a>
-<a href=https://www.bkneng.com/>不可能的世界-漫画</a>
-<a href=https://www.manhuatai.com/>漫画台</a>
-<a href=http://www.baozoumanhua.com/>暴走漫画</a>
-<br>
-<a href=https://www.mkzhan.com/>漫画栈</a>
-<a href=https://www.dongmanmanhua.cn/>咚漫</a>
-<a href=https://www.migudm.cn/>咪咕动漫</a>
-<a href=http://qiximh3.com/>七夕漫画</a>
-<a href=https://www.colamanhua.com/>cola漫画</a>
-<a href=https://manhua.iqiyi.com/comic/>叭嗒漫画</a>
-<a href=https://www.baozimh.com/>包子漫画</a>
- <br>
-<br>
-2.3  漫画相关软件
- <br>
-看漫画:
-<a href=https://www.36mh.app/>36漫画</a>
-<a href=https://www.msmh.site/>喵上漫画</a>
-<a href=https://github.com/niuhuan/daisy/>daisy</a>
- <br>
-<br>
-阅读器【需要自行导入源】:
-<a href=https://tachiyomi.org/download/>Tachiyomi</a>
-<a href=https://fairyflower.github.io/>异次元</a>
-<a href=https://github.com/xiaoyaocz/flutter_dmzj>flutter_dmzj</a>
-<a href=https://github.com/Haleydu/Cimoc>Cimoc</a>
-
-<p>&nbsp;</p>
-
-③轻小说及电子书等
-<br> <a id="novel">
-<a href=https://www.linovelib.com/>哔哩轻小说</a>
-<a href=https://www.wenku8.net/index.php>轻小说文库</a>
-<a href=https://www.lightnovel.app/>轻书架</a>
-<a href=https://www.23qb.net/lightnovel/>铅笔小说</a>
-<a href=https://www.mobinovels.com/>魔笔小说</a>
-<a href=https://masiro.me/admin>真白萌</a>
-<a href=http://ritdon.com/>深夜读书会</a>
-<a href=https://www.esjzone.cc/>ESJZone</a>
-<a href=https://clibrary.top/>clibrary</a>
- <br>
-<a href=https://www.52doc.com/>我爱电子书</a>
- <a href=https://epub.love/wp/>图书馆的无限回廊</a>
- <br>
-<br>
-3.1  本地原创轻小说
- <br>
-<a href=https://book.sfacg.com/>SF轻小说</a>
-<a href=https://www.linovel.net/>轻之文库</a>
-<a href=https://www.ciweimao.com/>刺猬猫</a>
-<a href=https://www.8kana.com/>不可能de世界</a>
-<a href=http://www.iciyuan.com/>趣阅异世界</a>
-<br>
-<br>
-3.2  小说相关软件
-<br>
-<a href=https://lib-37i6why4iwwarkgy5zo7vwik.1lib.cz/android>ZLibry图书馆</a>
-<a href=https://sfacg.com/>菠萝包轻小说</a>
-<a href=https://www.moondownload.com/chinese.html>静读天下</a>
-
-<p>&nbsp;</p>
-<a id="music">
-④次元音乐
-<br> 
-<a href=https://biu.moe/>Biu~</a>
-<a href=https://www.beatstage.com/>Beatstage</a>
-<a href=http://www.acgjc.com/>ACG漫音社</a>
-<a href=https://www.cdbao.net/forum-173-1.html>CD包音乐网</a>
-<a href=https://www.hifini.com/>音乐磁场</a>
-<br>
-<br>
-4.1  本地正版音娱平台
-<br>
-<a href=https://www.bilibili.com/audio/home>哔哩哔哩音乐</a>
-<a href=https://music.163.com/>网易云音乐</a>
-<a href=https://y.qq.com/>QQ音乐</a>
-<a href=https://www.kugou.com>酷狗音乐</a>
-<a href=https://kuwo.cn/>酷我音乐</a>
-<a href=https://music.douban.com/>豆瓣音乐</a>
-<a href=https://www.ximalaya.com/>喜马拉雅</a>
-<a href=https://qtfm.cn/>蜻蜓FM</a>
-<a href=https://www.lavaradio.com/>lavaradio收音机</a>
-
-<p>&nbsp;</p>
-
-
-<a id="game">⑤GAME</a>
-<br>
-<a href=https://www.66rpg.com/>橙光</a>
-<a href=https://www.3000.com/>闪艺</a>
-<a href=https://www.iwzyx.com/>蝶梦</a>
-<a href=https://avg.163.com/m/>易次元</a>
-<a href=http://www.lpengine.cn/>LP文字游戏平台</a>
-<a href=https://gartic.io/>你画我猜</a>
- <br>
-<a href=https://fufugal.com/>初音的青葱</a>
-<a href=https://shinnku.com/>失落小站</a>
-<a href=https://9shenmi.com/register.php>绯月</a>
-<a href=https://www.ttloli.com/>忧郁的弟弟</a>
-<a href=https://www.haogal8.com/>好GAL</a>
-<a href=https://www.ymgal.games/>月幕GAL</a>
-<a href=https://www.galcg.org/>GAL领域</a>
-<a href=http://78gamego.com/>78游戏GAL</a>
-<a href=https://galge.fun/>2Dfun</a>
-<a href=https://ggbases.dlgal.com/>ggbases</a>
-<a href=https://www.clfans.club/>光坂小镇</a>
- <br>
-<a href=https://gallibrary.pw/index.html>GAL图书馆</a>
-<a href=https://ercygame.com/>GALGAME资源发布</a>
-<a href=https://www.galzy.eu.org/>紫缘社</a>
-<a href=https://www.cngal.org>中文galgame</a>
-<a href=https://www.tianshie.com/zh-tw/>天使二次元</a> 
-<a href=https://blog.reimu.net/>灵梦御所</a>
-<a href=https://www.hgalgamemaster.top>目标是h游戏大师</a>
-<br>
-<a href=https://acg.qingjuacg.top/>青桔网</a>
-<p>&nbsp;</p>
-
-
-⑥次元资讯
-<a id="acgnlive">
- <br>
-<a href=http://www.animetox.com/>Animetox</a>
-<a href=http://cxacg.com/>橙心社</a>
-<a href=https://www.xydm.net/>星音动漫网</a>
-<a href=https://www.hexieshe.cn>和邪社</a>
-<a href=https://www.dongmanzx.com>漫资讯</a>
-<a href=https://www.moejam.com>梦域动漫网</a>
-<a href=https://www.jpbeta.cc>多元化日本文化资讯站</a>
-<a href=https://www.acglivefan.com>二次元现场</a>
- <br>
-<a href=https://www.anicoga.com>Anicoga</a>
-<a href=https://moegirl.cyou/Mainpage>萌娘百科镜像</a>
-<a href=https://acgsecrets.hk/>ACGsecrets.hk</a>
-<a href=http://yuc.wiki/>YuC's AnimeList</a>
-<a href=https://bgmlist.com/>番组放送</a>
-<a href=https://hmacg.cn/bangumi/>动漫新番表</a>
-<a href=https://www.acgmh.com/>ACGN门户</a>
-<a href=https://www.yimoe.cc>翼萌动漫</a>
- <br>
-<a href=https://2chcn.com/>2ch中文网</a>
-<a href=https://www.roxylib.com/>洛琪希图书馆</a>
-<a href=https://acgwiki.tw/>acg百科</a>
-<p>&nbsp;</p>
-
-⑦ACGN网络
- <br>
-<a id="ACGNweb">
-<br>
-<br>
-7.1  社区与论坛
-<br>
-<a href=https://www.mfuns1.cn/>喵御宅</a>
-<a href=https://acgn.zone/>ACG里世界</a>
-<a href=https://nga.cn/>NGA玩家社区</a>
-<a href=https://bbs.saraba1st.com/2b/forum.php>S1论坛</a>
-<a href=https://www.tsdm39.net/forum.php>天使动漫论坛</a>
-<a href=http://www.acgnasia.com/discuz/forum.php>二次元亚洲论坛</a>
-<a href=https://www.53dushu.com/forum.php>读书会</a>
-<a href=https://www.xinqi8888.com/>次元社</a>
-<a href=https://bbs.popgo.org/bbs/>漫游论坛</a>
- <br>
-<a href=https://hvhbbs.com/threads/10741/>贞德游戏交流论坛</a>
-<a href=https://www.xinqi088.com/>星期八</a>
-<a href=https://piliacg.cn/>霹雳动漫社区</a>
-<a href=https://www.xinqi088.com/>阅次元论坛</a>
-<a href=https://www.acgke.org/>次元客</a>
-<a href=https://www.lcyll.com/>零次元社区</a>
-<a href=https://bbs2.seikuu.com/>星空论坛</a>
-<a href=https://www.yukict.com/bbs/index.php>YUKI飛雪之城</a>
-
- <br>
-<a href=https://bbs.acgrip.com/>Anime字幕论坛</a>
-<a href=https://www.keyfc.net/bbs/index.aspx>keyfansclub 我们的梦想</a>
-<a href=https://iirose.com/>蔷薇花园</a>
-<a href=https://www.feiyuacg.com/>飞鱼ACG</a>
-<a href=http://www.sosg.net/>SOGO动漫网</a>
-<a href=http://bbs2.kdays.net/>keydays论坛</a>
-<a href=https://bbs.zdfx.net/>终点论坛</a>
-<br>
-<a href=https://www.m.schub.top/com/>SC中文社区</a>
-<a href=https://yhuam.cc/>樱花萌ACG</a>
-<a href=https://www.gtloli.gay/>哥特动漫王国</a>
-<br>
-<br>
-"点·格·子″
-<br>
-<a href=http://bgm.tv/>Bangumi番组计划</a>
-<a href=http://www.dudulu.moe/>嘟嘟嘟二次元理想乡</a>
-<a href=https://neodb.social/users/login/>neodb</a>
-
-<p>&nbsp;</p>
-<b>综合资源站</b>
- <br>
-<a href=https://www.wobbay.xyz/>wobbay的资源小屋</a>
-<a href=http://www.2cycd.com/>二次元虫洞</a>
-<a href=https://dimtown.com/>次元小镇</a>
-<a href=https://www.teaqqq.com/>二次元下午茶</a>
-<a href=https://miaotudmw.com/>漫兔动漫社</a>
-<a href=https://www.acgndog.com/>次元狗</a>
-<a href=https://www.mikuclub.win/>初音社</a>
-<a href=https://www.mengzhan23.com/>萌站</a>
-<br>
-<a href=https://www.krloli.com/>氪哩氪哩</a>
- <a href=http://hgalgame.com/?cat=4>MAY社-宅の资源</a>
- <a href=https://saber.love/>saber酱的抱枕</a>
- <a href=https://www.hacg>琉璃神社</a>
- <a href=https://www.hmoe12.com/>萌幻之乡</a>
- 
-
-<p>&nbsp;</p>
-<b>网站发布页</b>
- <br>
-<a href=https://acgttt.com/>二次元下午茶发布页</a>
-<a href=https://gxdm.org/>宫下动漫发布页</a>
-
-
-
-
-
- 
-
-
- <hr>
-<a href=#top>回到顶部</a>
-
- <footer>
-<!-- 网站浏览次数 -->
-<div>
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	<span id="busuanzi_container_site_pv" style='display:none'> 此页总浏览<span id="busuanzi_value_site_pv"></span>次</span>
-</div>
-
+    <footer>
+        <hr>
+        <a href=#top>回到顶部</a>
+        <!-- 网站浏览次数 -->
+        <div>
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv" style='display:none'>此页总浏览<span id="busuanzi_value_site_pv"></span>次</span>
+        </div>
+    </footer>
+</body>
+</html>
