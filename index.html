@@ -6,13 +6,40 @@
  <title>木晞i的资源汇总</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
  <script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+ <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script>
+/*
+回到顶部js
+*/
+(".backtop").hide();  
+	    $(function () {  
+	        //检测屏幕高度  
+	        var height=$(window).height();  
+	        //scroll() 方法为滚动事件  
+	        $(window).scroll(function(){  
+	            if ($(window).scrollTop()>height){  
+	                $(".backtop").fadeIn(500);  
+	            }else{  
+	                $(".backtop").fadeOut(500);  
+	                }  
+	        });  
+	        $(".backtop").click(function(){  
+	            $('body,html').animate({scrollTop:0},100);  
+	            return false;  
+	        });  
+	    });  
+	});
+
+</script>
+
+
 <style>
  .my-link{
  color: pink;
 }
   </style>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
    </head>
 
 <body onload="showPopup()">
