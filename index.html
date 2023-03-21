@@ -6,33 +6,6 @@
  <title>木晞i的资源汇总</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
  <script src="script.js"></script>
-
- <script>
-/*
-回到顶部js
-*/
-(".backtop").hide();  
-	    $(function () {  
-	        //检测屏幕高度  
-	        var height=$(window).height();  
-	        //scroll() 方法为滚动事件  
-	        $(window).scroll(function(){  
-	            if ($(window).scrollTop()>height){  
-	                $(".backtop").fadeIn(500);  
-	            }else{  
-	                $(".backtop").fadeOut(500);  
-	                }  
-	        });  
-	        $(".backtop").click(function(){  
-	            $('body,html').animate({scrollTop:0},100);  
-	            return false;  
-	        });  
-	    });  
-	});
-
-</script>
-
-
 <style>
  .my-link{
  color: pink;
@@ -54,7 +27,40 @@
             </button>
         </a>
     </div>
-    
+ 
+/*
+回到顶部
+*/
+<script>
+(".backtop").hide();  
+	    $(function () {  
+	        //检测屏幕高度  
+	        var height=$(window).height();  
+	        //scroll() 方法为滚动事件  
+	        $(window).scroll(function(){  
+	            if ($(window).scrollTop()>height){  
+	                $(".backtop").fadeIn(500);  
+	            }else{  
+	                $(".backtop").fadeOut(500);  
+	                }  
+	        });  
+	        $(".backtop").click(function(){  
+	            $('body,html').animate({scrollTop:0},100);  
+	            return false;  
+	        });  
+	    });  
+	});
+
+function showPopup() {
+			document.getElementById("popup").style.display = "block";
+		}
+		
+		function hidePopup() {
+			document.getElementById("popup").style.display = "none";
+		}
+</script>  
+
+
 <!-- 弹窗 -->
 	<div id="popup">
 		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
