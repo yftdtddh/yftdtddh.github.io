@@ -73,7 +73,7 @@ a {
 	h2 {
 		margin-top: 0;
 		font-size: 24px;
-		color: #333;
+		color: #55;
 	}
     p {
 		margin-bottom: 20px;
@@ -152,5 +152,6 @@ a {
             flex-flow: row wrap;
         }
  h3{
+color:#555;
 font-family: 宋体;
 }
