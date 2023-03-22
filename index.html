@@ -24,6 +24,20 @@ function showPopup() {
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+
+</head>
+
+<body onload="showPopup()">
+    <div id="hqestop"></div>
+    <div class="backtop">
+        <!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
+        <a href="#hqestop" target="_self" onfocus="this.blur();">
+            <button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
+                <i class="fa fa-caret-up"></i>
+            </button>
+        </a>
+    </div>
+ <script>
 (".backtop").hide();  
 	    $(function () {  
 	        //检测屏幕高度  
@@ -42,21 +56,7 @@ function showPopup() {
 	        });  
 	    });  
 	});
-</head>
-
-<body onload="showPopup()">
-    <div id="hqestop"></div>
-    <div class="backtop">
-        <!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
-        <a href="#hqestop" target="_self" onfocus="this.blur();">
-            <button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
-                <i class="fa fa-caret-up"></i>
-            </button>
-        </a>
-    </div>
- 
-
-
+</script>
 
 <!-- 弹窗 -->
 	<div id="popup">
