@@ -217,7 +217,31 @@ $( document ).ready( function(){
     <a href=http://www.dmlaa.com/>风车动漫①</a>
     <a href=http://www.dm3.cc/>风车动漫②</a>
     <a href=https://www.fengche530.com/>风车动漫③</a>
-    <h3><a>1.3  本地正版版权动画平台</a></h3>
+   <div class="list">
+  <div class="list-header">相似网站</div>
+  <div class="list-content">
+    <p><a href=http://acgdm6.com/>age动漫(备)</a></p>
+    <p><a href=http://agefans.top/>age动漫(备)</a></p>
+    <p><a href=http://www.dmlaa.com/>风车动漫①</a></p>
+    <p><a href=http://www.dm3.cc/>风车动漫②</a></p>
+    <p><a href=https://www.fengche530.com/>风车动漫③</a></p>
+</div>
+</div>
+<script>
+const lists = document.querySelectorAll('.list');
+
+lists.forEach(list => {
+  const header = list.querySelector('.list-header');
+  
+  header.addEventListener('click', () => {
+    list.classList.toggle('opened');
+  });
+});
+
+</script>
+<br>
+
+ <h3><a>1.3  本地正版版权动画平台</a></h3>
     <a href=https://www.bilibili.com/anime/>bilibili动画</a>
     <a href=https://www.acfun.cn/bangumilist>acfun番剧</a>
     <a href=http://comic.le.com/>乐视动画</a>
