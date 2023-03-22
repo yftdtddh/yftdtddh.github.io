@@ -15,6 +15,17 @@ function showPopup() {
 			document.getElementById("popup").style.display = "none";
 		}
 
+
+const lists = document.querySelectorAll('.list');
+
+lists.forEach(list => {
+  const header = list.querySelector('.list-header');
+  
+  header.addEventListener('click', () => {
+    list.classList.toggle('opened');
+  });
+});
+
 </script>
 <style>
 
@@ -39,6 +50,24 @@ a>.btnbacktop{
     box-shadow: 0 0 5px rgba(0,0,0,.05);
 }
 
+.list {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.list-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  cursor: pointer;
+}
+.list-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.list.opened .list-content {
+  max-height: 200px; /* 设置最大高度来显示内容 */
+  overflow: auto; /* 当内容超过最大高度时，启用滚动条 */
+}
   </style>
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -227,19 +256,8 @@ $( document ).ready( function(){
     <p><a href=https://www.fengche530.com/>风车动漫③</a></p>
 </div>
 </div>
-<script>
-const lists = document.querySelectorAll('.list');
 
-lists.forEach(list => {
-  const header = list.querySelector('.list-header');
-  
-  header.addEventListener('click', () => {
-    list.classList.toggle('opened');
-  });
-});
 
-</script>
-<br>
 
  <h3><a>1.3  本地正版版权动画平台</a></h3>
     <a href=https://www.bilibili.com/anime/>bilibili动画</a>
@@ -567,6 +585,7 @@ lists.forEach(list => {
 <a href=http://www.gededy.com/>哥的电影网</a>
 <a href=https://o8tv.com/>555电影</a>
 <a href=http://tkznp1.com/>天空影视</a>
+
 
 
  <hr>
