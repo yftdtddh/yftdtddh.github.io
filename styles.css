@@ -10,6 +10,9 @@ a {
  color: pink;
 }
 
+.horizontal-list li {
+  display: inline-block;
+}
 
 
 
