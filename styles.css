@@ -1,13 +1,13 @@
 *{
 font-family: 宋体;
 }
-a {
-  font-family: 微软雅黑;
-  color: #824ce6;
-}
 
 .horizontal-list li {
   display: inline-block;
+}
+.body a {
+text-decoration: none;
+color: #824ce6;
 }
 
 /* Add some anime-style styling */
