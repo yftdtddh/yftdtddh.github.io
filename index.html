@@ -42,6 +42,33 @@ a>.btnbacktop{
     box-shadow: 0 0 5px rgba(0,0,0,.05);
 }
 
+nav {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: black;
+}
   </style>
  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -89,8 +116,20 @@ $( document ).ready( function(){
 		<button onclick="hidePopup()">关闭</button>
 	</div>
  <div id="mySidenav" class="sidenav">
+<div>
+<nav>
+  <ul>
+    <li><a href="#animation">动画</a></li>
+    <li><a href="#manga">漫画</a></li>
+    <li><a href="#novel">轻小说</a></li>
+    <li><a href="#anisong">音乐</a></li>
+    <li><a href="#game">游戏</a></li>
+  </ul>
+</nav>
+</div>
+
 <header>
- <h1>资源汇总</h1>
+<h2> 资源汇总 </h2>
 此页创建时间：<time>2022-12-19</time>&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
  <script>
         const lastUpdatedElement = document.getElementById('lastUpdated');
@@ -109,20 +148,6 @@ $( document ).ready( function(){
 	<span id="busuanzi_container_site_pv" style='display:none'> 此页总浏览<span id="busuanzi_value_site_pv"></span>次</span>
 </div>
 </header>
-<hr>
-<div>
-<nav>
-  <ul>
-    <li><a href="#animation">动画</a></li>
-    <li><a href="#manga">漫画</a></li>
-    <li><a href="#novel">轻小说</a></li>
-    <li><a href="#anisong">音乐</a></li>
-    <li><a href="#game">游戏</a></li>
-  </ul>
-</nav>
-</div>
-    <br>
-<br>
     <hr style="border: solid 1px black;">
 <br>
 <br>
