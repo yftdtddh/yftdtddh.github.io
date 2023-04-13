@@ -49,12 +49,21 @@ nav {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+        flex-wrap: none;
+        justify-content: left;
+        list-style: none;
+
+
   margin: 0;
   padding: 0;
 }
 
 nav li {
   float: left;
+  display: inline-block;
+  margin-right: 10px; /* 设置项目之间的右侧间距 */
+  font-size: 18px; /* 设置字体大小 */
 }
 
 nav li a {
@@ -107,15 +116,6 @@ $( document ).ready( function(){
 
 </script>
 
-<!-- 弹窗 -->
-	<div id="popup">
-		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
-		<b style="font-size: large;">更新内容:测试一下导航栏，错的话会马上改。</b>
-      <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
-       <br>底部备份站(一)访问密码1234。
-		<button onclick="hidePopup()">关闭</button>
-	</div>
- <div id="mySidenav" class="sidenav">
 <div>
 <nav>
   <ul>
@@ -127,7 +127,15 @@ $( document ).ready( function(){
   </ul>
 </nav>
 </div>
-
+<!-- 弹窗 -->
+	<div id="popup">
+		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
+		<b style="font-size: large;">更新内容:测试一下导航栏，错的话会马上改。</b>
+      <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
+       <br>底部备份站(一)访问密码1234。
+		<button onclick="hidePopup()">关闭</button>
+	</div>
+ <div id="mySidenav" class="sidenav">
 <header>
 <h2> 资源汇总 </h2>
 此页创建时间：<time>2022-12-19</time>&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
