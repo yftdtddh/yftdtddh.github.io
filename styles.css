@@ -17,22 +17,12 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 15px;
-  padding: 15px;
   display: none;
-  flex-wrap: none;
-  justify-content: none;
-  list-style: none;    
 }
 
 nav li {
-  float: left;
-  border-radius: 5px;
-        box-shadow: none;
-        margin: none;
-        padding: none;
-        text-align: none;
-        width: none;
+  float: center;
+  
 }
 
 nav li a {
