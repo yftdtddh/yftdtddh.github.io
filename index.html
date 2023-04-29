@@ -1,8 +1,8 @@
 <!DOCTYPE html>
  <html>
-<html lang="en">
+<html lang="zh">
 <head>
- <meta charset="UTF-8">
+ <meta charset="UTF-8">
  <title>木晞i的资源汇总</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
  <script>
@@ -44,8 +44,7 @@ a>.btnbacktop{
 
 
   </style>
- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
- <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body onload="showPopup()">
@@ -59,26 +58,25 @@ a>.btnbacktop{
         </a>
     </div>
  <script>
-$( document ).ready( function(){
-(".backtop").hide();  
-	    $(function () {  
-	        //检测屏幕高度  
-	        var height=$(window).height();  
-	        //scroll() 方法为滚动事件  
-	        $(window).scroll(function(){  
-	            if ($(window).scrollTop()>height){  
-	                $(".backtop").fadeIn(500);  
-	            }else{  
-	                $(".backtop").fadeOut(500);  
-	                }  
-	        });  
-	        $(".backtop").click(function(){  
-	            $('body,html').animate({scrollTop:0},100);  
-	            return false;  
-	        });  
-	    });  
-	});
+const backtop = document.querySelector(".backtop");
+backtop.style.display = "none";
 
+window.onload = function() {
+    const height = window.innerHeight;
+
+    window.onscroll = function() {
+        if (window.pageYOffset > height) {
+            backtop.style.display = "block";
+        } else {
+            backtop.style.display = "none";
+        }
+    };
+
+    backtop.onclick = function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return false;
+    };
+};
 </script>
 
 <!-- 弹窗 -->
