@@ -55,6 +55,14 @@ body {
 }
   </style>
  <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- 弹窗 -->	
+<div id="popup">
+		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
+		<b style="font-size: large;">更新内容:添加背景图片等，这里起用了winteru提供的代码。</b>
+                <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
+                <br>底部备份站(一)访问密码1234。
+                <button onclick="hidePopup()">关闭</button>
+</div>
 </head>
 
 <body onload="showPopup()">
@@ -89,14 +97,9 @@ window.onload = function() {
 };
 </script>
 
-     <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
-     <br>底部备份站(一)访问密码1234。
-     <button onclick="hidePopup()">关闭</button>
-  <!-- 弹窗 -->	
-<div id="popup">
-		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
-		<b style="font-size: large;">更新内容:添加背景图片等，这里起用了winteru提供的代码。</b>  
-</div>
+     
+  
+
  <div id="mySidenav" class="sidenav">
 <h2> 资源汇总 </h2>
 此页创建时间：<time>2022/12/19</time>&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
