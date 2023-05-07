@@ -119,8 +119,8 @@ body {
     #popup {
         display: none;
         position: fixed;
-        top: 50%;
-        left: 50%;
+        top: 200px;
+        left: 300px;
         transform: translate(-50%, -50%);
         width: 500px;
         padding: 30px;
