@@ -1,5 +1,5 @@
 *{
-font-family: 宋体;
+font-family: "Microsoft YaHei";
 }
 
 .horizontal-list li {
@@ -112,7 +112,8 @@ color: #824ce6;
 a {
             transition: all 0.2s ease-in;
             padding: .3rem;
-        }
+            text-decoration: none;
+	}
         a:hover {
             background: blue;
             border-radius: .3rem;
