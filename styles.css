@@ -9,6 +9,26 @@ font-family: "Microsoft YaHei";
 text-decoration: none;
 color: #824ce6;
 }
+.all {
+
+    background-image: url("https://www.dmoe.cc/random.php");
+
+    background-size: cover;
+
+    background-attachment: fixed;
+
+}
+
+#mySidenav {
+
+    background-color: #f1f1f1ee;
+
+    padding: 1em;
+
+    border-radius: 4px;
+
+}
+
 
 /* 回到顶部css */
 
@@ -48,27 +68,6 @@ a>.btnbacktop{
 
 }
 
-/* 背景图片 */
-
-body {
-
-    background-image: url("https://www.dmoe.cc/random.php");
-
-    background-size: cover;
-
-    background-attachment: fixed;
-
-}
-
-#mySidenav {
-
-    background-color: #f1f1f1ee;
-
-    padding: 1em;
-
-    border-radius: 4px;
-
-}
 
 /* Add some anime-style styling */
     body {
