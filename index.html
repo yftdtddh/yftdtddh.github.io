@@ -19,7 +19,7 @@ function showPopup() {
 
 </script>
  </head>
-
+<div class="all">
 <body onload="showPopup()">
     <div id="hqestop"></div>
     <div class="backtop">
@@ -52,10 +52,21 @@ window.onload = function() {
     };
 };
 </script>
-
  <div id="mySidenav" class="sidenav">
+<!-- 弹窗 -->	
+	<div id="popup">
 
-<div class="all">
+		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
+
+		<b style="font-size: large;">更新内容:添加背景图片等，这里起用了winteru提供的代码。</b>
+
+                <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
+
+                <br>底部备份站(一)访问密码1234。
+
+                <button onclick="hidePopup()">关闭</button>
+       </div>		 
+
 <h2> 资源汇总 </h2>
 此页创建时间：<span>2022/12/19</span>&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
  <script>
@@ -582,21 +593,6 @@ window.onload = function() {
 <ul class="horizontal-list">
  <li> <a href=#top>回到顶部</a>  <a href="./die.html">失效的网站</a>  <a href="./nishijie.html">里世界</a> <a href=http://www.gezhongji.com/note/show/9000779 target="_blank">备份站(一)密码1234</a></li>
    </ul>
-<div>
-<!-- 弹窗 -->	
-	<div id="popup">
-
-		<h2>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重要通知</h2>
-
-		<b style="font-size: large;">更新内容:添加背景图片等，这里起用了winteru提供的代码。</b>
-
-                <br>慢速更新网站，如果您有我没有列出的网站，请点击邮箱联系给我发邮件吧！
-
-                <br>底部备份站(一)访问密码1234。
-
-                <button onclick="hidePopup()">关闭</button>
-</div>
-</div>	
-</div>	
+  </div>	
  </body>
 </html>
