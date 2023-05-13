@@ -9,7 +9,7 @@ font-family: "Microsoft YaHei";
 text-decoration: none;
 color: #824ce6;
 }
-.body {
+body all {
 
     background-image: url("https://www.dmoe.cc/random.php");
 
