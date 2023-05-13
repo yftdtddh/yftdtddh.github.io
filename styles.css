@@ -9,14 +9,13 @@ font-family: "Microsoft YaHei";
 text-decoration: none;
 color: #824ce6;
 }
-body all {
+body {
 
     background-image: url("https://www.dmoe.cc/random.php");
 
     background-size: cover;
 
     background-attachment: fixed;
-
 }
 
 #mySidenav {
@@ -26,7 +25,6 @@ body all {
     padding: 1em;
 
     border-radius: 4px;
-
 }
 
 
@@ -111,10 +109,7 @@ a>.btnbacktop{
     }
 
 /* 添加一个简单的弹窗公告 */
-    body {
-        background-color: #f1f1f1;
-        font-family: Arial, sans-serif;
-	}
+   
     #popup {
         display: none;
         position: fixed;
