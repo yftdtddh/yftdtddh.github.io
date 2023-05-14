@@ -35,7 +35,7 @@ function showPopup() {
 const backtop = document.querySelector(".backtop");
 backtop.style.display = "none";
 
-window.onload = function() {
+window.addEventListener('load', function() {
     const height = window.innerHeight;
 
     window.onscroll = function() {
@@ -50,7 +50,7 @@ window.onload = function() {
         window.scrollTo({ top: 0, behavior: "smooth" });
         return false;
     };
-};
+});
 </script>
  <div id="mySidenav" class="sidenav">
 <!-- 弹窗 -->	
