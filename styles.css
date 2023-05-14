@@ -109,7 +109,10 @@ a>.btnbacktop{
     }
 
 /* 添加一个简单的弹窗公告 */
-   
+    body { 
+         background-color: #f1f1f1; 
+         font-family: Arial, sans-serif; 
+         } 
     #popup {
         display: none;
         position: fixed;
