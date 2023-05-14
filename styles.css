@@ -116,15 +116,15 @@ a>.btnbacktop{
     #popup {
         display: none;
         position: fixed;
-        top: 200px;
-        left: 300px;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        width: 500px;
-        padding: 30px;
+        width:  400px;
+        padding: 20px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
-        z-index: 99999;
+        z-index: 9999;
 	}
 		
 	h2 {
