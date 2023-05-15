@@ -12,6 +12,13 @@ color: #824ce6;
 .hui {
 color: #555
 }
+.anime1 {
+width: 800px;
+height: 300px;
+padding-top: 1px;
+padding-left: 1px;
+line-height: 30px;
+}
 body {
 
     background-image: url("https://www.dmoe.cc/random.php");
