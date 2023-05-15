@@ -67,19 +67,22 @@ window.addEventListener('load', function() {
  <div id="mySidenav" class="sidenav">
 
 
-<h2> 资源汇总 </h2>
-此页创建时间：<span>2022/12/19</span>&nbsp;&nbsp;最后更新：<span id="lastUpdated"></span>.
- <script>
+<h2 align="center"> 资源汇总 </h2>
+<div align="center"><span style="color:blue;">资源共享请点<a href=mailto:bilibilimuxi@126.com><b>这里</b></a>发邮件于我。红豆泥阿力嘎多！</span>
+<br>
+<span>以下网站难免会出现弹窗广告，综合情况使用。</span>
+<b>此页创建时间：</b><span class="hui">2022/12/19</span>&nbsp;&nbsp;<b>最后更新：</b><span id="lastUpdated"></span>.
+ </div>
+<script>
         const lastUpdatedElement = document.getElementById('lastUpdated');
         const lastUpdatedDate = new Date(document.lastModified);
         const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
         const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
         lastUpdatedElement.innerHTML = formattedDate
-   </script>
+  </script>
     <br>
-    <span>以下网站难免会出现弹窗广告，综合情况使用。</span>
-    <p style="color:blue;">资源共享请点<a href=mailto:bilibilimuxi@126.com><b>这里</b></a>发邮件于我。红豆泥阿力嘎多！</p>
-    <br>
+    
+   
 <!-- 网站浏览次数 -->
 <div>   
 	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
