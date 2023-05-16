@@ -4,7 +4,7 @@ font-family: "Microsoft YaHei";
 
 .horizontal-list li {
   display: inline-block;
-  width: 150px;
+  width: 250px;
 }
 .body a {
 text-decoration: none;
@@ -167,6 +167,7 @@ a>.btnbacktop{
 a {
             transition: all 0.2s ease-in;
             padding: .3rem;
+	text-decoration: none;
 	
 	
 	}
