@@ -4,6 +4,7 @@ font-family: "Microsoft YaHei";
 
 .horizontal-list li {
   display: inline-block;
+  width: 60px;
 }
 
 .body a {
