@@ -14,7 +14,14 @@ color: #555
 }
 .anime1 {
 width: 800px;
-height: 300px;
+height: 200px;
+padding-top: 1px;
+padding-left: 1px;
+line-height: 30px;
+}
+.anime2 {
+width: 800px;
+height: 100px;
 padding-top: 1px;
 padding-left: 1px;
 line-height: 30px;
@@ -78,27 +85,7 @@ a>.btnbacktop{
 
 
 /* Add some anime-style styling */
-    body {
-        background-color: ;
-        font-family: ;
-    }
-
-    h2,
-    h3 {
-        text-align: ;
-        color: ;
-    }
-
-    h2 {
-        font-size: ;
-        margin-top: ;
-    }
-
-    h3 {
-        font-size: ;
-        margin: ;
-    }
-
+   
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -156,7 +143,7 @@ a>.btnbacktop{
         background-color: #0077cc;
         color: #fff;
         border: none;
-        border-radius: 5px;
+        border-radius: 10px;
         font-size: 16px;
         cursor: pointer;
         transition: background-color .3s ease-in-out;
