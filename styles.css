@@ -28,13 +28,23 @@ line-height: 25px;
 }
 .anime3 {
 width: 800px;
-
 height: 150px;
-
 padding-top: 1px;
-
 padding-left: 1px;
-
+line-height: 25px;
+}
+.anime4 {
+width: 800px;
+height: 150px;
+padding-top: 1px;
+padding-left: 1px;
+line-height: 25px;
+}
+.anime5 {
+width: 800px;
+height: 150px;
+padding-top: 1px;
+padding-left: 1px;
 line-height: 25px;
 }
 body {
