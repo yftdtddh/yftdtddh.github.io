@@ -47,6 +47,28 @@ padding-top: 10px;
 padding-left: 1px;
 line-height: 25px;
 }
+.manga1 {
+width: 800px;
+height: 90px;
+padding-top: 10px;
+padding-left: 1px;
+line-height: 25px;
+}
+.manga2 {
+width: 800px;
+height: 90px;
+padding-top: 10px;
+padding-left: 1px;
+line-height: 25px;
+}
+.manga3 {
+width: 800px;
+height: 40px;
+padding-top: 10px;
+padding-left: 1px;
+line-height: 25px;
+}
+
 body {
 
     background-image: url("https://www.dmoe.cc/random.php");
@@ -76,7 +98,7 @@ body {
 
     bottom: 2rem;
 
-    z-index: 1000;	}
+    z-index: 1000;    }
 
 a>.btnbacktop{
 
@@ -143,20 +165,20 @@ a>.btnbacktop{
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,.5);
         z-index: 9999;
-	}
-		
-	h2 {
-		margin-top: 0;
-		font-size: 24px;
-		color: #55;
-	}
+    }
+        
+    h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #55;
+    }
     p {
-		margin-bottom: 20px;
-		font-size: 16px;
-		line-height: 1.5;
-		color: #666;
-	}
-		
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+    }
+        
     button {
         display: block;
         margin: 0 auto;
@@ -171,10 +193,10 @@ a>.btnbacktop{
     }
 
     button:hover {
-			background-color: #005fa3;
-	}
+            background-color: #005fa3;
+    }
 
-	h2 {
+    h2 {
         font-size: 25px;
     }
 
@@ -187,10 +209,10 @@ a>.btnbacktop{
 a {
         transition: all 0.2s ease-in;
         padding: .3rem;
-	text-decoration: none;
-	
-	
-	}
+    text-decoration: none;
+    
+    
+    }
         a:hover {
             background: blue;
             border-radius: .3rem;
@@ -234,7 +256,3 @@ a {
 color:#555;
 font-family: 宋体;
 }
-
-
-
-
