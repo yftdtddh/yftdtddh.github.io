@@ -4,6 +4,7 @@ font-family: "Microsoft YaHei";
 
 .horizontal-list li {
   display: inline-block;
+  font-size: 17px;
 }
 .body a {
 text-decoration: none;
@@ -11,6 +12,10 @@ color: #824ce6;
 }
 .hui {
 color: #555
+}
+.zheli a {
+color: skybule;
+font-size: 18px;
 }
 .anime1 {
 width: 800px;
@@ -95,7 +100,6 @@ width: 800px;
 height: 90px;
 padding-left: 1px;
 line-height: 27px;
-
 }
 
 
