@@ -101,7 +101,12 @@ height: 90px;
 padding-left: 1px;
 line-height: 27px;
 }
-
+.game1 {
+width: 800px;
+height: 150px;
+padding-left: 1px;
+line-height: 27px;
+}
 
 body {
 
