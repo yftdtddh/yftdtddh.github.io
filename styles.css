@@ -1,5 +1,7 @@
 *{
 font-family: "Microsoft YaHei";
+padding: 0px;
+margin: 0px;
 }
 
 .horizontal-list li {
@@ -17,98 +19,79 @@ color: #555
 color: skybule;
 font-size: 18px;
 }
+.lei a{
+color: #1124;
+}
 summary {
 color: skyblue;
 }
 .anime1 {
-width: 800px;
-height: 170px;
-padding-top: 1px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .anime2 {
-width: 800px;
-height: 130px;
-padding-top: 10px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .anime3 {
-width: 800px;
-height: 70px;
-padding-top: 10px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .anime4 {
-width: 800px;
-height: 90px;
-padding-top: 10px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .anime5 {
-width: 800px;
-height: 90px;
-padding-top: 10px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .manga1 {
-width: 800px;
-height: 110px;
-padding-top: 10px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .manga2 {
-width: 800px;
-height: 70px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 30px;
 }
 .manga3 {
-width: 800px;
-height: 50px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .novel1 {
-width: 800px;
-height: 90px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .novel2 {
-width: 800px;
-height: 70px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .novel3 {
-width: 800px;
-height: 80px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .anisong1 {
-width: 800px;
-height: 60px;
-padding-left: 1px;
-line-height: 27px;    
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .song2 {
-width: 800px;
-height: 90px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
 }
 .game1 {
-width: 800px;
-height: 150px;
-padding-left: 1px;
-line-height: 27px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.acgnews {
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.shequ {
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.gezi {
+    padding-bottom: 30px;
+    padding-left: 20px;
 }
 
 body {
@@ -124,9 +107,9 @@ body {
 
     background-color: #f1f1f1ee;
 
-    padding: 1em;
+    padding: 2em;
 
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 
@@ -249,15 +232,16 @@ a>.btnbacktop{
 /* 设定链接的样式 */
 
 a {
-        transition: all 0.2s ease-in;
-        padding: .3rem;
-    text-decoration: none;
-    
-    
+       transition: all 0.2s ease-in;
+       padding: .3rem;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 20px;
+       line-height: 27px;
     }
         a:hover {
-            background: blue;
-            border-radius: .3rem;
+            background: orange;
+            border-radius: 0.3rem;
             color: white;
         }
         h2 a, h3 a {
@@ -273,15 +257,28 @@ a {
             background: none;
         }
 
-        span {
+       
+            span {
              border-bottom: solid 1px black;
              margin-top: 1em;
          }
+         
 
         h3 {
             margin-top: 1em;
         }
-
+        h4 {
+            border-bottom: solid 1px black;
+            margin-top: 1em;
+            font-size: 18px;
+        }
+        h5 {
+            display: inline-block;
+            border-bottom: solid 1px black;
+            margin-top: 1em;
+            padding-bottom: 5px;
+            font-size: 15px;
+        }
         body {
             /*
             background-image: url("https://api.ghser.com/random/bg.php");
@@ -294,7 +291,3 @@ a {
         .site-container {
             flex-flow: row wrap;
         }
- h3{
-color:#555;
-font-family: 宋体;
-}

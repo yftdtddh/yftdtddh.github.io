@@ -5,18 +5,8 @@
    <title>木晞i的资源汇总</title>
    <link rel="stylesheet" type="text/css" href="styles.css">
    <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="6e60b6cd01c82516.jpg" type="image/x-icon">
-<script>
-
-function showPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-        
-        function hidePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-
-</script>
+   <link rel="shortcut icon" href="6e60b6cd01c82516.jpg" type="image/x-icon">
+   <script src="script.js"></script>
  </head>
 
 <body onload="showPopup()">
@@ -24,33 +14,12 @@ function showPopup() {
     <div class="backtop">
         <!-- onfocus="this.blur();去掉点击a标签时的虚线 -->
         <a href="#hqestop" target="_self" onfocus="this.blur();">
-            <button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
+                <button class="btnbacktop" type="回到顶部" onfocus="this.blur();">
                 <i class="fa fa-caret-up"></i>
-            </button>
-        </a>
-    </div>
+                </button>
+            </a>
+      </div>
 
- <script>
-const backtop = document.querySelector(".backtop");
-backtop.style.display = "none";
-
-window.addEventListener('load', function() {
-    const height = window.innerHeight;
-
-    window.onscroll = function() {
-        if (window.pageYOffset > height) {
-            backtop.style.display = "block";
-        } else {
-            backtop.style.display = "none";
-        }
-    };
-
-    backtop.onclick = function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        return false;
-    };
-});
-</script>
 
 <!-- 弹窗 -->    
       <div id="popup">
@@ -67,6 +36,8 @@ window.addEventListener('load', function() {
                 <button onclick="hidePopup()">关闭</button>
        </div>             
  <div id="mySidenav" class="sidenav">
+   
+   <!-- 头部 -->
 <h2 align="center"> 资源汇总 </h2>
 <div align="center" class="zheli"><span>资源共享请点<a href=mailto:bilibilimuxi@126.com><b>这里</b></a>发邮件于我。红豆泥阿力嘎多！</span>
 <br>
@@ -75,6 +46,7 @@ window.addEventListener('load', function() {
 <b>此页创建时间：</b><span class="hui">2022/12/19</span>&nbsp;&nbsp;<b>最后更新：</b><span id="lastUpdated"></span>.
  </div>
 <script>
+//最后更新网页时间
         const lastUpdatedElement = document.getElementById('lastUpdated');
         const lastUpdatedDate = new Date(document.lastModified);
         const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
@@ -82,13 +54,13 @@ window.addEventListener('load', function() {
         lastUpdatedElement.innerHTML = formattedDate
   </script>
   
-  <p align="center"><a href=#animation>动画</a>| <a href=#manga>漫画</a>| <a href=#novel>轻小说</a> | <a href=#anisong>音乐</a> | <a href=#game>游戏</a></p>
+  <div class="lei"> <p align="center"><a href=#animation>动画</a>| <a href=#manga>漫画</a>| <a href=#novel>轻小说</a> | <a href=#anisong>音乐</a> | <a href=#game>游戏</a></p> </div>
     <br>
-<hr style="border: solid 1px black;">
+<hr style="border: dotted 2px #1444;">
 <br>
 <br>
 
- <span style= font-size:18px;>①动画</span>
+ <h4 align="center">①动画</h4>
     <br>
     <h3 align="center">十个精选站</h3>
     <br>                                       
@@ -133,7 +105,7 @@ window.addEventListener('load', function() {
 <p>&nbsp;</p>
  
     <div id="animation" class="anime1">
-    <span style= font-size:15px;>1.1  在线动画推荐</span>
+    <h5>1.1  在线动画推荐</h5>
     <br>
     <a href=https://www.7sefun.top/ target="_blank">七色番</a>
     <a href=https://www.anfuns.cc/ target="_blank">ANFUNS动漫</a>
@@ -182,7 +154,7 @@ window.addEventListener('load', function() {
     </div>
     
     <div class="anime2">
-    <span style= font-size:15px;>1.2  次用</span>
+    <h5>1.2  次用</h5>
     <br>
     <a href=https://www.cydmfl.com/ target="_blank">次元福利动漫网</a>
     <a href=http://www.nicotv.club/ target="_blank">妮可动漫</a>
@@ -216,7 +188,7 @@ window.addEventListener('load', function() {
   </div>
     
     <div class="anime3">
-    <span style= font-size:15px;>1.3  本地正版版权动画平台</span>
+    <h5>1.3  本地正版版权动画平台</h5>
     <br>
     <a href=https://www.bilibili.com/anime/ target="_blank">bilibili动画</a>
     <a href=https://www.acfun.cn/bangumilist target="_blank">acfun番剧</a>
@@ -229,7 +201,7 @@ window.addEventListener('load', function() {
     </div>
     
     <div class="anime4">
-    <span style= font-size:15px;>1.4  动画软件</span>
+    <h5>1.4  动画软件</h5>
     <br>
     <a href=https://dick.xfani.com/index.php/label/down.html target="_blank">稀饭动漫</a>
     <a href=https://omofun.tv/ target="_blank">omofun动画弹幕网</a>
@@ -237,16 +209,16 @@ window.addEventListener('load', function() {
     <a href=https://www.hfdm.xyz/app/ target="_blank">横风动漫</a>
     <a href=https://www.tucao.cam/app/ target="_blank">吐槽弹幕网</a>
     <a href=https://cyfz.vip/index.php/label/down.html target="_blank">次元方舟动漫网</a>
+     <br>
     <a href=https://zzz-1251249846.file.myqcloud.com/index.html target="_blank">ZZZfun</a>
     <a href=http://heibai2.com/ target="_blank">heibai弹</a>
-    <br>
     <a href=https://github.com/easybangumiorg/EasyBangumi target="_blank">纯纯看番</a>
     <a href=https://www.cymapp.cc/ target="_blank">次元喵</a>
     <a href=https://www.dangniao.app/>当鸟动漫</a>
     </div>
     
     <div class="anime5">
-    <span style= font-size:15px;>1.5  BT&nbsp;网盘&nbsp;字幕组</span>
+    <h5>1.5  BT&nbsp;网盘&nbsp;字幕组</h5>
     <br>
     <a href=https://bangumi.moe/ target="_blank">萌番组</a>
     <a href=https://fitacg.com/ target="_blank">菲特动漫</a>
@@ -277,7 +249,7 @@ window.addEventListener('load', function() {
     </div>
 <p>&nbsp;</p>
 
-<span style= font-size:18px;>②漫画</span>
+<h4 align="center">②漫画</h4>
  <br>
         <h3 align="center">四个精选站</h3>
  <br>
@@ -299,7 +271,7 @@ window.addEventListener('load', function() {
  <p>&nbsp;</p>
 
 <div id="manga" class="manga1">
-<span style= font-size:15px;>2.1  在线漫画网</span> 
+<h5>2.1  在线漫画网</h5> 
 <br>
 <a href=https://www.copymanga.tv/ target="_blank">拷贝漫画</a>
 <a href=https://www.dongman.la/ target="_blank">动漫啦</a>
@@ -310,7 +282,6 @@ window.addEventListener('load', function() {
 <a href=https://www.dmzj.com/index.html target="_blank">动漫之家</a>
 <a href=https://www.dm5.com/ target="_blank">漫画人</a>
 <a href=https://www.manhuadb.com/ target="_blank">漫画DB</a>
-<a href=http://m.gugu5.com/ target="_blank">古古漫画</a>
  <br>
 <a href=https://www.fffdm.com/ target="_blank">风之动漫</a>
 <a href=http://www.imitui.com/ target="_blank">米推漫画</a>
@@ -325,9 +296,11 @@ window.addEventListener('load', function() {
 <br>
 <a href=https://www.591ac.com/ target="_blank">南方漫画网</a> 
 <a href=https://www.tvbsmh.com/ target="_blank">tvbsmh</a> 
+<a href=http://m.gugu5.com/ target="_blank">古古漫画</a>
 </div>
-<span style= font-size:15px;>2.2  引进正版与国创漫画平台</span>
-<br><div class="manga2">
+<div class="manga2">
+<h5>&nbsp;2.2  引进正版与国创漫画平台</h5>
+<br>
 <a href=https://manga.bilibili.com/ target="_blank">哔哩哔哩漫画</a>
 <a href=https://ac.qq.com/ target="_blank">腾讯漫画</a>
 <a href=https://manmanapp.com/ target="_blank">漫漫漫画</a>
@@ -347,8 +320,9 @@ window.addEventListener('load', function() {
 <a href=https://www.manhuatai.com/ target="_blank">漫画台</a>
 <a href=http://www.baozoumanhua.com/ target="_blank">暴走漫画</a>
 </div>
-<span style= font-size:15px;>2.3  漫画相关软件</span>
- <br><div class="manga3">
+<div class="manga3">
+<h5>  2.3  漫画相关软件</h5>
+<br>
 <a href=https://www.36mh.app/ target="_blank">36漫画</a>
 <a href=https://www.msmh.site/ target="_blank">喵上漫画</a>
 <a href=https://github.com/niuhuan/daisy/ target="_blank">daisy</a>
@@ -360,11 +334,11 @@ window.addEventListener('load', function() {
 <a href=https://github.com/Haleydu/Cimoc target="_blank">Cimoc</a>
 </div>
 
-<span style= font-size:18px;>③轻小说及电子书等</span>
+<h4 align="center">③轻小说及电子书等</h4>
 <br>
 <br>
 <div id="novel"  class="novel1"> 
-<span style= font-size:15px;>3.1  日轻</span>
+<h5>3.1  日轻</h5>
 <br>
 <a href=https://www.linovelib.com/ target="_blank">哔哩轻小说</a>
 <a href=https://www.wenku8.net/index.php target="_blank">轻小说文库</a>
@@ -380,7 +354,7 @@ window.addEventListener('load', function() {
  <a href=https://epub.love/wp/ target="_blank">图书馆的无限回廊</a>
 </div>
 <div class="novel2">
-<span style= font-size:15px;>3.2  本地原创轻小说</span>
+<h5>3.2  本地原创轻小说</h5>
 <br>
 <a href=https://book.sfacg.com/ target="_blank">SF轻小说</a>
 <a href=https://www.linovel.net/ target="_blank">轻之文库</a>
@@ -389,15 +363,14 @@ window.addEventListener('load', function() {
 <a href=http://www.iciyuan.com/ target="_blank">趣阅异世界</a>
 </div>
 <div class="novel3">
-<span style= font-size:15px;>3.3  小说相关软件</span>
+<h5>3.3  小说相关软件</h5>
 <br>
 <a href=https://lib-37i6why4iwwarkgy5zo7vwik.1lib.cz/android target="_blank">ZLibry图书馆</a>
 <a href=https://sfacg.com/ target="_blank">菠萝包轻小说</a>
 <a href=https://www.moondownload.com/chinese.html target="_blank">静读天下</a>
 </div>
 
-<span style=font-size:18px;>④音乐</span>
-<br> 
+<h4 align="center">④音乐</h4>
 <br>
 <div id="anisong" class="anisong1">
 <span style=font-size:15px;>4.1  二次元音声</span>
@@ -420,12 +393,12 @@ window.addEventListener('load', function() {
 <a href=https://music.douban.com/ target="_blank">豆瓣音乐</a>
 <a href=https://www.ximalaya.com/ target="_blank">喜马拉雅</a>
 <a href=https://qtfm.cn/ target="_blank">蜻蜓FM</a>
-<br>
 <a href=https://www.lavaradio.com/ target="_blank">lavaradio收音机</a>
 </div>
 
 <div id="game" class="game1">
-<span style= font-size:18px;>⑤游戏</a></span>
+<h4 align="center">⑤游戏</h4>
+<br>
 <br>
 <a href=https://www.66rpg.com/ target="_blank">橙光</a>
 <a href=https://www.3000.com/ target="_blank">闪艺</a>
@@ -457,8 +430,8 @@ window.addEventListener('load', function() {
 <a href=https://www.clfans.club/ target="_blank">光坂小镇</a>
 <a href=https://acg.qingjuacg.top/ target="_blank">青桔网</a>
 </div>
-
-<span style= font-size:18px;>⑥次元资讯<a id="acgnlive"></a></span>
+<div id="acgnlive" class="acgnews">
+<h4 align="center">⑥次元资讯</h4>
 <br>
 <a href=http://www.animetox.com/ target="_blank">Animetox</a>
 <a href=http://cxacg.com/ target="_blank">橙心社</a>
@@ -484,9 +457,9 @@ window.addEventListener('load', function() {
 <a href=https://acgwiki.tw/ target="_blank">ACG百科</a>
 <a href=https://moegirl.cyou/Mainpage target="_blank">萌娘百科镜像</a>
 <a href=https://www.005.tv/index.html target="_blank">羁绊动漫网</a>
-<p>&nbsp;</p>
-
-<span style= font-size:18px;>⑦社区与论坛<a id="ACGNweb"></a></span>
+</div>
+<div id="ACGNweb" class="shequ">
+<h4 align="center">⑦社区与论坛</h4>
 <br>
 <a href=https://www.mfuns1.cn/ target="_blank">喵御宅</a>
 <a href=https://acgn.zone/ target="_blank">ACG里世界</a>
@@ -521,18 +494,19 @@ window.addEventListener('load', function() {
 <a href=http://www.dongman.fm/ target="_blank">动漫fm</a>
 <br>
 <a href=https://mcyacg.com/ target="_blank">梦次元</a>
-<br>
-<span style= font-size:18px;>"点·格·子″</span>
+
+<div class="gezi">
+<h5>点·格·子</h5>
 <br>
 <a href=http://bgm.tv/ target="_blank">Bangumi番组计划</a>
 <a href=http://www.dudulu.moe/ target="_blank">嘟嘟嘟二次元理想乡</a>
 <a href=https://neodb.social/users/login/ target="_blank">neodb</a>
 <a href=https://anilist.co>anilist</a>
 <a href=#>漫迹</a>
+</div>
 
-<p>&nbsp;</p>
-
-<span style= font-size:15px;>⑧综合资源站</span>
+<div class="douyou">
+<h4 align="center">⑧综合资源站</h4>
  <br>
 <a href=https://www.wobbay.xyz/ target="_blank">wobbay的资源小屋</a>
 <a href=http://www.2cycd.com/ target="_blank">二次元虫洞</a>
@@ -551,20 +525,17 @@ window.addEventListener('load', function() {
  <a href=https://gkdworld.cf/ target="_blank">资源统筹局</a>
  <a href=https://miaokadm.com/ target="_blank">喵咔</a>
  <a href=https://c1.sky.skyacg666.top/forum.php target="_blank">天空ACG</a>
- <p>&nbsp;</p>
-
-<span style= font-size:18px;>⑨网站发布页</span>
+</div>
+<div class="webuploadpage"><h4 align="center">⑨网站发布页</h4>
  <br>
 <a href=https://acgttt.com/ target="_blank">二次元下午茶发布页</a>
 <a href=https://gxdm.org/ target="_blank">宫下动漫发布页</a>
 <a href=http://www.dmd8.com/ target="_blank">动漫岛发布页</a>
 <a href=https://idanmu.pages.dev/ target="_blank">爱弹幕发布页</a>
-<p>&nbsp;</p>
 
-<span style= font-size:18px;>⑩影视集合</span>
+<h4 align="center">⑩影视集合</h4>
 <br>
-<br>
-<span style= font-size:15px;>10.1  在线剧集</span>
+<h5>10.1  在线剧集</h5>
 <br>
 <a href=https://cupfox.app/ target="_blank">茶杯狐</a>
 <a href=http://www.gededy.com/ target="_blank">哥的电影网</a>
@@ -585,7 +556,7 @@ window.addEventListener('load', function() {
 
 
 <br>
-<span style= font-size:15px;>10.2  本地正版版权剧集平台</span>
+<h5>10.2  本地正版版权剧集平台</h5>
 <br>
  <a href=https://v.qq.com/channel/tv target="_blank">腾讯视频</a>
  <a href=https://www.youku.com/channel/webhome target="_blank">优酷</a>
