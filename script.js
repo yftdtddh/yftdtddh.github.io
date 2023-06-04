@@ -1,12 +1,12 @@
 //回到顶部
-    function showPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-        
-        function hidePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-        
+function showPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function hidePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
 const backtop = document.querySelector(".backtop");
 backtop.style.display = "none";
 
@@ -22,10 +22,10 @@ window.addEventListener('load', function() {
     };
 
     backtop.onclick = function() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
         return false;
     };
 });
-
-
- 

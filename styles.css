@@ -1,94 +1,111 @@
-*{
-font-family: "Microsoft YaHei";
-padding: 0px;
-margin: 0px;
+* {
+    font-family: "Microsoft YaHei";
+    padding: 0px;
+    margin: 0px;
 }
 
 .horizontal-list li {
-  display: inline-block;
-  font-size: 17px;
+    display: inline-block;
+    font-size: 17px;
 }
+
 .body a {
-text-decoration: none;
-color: #824ce6;
+    text-decoration: none;
+    color: #824ce6;
 }
+
 .hui {
-color: #555
+    color: #555
 }
+
 .zheli a {
-color: skybule;
-font-size: 18px;
+    color: skybule;
+    font-size: 18px;
 }
-.lei a{
-color: #1124;
+
+.lei a {
+    color: #1124;
 }
+
 summary {
-color: skyblue;
+    color: skyblue;
 }
+
 .anime1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .anime2 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .anime3 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
-.anime4 {
+
+.BT1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
-.anime5 {
-    padding-bottom: 30px;
-    padding-left: 40px;
-}
+
 .manga1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .manga2 {
     padding-bottom: 30px;
     padding-left: 30px;
 }
+
 .manga3 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .novel1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .novel2 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .novel3 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .anisong1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .song2 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .game1 {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .acgnews {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .shequ {
     padding-bottom: 30px;
     padding-left: 40px;
 }
+
 .gezi {
     padding-bottom: 30px;
     padding-left: 20px;
@@ -115,7 +132,7 @@ body {
 
 /* 回到顶部css */
 
-.backtop{
+.backtop {
 
     position: fixed;
 
@@ -123,9 +140,10 @@ body {
 
     bottom: 2rem;
 
-    z-index: 1000;    }
+    z-index: 1000;
+}
 
-a>.btnbacktop{
+a>.btnbacktop {
 
     font-size: 2rem;
 
@@ -147,147 +165,157 @@ a>.btnbacktop{
 
     border-radius: 50%;
 
-    box-shadow: 0 0 5px rgba(0,0,0,.05);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .05);
 
 }
 
 
 /* Add some anime-style styling */
-   
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
 
-    li {
-        background-color: ;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px ;
-        margin: 20px;
-        padding: 20px;
-        text-align: center;
-        width: 400px;
-    }
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #cccccc;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
 
 /* 添加一个简单的弹窗公告 */
-    body { 
-         background-color: #f1f1f1; 
-         font-family: Arial, sans-serif; 
-         } 
-    #popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width:  400px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,.5);
-        z-index: 9999;
-    }
-        
-    h2 {
-        margin-top: 0;
-        font-size: 24px;
-        color: #55;
-    }
-    p {
-        margin-bottom: 20px;
-        font-size: 16px;
-        line-height: 1.5;
-        color: #666;
-    }
-        
-    button {
-        display: block;
-        margin: 0 auto;
-        padding: 10px 20px;
-        background-color: #0077cc;
-        color: #fff;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color .3s ease-in-out;
-    }
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
 
-    button:hover {
-            background-color: #005fa3;
-    }
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
 
-    h2 {
-        font-size: 25px;
-    }
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #55;
+}
 
-    p {
-        color: #ff0000;
-    }
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    color: #ff0000;
+}
 
 /* 设定链接的样式 */
 
 a {
-       transition: all 0.2s ease-in;
-       padding: .3rem;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 20px;
-       line-height: 27px;
-    }
-        a:hover {
-            background: orange;
-            border-radius: 0.3rem;
-            color: white;
-        }
-        h2 a, h3 a {
-            padding: none;
-            color: black;
-            font-size: 1.2em;
-        }
-        h2 a:hover, 
-        h3 a:hover {
-            border-radius: none;
-        }
-        .backtop a:hover {
-            background: none;
-        }
+    transition: all 0.2s ease-in;
+    padding: .3rem;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19.9px;
+    line-height: 27px;
+}
 
-       
-            span {
-             border-bottom: solid 1px black;
-             margin-top: 1em;
-         }
-         
+a:hover {
+    background: orange;
+    border-radius: 0.3rem;
+    color: white;
+}
 
-        h3 {
-            margin-top: 1em;
-        }
-        h4 {
-            border-bottom: solid 1px black;
-            margin-top: 1em;
-            font-size: 18px;
-        }
-        h5 {
-            display: inline-block;
-            border-bottom: solid 1px black;
-            margin-top: 1em;
-            padding-bottom: 5px;
-            font-size: 15px;
-        }
-        body {
-            /*
+h2 a,
+h3 a {
+    padding: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+h2 a:hover,
+h3 a:hover {
+    border-radius: none;
+}
+
+.backtop a:hover {
+    background: none;
+}
+
+
+span {
+    border-bottom: solid 1px black;
+    margin-top: 1em;
+}
+
+
+h3 {
+    border-bottom: solid 1px black;
+    margin-top: 1em;
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 1em;
+
+}
+
+h5 {
+    display: inline-block margin-top: 2em;
+    padding-bottom: 5px;
+
+}
+
+body {
+    /*
             background-image: url("https://api.ghser.com/random/bg.php");
             background-size: cover;
             background-attachment: fixed;
             */
-            padding: 1em;
-        }
+    padding: 1em;
+}
 
-        .site-container {
-            flex-flow: row wrap;
-        }
+.site-container {
+    flex-flow: row wrap;
+}
