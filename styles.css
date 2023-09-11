@@ -130,6 +130,17 @@ li {
     padding: 20px;
     text-align: center;
     width: 300px;
+    transition: all 2s;
+}
+li:hover {
+    opacity: 0.2;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
 }
 
 /* 添加一个简单的弹窗公告 */
@@ -165,7 +176,7 @@ p {
     color: #666;
 }
 
-button {
+.tcbutton {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
@@ -202,7 +213,7 @@ a {
 }
 
 a:hover {
-    background: orange;
+    background: ;
     border-radius: 0.3rem;
     color: white;
 }
