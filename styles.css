@@ -202,7 +202,7 @@ a {
 }
 
 a:hover {
-    background: ;
+    background: orange;
     border-radius: 0.3rem;
     color: white;
 }
@@ -221,7 +221,6 @@ span {
 h3 {
     border-bottom: solid 1px black;
     margin-top: 1em;
-    font-size: 20px;
 }
 
 
