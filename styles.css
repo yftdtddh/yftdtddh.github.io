@@ -171,6 +171,10 @@ p {
     line-height: 1.5;
     color: #666;
 }
+p::selection {
+    color: white;
+    background-color: pink;
+}
 
 .tcbutton {
     display: block;
