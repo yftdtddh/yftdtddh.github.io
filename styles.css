@@ -11,18 +11,8 @@
     font-size: 17px;
 }
 
-.body a {
-    
-    color: #824ce6;
-}
-
 .hui {
     color: #555
-}
-
-
-.lei a {
-    color: #1124;
 }
 
 html {
@@ -133,9 +123,11 @@ li {
     width: 300px;
     transition: all 2s;
 }
+
 li:hover {
     opacity: 0.2;
 }
+
 button {
     display: block;
     margin: 0 auto;
@@ -171,10 +163,6 @@ p {
     line-height: 1.5;
     color: #666;
 }
-p::selection {
-    color: white;
-    background-color: pink;
-}
 
 .tcbutton {
     display: block;
@@ -195,7 +183,6 @@ button:hover {
 
 
 /* 设定链接的样式 */
-
 a {
     transition: all 0.2s ease-in;
     padding: .3rem;
@@ -205,32 +192,41 @@ a {
     line-height: 27px;
 }
 
+a:link {
+    color: skyblue;
+}
+
+a:visited {
+    color: #BCB399;
+}
+
 a:hover {
     background: orange;
     border-radius: 0.3rem;
     color: white;
 }
 
+a:active {
+    color: #17FF5F;
+}
+
+a::selection {
+    color: white;
+    background-color: pink;
+}
+
 .backtop a:hover {
     background: none;
 }
-
 
 span {
     border-bottom: solid 1px black;
     margin-top: 1em;
 }
 
-
 h3 {
     border-bottom: solid 1px black;
     margin-top: 1em;
-}
-
-
-h5 {
-    display: inline-block margin-top: 2em;
-    padding-bottom: 5px;
 }
 
 body {
