@@ -134,10 +134,6 @@ button {
 }
 
 /* 添加一个简单的弹窗公告 */
-body {
-    background-color: #f1f1f1;
-    font-family: Arial, sans-serif;
-}
 
 #popup {
     display: none;
@@ -145,10 +141,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 600px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: #CDEFFA;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     z-index: 9999;
 }
