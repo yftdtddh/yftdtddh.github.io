@@ -29,8 +29,9 @@ header a:link {
 
 footer {
     padding-top: 20px;
-    bottom: 2;
+    bottom: 2px;
     width: 100%;
+    height: 20%;
 }
 
 footer a:link {
