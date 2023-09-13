@@ -19,7 +19,7 @@ section {
 }
 
 summary {
-    color: skyblue;
+    color: gray;
 }
 
 header a:link {
@@ -45,6 +45,8 @@ body {
     background-size: cover;
 
     background-attachment: fixed;
+    
+    padding: 1em;
 }
 
 #mySidenav {
@@ -218,6 +220,9 @@ span {
     border-bottom: solid 1px black;
     margin-top: 1em;
 }
+span:hover {
+    color: blue;
+}
 
 h3 {
     border-bottom: solid 1px black;
@@ -225,12 +230,12 @@ h3 {
 }
 
 body {
-    /*
+    /*  备用背景
             background-image: url("https://api.ghser.com/random/bg.php");
             background-size: cover;
             background-attachment: fixed;
+            padding: 1em;
             */
-    padding: 1em;
 }
 
 .site-container {
