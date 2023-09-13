@@ -22,8 +22,8 @@ summary {
     color: skyblue;
 }
 
-header a {
-    color: skybule;
+header a:link {
+    color: gray;
     font-size: 18px;
 }
 
@@ -33,8 +33,9 @@ footer {
     width: 100%;
 }
 
-footer a {
+footer a:link {
     color: black;
+    font-size: 18px;
 }
 
 body {
@@ -107,6 +108,7 @@ ul {
     padding: 0;
 }
 
+
 li {
     background-color: #ffffff;
     border-radius: 5px;
@@ -117,7 +119,6 @@ li {
     width: 300px;
     transition: all 2s;
 }
-
 li:hover {
     opacity: 0.2;
 }
