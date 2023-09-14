@@ -17,9 +17,9 @@ section {
     padding-bottom: 30px;
     padding-left: 40px;
 }
-
 summary {
     color: gray;
+    font-size: 18px;
 }
 
 header a:link {
