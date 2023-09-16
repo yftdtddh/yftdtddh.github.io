@@ -45,15 +45,13 @@ body {
     background-size: cover;
 
     background-attachment: fixed;
-    
-    padding: 1em;
 }
 
 #mySidenav {
 
     background-color: #f1f1f1ee;
 
-    padding: 2em;
+    padding: 1em;
 
     border-radius: 6px;
 }
