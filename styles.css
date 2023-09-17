@@ -43,11 +43,12 @@ footer a:link {
 
 body {
 
-    background-image: url("https://www.dmoe.cc/random.php");
+    background-image: url("https://api.asxe.vip/random.php");
 
     background-size: cover;
 
     background-attachment: fixed;
+    
 }
 
 #mySidenav {
@@ -230,7 +231,7 @@ h3 {
 
 body {
     /*  备用背景
-            background-image: url("https://api.ghser.com/random/bg.php");
+            background-image: url("https://api.ghser.com/random/bg.php","https://www.dmoe.cc/random.php");
             background-size: cover;
             background-attachment: fixed;
             padding: 1em;
