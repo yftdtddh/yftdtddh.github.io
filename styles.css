@@ -1,5 +1,5 @@
 * {
-    font-family: 'Microsoft YaHei','tahoma','arial';
+    font-family: "三极素纤简体",'Microsoft YaHei','tahoma','arial';
     padding: 0px;
     margin: 0px;
     text-decoration: none;
@@ -7,6 +7,10 @@
 @font-face {
     font-family: 'Minecraft-Regular';
     src: url(font/1_Minecraft-Regular.otf);
+}
+@font-face {
+    font-family: "三极素纤简体";
+    src: url(font／三极素纤简体.ttf);
 }
 .hui {
     color: #555
