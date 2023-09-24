@@ -6,11 +6,11 @@
 }
 @font-face {
     font-family: 'Minecraft-Regular';
-    src: url(font/1_Minecraft-Regular.otf);
+    src: url(fonts/1_Minecraft-Regular.otf);
 }
 @font-face {
     font-family: "三极素纤简体";
-    src: url(font／三极素纤简体.ttf);
+    src: url(fonts／三极素纤简体.ttf);
 }
 .hui {
     color: #555
@@ -244,8 +244,4 @@ body {
 
 .site-container {
     flex-flow: row wrap;
-}
-
-@media screen and (max-width: 576px;){
-    
 }
