@@ -1,5 +1,5 @@
 /* 头部css开始 */
-/* 回到顶部css */
+/* 回到顶部css开始 */
 
 .backtop {
 
@@ -43,7 +43,7 @@ a>.btnbacktop {
 }
 
 /* 回到顶部css结束 */
-/* 弹窗公告开始 */
+/* 弹窗公告css开始 */
 
 #popup {
     display: none;
@@ -84,8 +84,8 @@ a>.btnbacktop {
     background-color: #005fa3;
 }
 
-/* 弹窗公告结束 */
-/* 背景图片开始 */
+/* 弹窗公告css结束 */
+/* 背景图片css开始 */
 body {
 
     background-image: url("https://api.asxe.vip/random.php");
@@ -102,7 +102,7 @@ body {
     border-radius: 0px;
 }
 
-/* 背景图片结束 */
+/* 背景图片css结束 */
 .hui {
     color: #555
 }
