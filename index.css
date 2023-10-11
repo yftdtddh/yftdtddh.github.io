@@ -190,30 +190,24 @@ a {
     font-size: 18px;
     line-height: 27px;
 }
-
 a:link {
     color: skyblue;
 }
-
 a:visited {
     color: #BCB399;
 }
-
 a:hover {
     background: orange;
     border-radius: 0.3rem;
     color: white;
 }
-
 a:active {
     color: #17FF5F;
 }
-
 a::selection {
     color: white;
-    background-color: pink;
+    background-color: skyblue;
 }
-
 .backtop a:hover {
     background: none;
 }
