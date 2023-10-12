@@ -84,3 +84,6 @@ body {
             padding: 1em;         
 }
  */
+.site-container {
+    flex-flow: row wrap;
+}
