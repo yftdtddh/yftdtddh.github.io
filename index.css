@@ -122,25 +122,36 @@ ul {
     padding: 0;
 }
 
-
 li {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px #cccccc;
     margin: 20px;
     padding: 20px;
     text-align: center;
     width: 300px;
-    transition: all 2s;
+    transition: all 1s;
     cursor: pointer;
-}
-
-li:hover {
-    opacity: 0.2;
+    animation: fadeIn 1s ease-in-out;
 }
 
 li a {
     font-family: 'Minecraft-Regular';
+}
+
+li:hover {
+    transform: scale(1.05);
+    opacity: 0.3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 section {
