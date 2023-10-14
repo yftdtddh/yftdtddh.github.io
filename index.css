@@ -130,7 +130,6 @@ li {
     padding: 20px;
     text-align: center;
     width: 300px;
-    cursor: pointer;
     animation: fadeIn 1s ease-in-out;
     position: relative;
 }
