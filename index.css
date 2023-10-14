@@ -132,6 +132,7 @@ li {
     width: 300px;
     animation: fadeIn 1s ease-in-out;
     position: relative;
+    cursor: pointer;
 }
 
 li a {
@@ -150,7 +151,8 @@ li a:hover {
     display: none;
 }
 li a:active {
-    display: none;
+    color: #17FF5F;
+    font-size: 18px;
 }
 @keyframes fadeIn {
     from {
