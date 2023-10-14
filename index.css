@@ -130,20 +130,29 @@ li {
     padding: 20px;
     text-align: center;
     width: 300px;
-    transition: all 1s;
     cursor: pointer;
     animation: fadeIn 1s ease-in-out;
+    position: relative;
 }
 
 li a {
     font-family: 'Minecraft-Regular';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
 li:hover {
     transform: scale(1.05);
-    opacity: 0.3;
 }
 
+li a:hover {
+    display: none;
+}
+li a:active {
+    display: none;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
