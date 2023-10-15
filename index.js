@@ -29,10 +29,3 @@ window.addEventListener('load', function() {
         return false;
     };
 });
-
-
-var screenWidth = window.innerWidth || document.documentElement.clientWidth;
-
-if (screenWidth <= 600) { // 假设 768px 是移动设备的标准宽度阈值
-  window.location.href = "./others/rebild.html";
-}
