@@ -5,6 +5,19 @@
     text-decoration: none;
 }
 
+/*html5*/
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+nav,
+figure,
+menu {
+    display: block
+}
+
 @font-face {
     font-family: 'Minecraft-Regular';
     src: url(fonts/1_Minecraft-Regular.otf);
