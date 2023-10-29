@@ -136,6 +136,9 @@ header {
     font-style: italic;
     text-shadow: 3px 3px 5px #27D5CB;
 }
+.text-logo a:visited {
+    display: none;
+}
 .text-logo a:hover {
     background: none;
     border-radius: none;
