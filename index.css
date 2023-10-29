@@ -152,6 +152,9 @@ header {
     line-height: 40px;
     display: inline;
 }
+.navigator p a:visited {
+    display: none;
+}
 .navigator p a:hover {
     background: none;
     border-radius: none;
