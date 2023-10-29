@@ -93,6 +93,8 @@ body {
     background-size: cover;
 
     background-attachment: fixed;
+    
+    text-transform: capitalize;
 
 }
 
