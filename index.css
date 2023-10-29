@@ -103,16 +103,65 @@ body {
 }
 
 /* 背景图片css结束 */
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #E3E3E3;
+    height: 40px;
+    position: sticky;
+    top: 0;
+}
+
 .hui {
     color: #555
 }
 
-header a:link {
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.text-logo {
+    float: left;
+    line-height: 40px;
+}
+
+.text-logo a {
+    color: #27D5CB;
+    background: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 3px 3px 5px #27D5CB;
+}
+.text-logo a:hover {
+    background: none;
+    border-radius: none;
+    color: white;
+}
+
+.navigator {
+    float: left;
+    padding-left: 30px;
+}
+.navigator p a {
     color: gray;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 40px;
+    display: inline;
+}
+.navigator p a:hover {
+    background: none;
+    border-radius: none;
+    color: white;
 }
 
 /* 头部css结束 */
+.headerend {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +190,7 @@ li a {
 li:hover {
     transform: scale(1.05);
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -197,7 +247,6 @@ summary {
 footer {
     padding-top: 20px;
     bottom: 2px;
-    width: 100%;
 }
 
 footer a:link {
