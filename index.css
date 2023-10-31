@@ -253,11 +253,17 @@ summary {
 
 /* 底部css开始 */
 footer {
-    padding-top: 20px;
-    bottom: 2px;
+    padding-bottom: 5px;
+    background: #1E1E1E;
+    color: #AEAEAE;
 }
 
 footer a:link {
-    color: black;
-    font-size: 18px;
+    color: white;
+    font-size: 20px;
+}
+
+footer a:hover {
+    background: #EAEAEA;
+    color: #FF1723;
 }
