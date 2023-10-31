@@ -1,6 +1,5 @@
 /* 头部css开始 */
 /* 回到顶部css开始 */
-
 .backtop {
     position: fixed;
     right: 2rem;
@@ -29,15 +28,17 @@ a>.btnbacktop {
 
 /* 回到顶部css结束 */
 /* 弹窗公告css开始 */
-
 #popup {
-    display: none;
     position: fixed;
+    display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    padding: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
     background-color: #CDEFFA;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -76,7 +77,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     text-transform: capitalize;
-
 }
 
 #mySidenav {
