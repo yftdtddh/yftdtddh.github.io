@@ -2,13 +2,9 @@
 /* 回到顶部css开始 */
 
 .backtop {
-
     position: fixed;
-
     right: 2rem;
-
     bottom: 2rem;
-
     z-index: 1000;
 }
 
@@ -17,27 +13,16 @@
 }
 
 a>.btnbacktop {
-
     font-size: 2rem;
-
     margin: 1rem 0 0;
-
     padding: 0;
-
     width: 3.33rem;
-
     height: 3.33rem;
-
     line-height: 0;
-
     color: #333;
-
     background-color: #EEA5A5;
-
     border: 1px solid #e3e8ee;
-
     border-radius: 50%;
-
     box-shadow: 0 0 5px rgba(0, 0, 0, .05);
 
 }
@@ -74,8 +59,8 @@ a>.btnbacktop {
     background-color: #0077cc;
     color: #fff;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 15px;
+    font-size: 18px;
     cursor: pointer;
     transition: background-color .3s ease-in-out;
 }
@@ -87,13 +72,9 @@ a>.btnbacktop {
 /* 弹窗公告css结束 */
 /* 背景图片css开始 */
 body {
-
     background-image: url("https://api.asxe.vip/random.php");
-
     background-size: cover;
-
     background-attachment: fixed;
-
     text-transform: capitalize;
 
 }
@@ -101,7 +82,7 @@ body {
 #mySidenav {
     background-color: #f1f1f1ee;
     padding: 1em;
-    border-radius: 0px;
+    border-radius: 1px;
 }
 
 /* 背景图片css结束 */
@@ -128,7 +109,7 @@ header {
     line-height: 40px;
     color: #27D5CB;
     background: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     font-style: italic;
     text-shadow: 3px 3px 5px #27D5CB;
