@@ -248,3 +248,11 @@ footer a:hover {
     background: #EAEAEA;
     color: #FF1723;
 }
+@media screen and (orientation: portrait) {
+    body {
+         font-size: 1.5rem;
+    }
+    body a {
+          font-size: 2rem;
+    }
+}
