@@ -78,29 +78,6 @@
                 lastUpdatedElement.innerHTML = formattedDate
             </script>
         </div>
-        <div class="headerendmobile" align="center">
-            <span>以下网站难免会出现广告，综合情况使用。</span>
-            <br>
-            <b>此页创建时间：</b><span class="hui">2022/12/19</span>&nbsp;&nbsp;&nbsp;
-            <br>
-            <b>最后更新：</b><time><span id="lastUpdated"></span>.</time>
-            <script>
-                //最后更新网页时间
-                const lastUpdatedElement = document.getElementById('lastUpdated');
-                const lastUpdatedDate = new Date(document.lastModified);
-                const options = {
-                    year: 'numeric',
-                    month: 'numeric',
-                    day: 'numeric',
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    second: 'numeric'
-                };
-                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-                lastUpdatedElement.innerHTML = formattedDate
-            </script>
-        </div>
-        
         <p>&nbsp;</p>
         <h2 align="center">①动画</h2>
         <br>
