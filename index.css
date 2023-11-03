@@ -151,10 +151,6 @@ header {
     padding-bottom: 15px;
 }
 
-.headerendmobile {
-    display: none;
-}
-
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -200,13 +196,22 @@ section {
 }
 
 summary {
+    list-style: none;
+    display: grid;
+    place-items: center;
     color: gray;
+    background-color: #C5C5C5;
+    border-radius: 10px;
     font-size: 18px;
+}
+
+.summary::-webkit-details-marker {
+    display: none;
 }
 
 .more a {
     transition: all 0.3s ease-in;
-    padding: .5rem;
+    padding: .4rem;
     display: inline-block;
     font-size: 18px;
     line-height: 27px;
@@ -243,6 +248,10 @@ footer {
     color: #AEAEAE;
 }
 
+footer div:first-child {
+    margin-bottom: 10px;
+}
+
 footer a:link {
     color: white;
     font-size: 20px;
@@ -251,4 +260,11 @@ footer a:link {
 footer a:hover {
     background: #EAEAEA;
     color: #FF1723;
+}
+
+@media screen and (orientation: landscape) {
+    .mobile-nav {
+        display: none;
+    }
+
 }
