@@ -1,0 +1,67 @@
+@media screen and (orientation: portrait) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    body a {
+        font-size: 2.0rem;
+        padding: .2rem;
+    }
+
+    h3 {
+        color: red;
+    }
+
+    #popup {
+        font-size: 1rem;
+        position: fixed;
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 520px;
+        background-color: #CDEFFA;
+        border-radius: 1px;
+        box-shadow: 0 0 10px rgba(0, 0, 3, .4);
+        z-index: 9999;
+    }
+
+    #popup p {
+        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #B9FFE8;
+        overflow: scroll;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    footer {
+        font-size: 1.5rem;
+        overflow: scroll;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    footer a {
+        font-size: 2.0rem;
+    }
+
+    .headerend {
+        font-size: 1.2rem;
+        overflow: scroll;
+        white-space: nowrap;
+        text-overflow: clip;
+    }
+
+    .more a {
+        font-size: 2rem;
+    }
+
+    li {
+        overflow: scroll;
+        white-space: nowrap;
+        text-overflow: clip;
+
+    }
+}
