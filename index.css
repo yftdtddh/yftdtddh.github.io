@@ -208,6 +208,10 @@ summary {
 .summary::-webkit-details-marker {
     display: none;
 }
+summary:hover {
+    transform: 0.3s;
+    padding-bottom: 10px;
+}
 
 .more a {
     transition: all 0.3s ease-in;
@@ -243,15 +247,10 @@ summary {
 
 /* 底部css开始 */
 footer {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     background: #1E1E1E;
     color: #AEAEAE;
 }
-
-footer div:first-child {
-    margin-bottom: 10px;
-}
-
 footer a:link {
     color: white;
     font-size: 20px;
@@ -260,6 +259,32 @@ footer a:link {
 footer a:hover {
     background: #EAEAEA;
     color: #FF1723;
+}
+.footer-link {
+    padding-bottom: 3rem;
+}
+
+footer dl:first-child {
+    
+}
+
+footer dl:nth-child(2) {
+    
+   
+}
+
+footer dl:last-child {
+ 
+}
+
+footer dl dt {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+footer dl dt dd a{
+    padding-bottom: .2px;
+
 }
 
 @media screen and (orientation: landscape) {

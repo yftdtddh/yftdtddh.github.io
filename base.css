@@ -33,6 +33,11 @@ h3 {
     margin-top: 1em;
 }
 
+dl {
+    display: inline-block;
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -81,6 +86,11 @@ a::selection {
     color: white;
     background-color: skyblue;
 }
+div::selection {
+    color: white;
+    background-color: pink;
+}
+
 
 
 /* 链接样式结束 */
