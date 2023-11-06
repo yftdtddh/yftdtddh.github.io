@@ -38,6 +38,45 @@ dl {
 
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-in-out;
+    cursor: pointer;
+}
+
+li a {
+    font-family: 'Minecraft-Regular';
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -86,10 +125,12 @@ a::selection {
     color: white;
     background-color: skyblue;
 }
+
 div::selection {
     color: white;
     background-color: pink;
 }
+
 
 
 

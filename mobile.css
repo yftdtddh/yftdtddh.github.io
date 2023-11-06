@@ -7,7 +7,10 @@
         font-size: 2.0rem;
         padding: .9rem;
     }
-
+.navigator p a {
+    color: gray;
+    font-size: 2.5rem;
+}
     h3 {
         color: red;
     }
@@ -37,7 +40,6 @@
     }
 
     header {
-        height: 6rem;
         background-color: #E3E3E3;
         position: sticky;
         top: 0;
