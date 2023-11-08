@@ -1,8 +1,7 @@
 * {
     font-family: "三极素纤简体", 'Microsoft YaHei', 'tahoma', 'arial';
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*html5*/
@@ -25,13 +24,21 @@ menu {
 
 @font-face {
     font-family: "三极素纤简体";
-    src: url(fonts／三极素纤简体.ttf);
+    src: url(fonts/三极素纤简体.ttf);
+}
+
+h2,
+h3,
+h4 {
+    text-align: center;
+
 }
 
 h3 {
     border-bottom: solid 1px black;
     margin-top: 1em;
 }
+
 
 dl {
     display: inline-block;
@@ -100,6 +107,7 @@ button {
 
 /* 链接样式开始 */
 a {
+    text-decoration: none;
     transition: all 0.3s ease-in;
     padding: .6rem;
     display: inline-block;

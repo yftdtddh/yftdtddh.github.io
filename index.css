@@ -170,11 +170,6 @@ summary {
     display: none;
 }
 
-summary:hover {
-    transform: 0.3s;
-    padding-bottom: 10px;
-}
-
 .more a {
     transition: all 0.3s ease-in;
     padding: .4rem;
@@ -228,11 +223,6 @@ footer a:hover {
     padding-bottom: 3rem;
 }
 
-footer dl:first-child {}
-
-footer dl:nth-child(2) {}
-
-footer dl:last-child {}
 
 footer dl dt {
     font-size: 20px;
