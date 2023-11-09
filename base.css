@@ -1,5 +1,5 @@
 * {
-    font-family: "三极素纤简体", 'Microsoft YaHei', 'tahoma', 'arial';
+    font-family: 'Microsoft YaHei', 'tahoma', 'arial';
     padding: 0;
     margin: 0;
 }
@@ -20,11 +20,6 @@ menu {
 @font-face {
     font-family: 'Minecraft-Regular';
     src: url(fonts/1_Minecraft-Regular.otf);
-}
-
-@font-face {
-    font-family: "三极素纤简体";
-    src: url(fonts/三极素纤简体.ttf);
 }
 
 h2,
@@ -52,6 +47,7 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-transform: capitalize;
 }
 
 li {

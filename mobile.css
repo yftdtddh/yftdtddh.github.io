@@ -1,4 +1,13 @@
 @media screen and (orientation: portrait) {
+    * {
+        font-family: "三极素纤简体", 'Microsoft YaHei', 'tahoma', 'arial';
+    }
+
+    @font-face {
+        font-family: "三极素纤简体";
+        src: url(fonts/三极素纤简体.ttf);
+    }
+
     body {
         font-size: 1.5rem;
     }
