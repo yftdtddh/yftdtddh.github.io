@@ -1,5 +1,5 @@
 * {
-        font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
+    font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
     padding: 0;
     margin: 0;
 }
@@ -31,7 +31,6 @@ menu {
 @font-face {
     font-family: 'Minecraft-Bold';
     src: url(fonts/3_Minecraft-Bold.otf)
-
 }
 
 h2,
@@ -42,7 +41,7 @@ h4 {
 
 h3 {
     border-bottom: solid 1px black;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 
@@ -74,9 +73,10 @@ ul li {
 }
 
 ul li a {
-    font-family: 'Minecraft-Bold';     
+    font-family: 'Minecraft-Bold';
 
 }
+
 ul li:hover {
     transform: scale(1.05);
     font-weight: 700;
@@ -137,11 +137,20 @@ a:hover {
     color: white;
 }
 
-::selection { background:pink; color:#333; }
+::selection {
+    background: pink;
+    color: #333;
+}
 
-::-moz-selection { background:pink; color:#333; }
+::-moz-selection {
+    background: pink;
+    color: #333;
+}
 
-::-webkit-selection { background:pink; color:#333;}
+::-webkit-selection {
+    background: pink;
+    color: #333;
+}
 
 a::selection {
     color: white;

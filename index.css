@@ -127,11 +127,19 @@ header {
     display: inline;
 }
 
+.text-logo a:visited {
+    color: #AEFFA2;
+    text-shadow: 3px 3px 5px #27D5CB;
+}
+
 .text-logo a:hover {
     background: none;
     border-radius: none;
     color: white;
 }
+
+
+
 
 
 .navigator {
