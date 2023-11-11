@@ -61,7 +61,7 @@ ul {
     text-transform: capitalize;
 }
 
-li {
+ul li {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #cccccc;
@@ -73,12 +73,13 @@ li {
     cursor: pointer;
 }
 
-li a {
+ul li a {
     font-family: 'Minecraft-Bold';     
 
 }
-li:hover {
+ul li:hover {
     transform: scale(1.05);
+    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -136,18 +137,16 @@ a:hover {
     color: white;
 }
 
+::selection { background:pink; color:#333; }
+
+::-moz-selection { background:pink; color:#333; }
+
+::-webkit-selection { background:pink; color:#333;}
+
 a::selection {
     color: white;
     background-color: skyblue;
 }
-
-div::selection {
-    color: white;
-    background-color: pink;
-}
-
-
-
 
 /* 链接样式结束 */
 /*  备用背景
