@@ -76,6 +76,8 @@ body {
     background-image: url("https://api.asxe.vip/random.php");
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Default.woff2';
+       
 }
 
 #mySidenav {
@@ -207,6 +209,7 @@ footer {
     background: #1E1E1E;
     color: #AEAEAE;
     text-transform: none;
+    padding-top: 5px;
 }
 
 footer a:link {

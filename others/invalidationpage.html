@@ -10,11 +10,10 @@
 </head>
 
 <body>
-        <header>
+    <header>
         <h1>失效的网站</h1>
-        </header>
-        <hr>
-        <div id="mySidenav" class="sidenav">
+    </header>
+    <div id="mySidenav" class="sidenav">
         <ol>
             <li> <a href="https://sunfun.net/">森之屋动漫</a></li>
             <li> <a href="http://ci.moefz.cc/">萌语动漫</a></li>
@@ -45,14 +44,34 @@
     </div>
     <style>
         * {
-            margin: 0;
+            font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        @font-face {
+            font-family: 'Default';
+            src: url(../fonts/Default.woff2);
+        }
+
+        @font-face {
+            font-family: "三极素纤简体";
+            src: url(../fonts/三极素纤简体.ttf);
         }
 
         a {
             text-decoration: none;
-            color: skyblue;
-            font-size: 30px;
-            line-height: 40px;
+            background: #8B9AFF;
+            color: #C8C8C8;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            transition: 0.5s;
+            display: inline-block;
+        }
+
+        a:hover {
+            border: 2px solid #808080;
         }
 
         body {
@@ -66,15 +85,27 @@
             padding: 1em;
             border-radius: 4px;
         }
+
         header {
-            background: linear-gradient(to right, #74FFFF,#7478FF);        
+            background: linear-gradient(to right, #74FFFF, #7478FF);
         }
+
         h1 {
+            font-family: "三极素纤简体";
             font-size: 30px;
             text-align: center;
             padding: 20px 0;
         }
 
+        ol {
+            list-style-type: none;
+            display: grid;
+            place-items: center;
+        }
+
+        li {
+            padding-bottom: .6rem;
+        }
     </style>
 </body>
 

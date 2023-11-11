@@ -1,5 +1,5 @@
 * {
-    font-family: 'Default.woff2', 'Microsoft YaHei', 'tahoma', 'arial';
+        font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
     padding: 0;
     margin: 0;
 }
@@ -17,25 +17,27 @@ menu {
     display: block
 }
 
+
 @font-face {
-    font-family: 'Minecraft-Regular';
-    src: url(fonts/1_Minecraft-Regular.otf);
+    font-family: 'Default';
+    src: url(fonts/Default.woff2);
 }
 
 @font-face {
-    font-family: 'Default.woff2';
-    src: url(fonts/Default.woff2);
-}
-@font-face {
     font-family: "三极素纤简体";
     src: url(fonts/三极素纤简体.ttf);
+}
+
+@font-face {
+    font-family: 'Minecraft-Bold';
+    src: url(fonts/3_Minecraft-Bold.otf)
+
 }
 
 h2,
 h3,
 h4 {
     text-align: center;
-
 }
 
 h3 {
@@ -72,9 +74,9 @@ li {
 }
 
 li a {
-    font-family: 'Minecraft-Regular';
-}
+    font-family: 'Minecraft-Bold';     
 
+}
 li:hover {
     transform: scale(1.05);
 }
