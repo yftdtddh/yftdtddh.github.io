@@ -20,6 +20,10 @@
         color: red;
     }
 
+    #wanchenqinkuang {
+        font-size: 1.5rem;
+    }
+
     #popup {
         font-size: 1rem;
         position: fixed;
