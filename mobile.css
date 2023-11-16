@@ -3,7 +3,6 @@
     body {
         font-size: 1.5rem;
         font-family: 'Default.woff2'
-
     }
 
     body a {
@@ -46,6 +45,10 @@
         overflow: scroll;
         white-space: nowrap;
         text-overflow: clip;
+    }
+    #xf-MusicPlayer {
+        display: none;
+    
     }
 
     header {
