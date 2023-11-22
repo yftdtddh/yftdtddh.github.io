@@ -46,20 +46,12 @@
         white-space: nowrap;
         text-overflow: clip;
     }
-    #xf-MusicPlayer {
-        display: none;
-    
-    }
 
-    header {
-        background-color: #E3E3E3;
-        position: sticky;
-        top: 0;
-    }
+
 
     footer {
         font-family: "三极素纤简体";
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         overflow: scroll;
         white-space: nowrap;
         text-overflow: clip;
@@ -77,7 +69,7 @@
     }
 
     .more a {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     li {

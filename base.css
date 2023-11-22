@@ -17,6 +17,18 @@ menu {
     display: block
 }
 
+/* 推荐加在全局样式文件 */
+:root {
+    box-sizing: border-box;
+    /* 设置根元素的 box-sizing: border-box */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* box-sizing 继承自父元素 */
+}
 
 @font-face {
     font-family: 'Default';
@@ -37,11 +49,19 @@ h2,
 h3,
 h4 {
     text-align: center;
+    padding: 0;
+    display: block;
+}
+
+
+h2 {
+    padding-bottom: 0;
+
 }
 
 h3 {
     border-bottom: solid 1px black;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 
@@ -155,6 +175,12 @@ a:hover {
 a::selection {
     color: white;
     background-color: skyblue;
+}
+
+span::selection {
+    color: blue;
+    background-color: red;
+
 }
 
 /* 链接样式结束 */
