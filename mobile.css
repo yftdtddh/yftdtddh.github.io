@@ -10,6 +10,15 @@
         padding: .9rem;
     }
 
+    .text-logo a {
+        font-size: 1.4rem;
+    }
+
+    .navigator {
+        position: absolute;
+        right: 0;
+    }
+
     .navigator p a {
         color: gray;
         font-size: 2.5rem;
@@ -63,9 +72,6 @@
 
     .headerend {
         font-size: 1.2rem;
-        overflow: scroll;
-        white-space: nowrap;
-        text-overflow: clip;
     }
 
     .more a {
