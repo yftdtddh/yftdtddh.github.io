@@ -107,7 +107,7 @@ header {
     top: 0;
 }
 
-.update-time {
+.start-time {
     color: #555
 }
 
@@ -192,6 +192,7 @@ summary {
     display: inline-block;
     font-size: 18px;
     line-height: 27px;
+    word-wrap: break-word;
 }
 
 .more a:link {
