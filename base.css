@@ -64,6 +64,11 @@ dl {
 
 }
 
+del {
+    text-decoration-color: #000000;
+    text-decoration-thickness: 8px;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
