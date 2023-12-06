@@ -55,6 +55,10 @@ h6 {
     display: block;
 }
 
+h2 {
+    padding-bottom: 20px;
+}
+
 h3 {
     border-bottom: solid 1px black;
 }
@@ -69,27 +73,6 @@ del {
     text-decoration-thickness: 8px;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
-}
-
-ul li {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #cccccc;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    width: 300px;
-    animation: fadeIn 1s ease-in-out;
-    cursor: pointer;
-}
 
 ul li a {
     font-family: 'Minecraft-Bold';

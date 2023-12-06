@@ -1,88 +1,150 @@
-@media screen and (orientation: portrait) {
+body {
+    font-size: 1.5rem;
+    font-family: 'Default.woff2'
+}
 
-    body {
-        font-size: 1.5rem;
-        font-family: 'Default.woff2'
-    }
+body a {
+    font-size: 2.0rem;
+    padding: .9rem;
+}
 
-    body a {
-        font-size: 2.0rem;
-        padding: .9rem;
-    }
+/* 头部css开始 */
+/* 弹窗css开始 */
+#popup {
+    font-size: 1rem;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+    background-color: #CDEFFA;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 3, .4);
+    z-index: 9999;
+}
 
-    .text-logo a {
-        font-size: 1.4rem;
-    }
+#popup p {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.5px;
+    color: #B9FFE8;
+    overflow: scroll;
+    white-space: nowrap;
+    text-overflow: clip;
+}
 
-    .navigator {
-        position: absolute;
-        right: 0;
-    }
+/* 弹窗css结束 */
+/* 导航css开始 */
+#text-logo a {
+    font-size: 2rem;
+}
 
-    .navigator p a {
-        color: gray;
-        font-size: 2.5rem;
-    }
+.navigator,
+#menu-checkbox {
+    display: none;
+}
 
-    h3 {
-        color: red;
-    }
+#menu-checkbox:checked~div {
+    display: block;
+}
 
-    #wanchenqinkuang {
-        font-size: 1.5rem;
-    }
+#header-container {
+    height: 30vh;
+}
 
-    #popup {
-        font-size: 1rem;
-        position: fixed;
-        display: none;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 520px;
-        background-color: #CDEFFA;
-        border-radius: 1px;
-        box-shadow: 0 0 10px rgba(0, 0, 3, .4);
-        z-index: 9999;
-    }
+#mobile-navigator {
+    display: none;
+    background-color: #E3E3E3;
+}
 
-    #popup p {
-        margin-bottom: 10px;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #B9FFE8;
-        overflow: scroll;
-        white-space: nowrap;
-        text-overflow: clip;
-    }
+#mobile-navigator ul {
+    list-style: none;
+}
 
+#mobile-navigator li {
+    display: flex;
+    text-align: center;
 
+}
 
-    footer {
-        font-family: "三极素纤简体";
-        font-size: 1.8rem;
-        overflow: scroll;
-        white-space: nowrap;
-        text-overflow: clip;
-    }
+#mobile-navigator a {
+    padding: 0.2rem;
+}
 
-    footer a {
-        font-size: 2.0rem;
-    }
+#mobile-navigator a:link {
+    color: #090909;
+}
 
-    .headerend {
-        font-size: 1.2rem;
-    }
+#mobile-navigator a:visited {
+    color: #FFFFFF;
+}
 
-    .more a {
-        font-size: 2.5rem;
-    }
+#mobile-navigator a:hover {
+    background-color: #A2FFF3;
+    border-radius: 0.6rem;
+    color: white;
+}
 
-    li {
-        overflow: scroll;
-        white-space: nowrap;
-        text-overflow: clip;
+#menu-toggle {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgba(25, 25, 25, .7);
+    background-color: #ECFF2E;
+    border-radius: 20px;
+}
 
-    }
+/* 导航css结束 */
+#headerend {
+    font-size: 1.2rem;
+}
 
+/* 头部css结束 */
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: red;
+}
+
+section li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-in-out;
+    cursor: pointer;
+    overflow: scroll;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.more a {
+    font-size: 2.5rem;
+}
+
+/* 底部css开始 */
+footer {
+    font-family: "三极素纤简体";
+    font-size: 1.8rem;
+    overflow: scroll;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+footer a {
+    font-size: 2.0rem;
 }

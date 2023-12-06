@@ -12,7 +12,7 @@
 }
 
 a>.btnbacktop {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem 0 0;
     padding: 0;
     width: 3.33rem;
@@ -21,7 +21,7 @@ a>.btnbacktop {
     color: #333;
     background-color: #EEA5A5;
     border: 1px solid #e3e8ee;
-    border-radius: 50%;
+    border-radius: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, .05);
 
 }
@@ -51,7 +51,6 @@ a>.btnbacktop {
     line-height: 1.5;
     color: #666;
 }
-
 
 .notice-button {
     display: block;
@@ -93,33 +92,33 @@ header {
     top: 0;
 }
 
-.start-time {
+#start-time {
     color: #555
 }
 
-.header-container {
+#header-container {
     background-color: #E3E3E3;
     height: 50px;
 }
 
-.text-logo {
+#text-logo {
     float: left;
     line-height: 50px;
     color: #27D5CB;
     background: none;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-style: italic;
     text-shadow: 3px 3px 5px #27D5CB;
     display: inline;
 }
 
-.text-logo a:visited {
+#text-logo a:visited {
     color: #AEFFA2;
     text-shadow: 3px 3px 5px #27D5CB;
 }
 
-.text-logo a:hover {
+#text-logo a:hover {
     background: none;
     border-radius: none;
     color: white;
@@ -128,13 +127,14 @@ header {
 .navigator {
     float: left;
     line-height: 50px;
+    padding-left: 50px;
 }
 
 .navigator p a {
     color: gray;
     font-size: 20px;
     line-height: 20px;
-    display: inline;
+    display: inline-block;
 }
 
 .navigator p a:visited {
@@ -148,7 +148,7 @@ header {
 }
 
 /* 头部css结束 */
-.header-end {
+#header-end {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -224,7 +224,7 @@ footer a:hover {
     color: #FF1723;
 }
 
-.footer-link {
+#footer-link {
     padding-bottom: 3rem;
 }
 
@@ -237,12 +237,6 @@ footer dl dt {
 
 footer dl dt dd a {
     padding-bottom: .2px;
-
 }
 
-@media screen and (orientation: landscape) {
-    .mobile-nav {
-        display: none;
-    }
-
-}
+/* 底部css结束 */
