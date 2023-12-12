@@ -239,4 +239,8 @@ footer dl dt dd a {
     padding-bottom: .2px;
 }
 
+#hen {
+    border-bottom: none;
+}
+
 /* 底部css结束 */
