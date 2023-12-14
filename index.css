@@ -52,7 +52,7 @@ a>.btnbacktop {
     color: #666;
 }
 
-.notice-button {
+#notice-button {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
@@ -65,7 +65,7 @@ a>.btnbacktop {
     transition: background-color .3s ease-in-out;
 }
 
-.notice-button:hover {
+#notice-button:hover {
     background-color: #005fa3;
 }
 
