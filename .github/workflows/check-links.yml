@@ -9,7 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check URL
-      run: IFS=$'\n'; for i in `curl -ssL https://yftdtddh.github.io/muxizyhz/ | tr -d '\n' | grep -oP '(<a href="http[s]?://.*?>.*?</a>)'`; do echo $i | grep -oP '(?<=>).*?(?=<)' | xargs echo -n >> report.tsv; echo -e -n "\t"  >> report.tsv; echo $i | grep -oP '(?<=<a href=")(http[s]?://[^"]*)' | xargs echo -n  >> report.tsv; echo -e -n "\t"  >> report.tsv; echo $i | grep -oP '(?<=<a href=")(http[s]?://[^"]*)' | xargs -L 1 curl -I -m 3 -s -w "%{http_code}\n" -o /dev/null  >> report.tsv; done
+      run: |
+        IFS=$'\n';
+        for i in `curl -ssL https://yftdtddh.github.io/muxizyhz/ | tr -d '\n' | grep -oP '(<a href="http[s]?://.*?>.*?</a>)'`; do
+            echo $i | grep -oP '(?<=>).*?(?=<)' | xargs echo -n >> report.tsv;
+            echo -e -n "\t"  >> report.tsv;
+            echo $i | grep -oP '(?<=<a href=")(http[s]?://[^"]*)' | xargs echo -n  >> report.tsv;
+            echo -e -n "\t"  >> report.tsv;
+            echo $i | grep -oP '(?<=<a href=")(http[s]?://[^"]*)' | xargs -L 1 curl -I -m 5 -s -w "%{http_code}\n" -o /dev/null  >> report.tsv;
+        done
     - name: Upload Report
       uses: actions/upload-artifact@v4.0.0
       with:
