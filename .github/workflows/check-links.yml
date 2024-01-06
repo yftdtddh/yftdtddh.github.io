@@ -17,4 +17,5 @@ jobs:
       - uses: actions/upload-artifact@v4.0.0
         if: always()
         with:
+          name: BrokenLinks(坏链).txt
           path: report.txt
