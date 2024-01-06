@@ -9,6 +9,6 @@ jobs:
   check-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: filiph/linkcheck@3
+      - uses: filiph/linkcheck@3.0.0
         with:
           arguments: -e https://yftdtddh.github.io/muxizyhz/
