@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run URL check script
-      uses: adriancoman/link-checks-action@0.1.0
+      uses: adriancoman/link-checks-action@1.0.1
       with:
         file-to-check: "index.html"
