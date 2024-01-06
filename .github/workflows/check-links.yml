@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: filiph/linkcheck@2.0.23
         with:
-          arguments: https://yftdtddh.github.io/muxizyhz/
+          arguments: -e https://yftdtddh.github.io/muxizyhz/
