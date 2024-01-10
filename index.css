@@ -72,9 +72,6 @@ a>.btnbacktop {
 /* 弹窗公告css结束 */
 /* 背景图片css开始 */
 body {
-    background-image: url("https://api.paugram.com/wallpaper/");
-    background-size: cover;
-    background-attachment: fixed;
     font-family: 'Default.woff2';
 }
 

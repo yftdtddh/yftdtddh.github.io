@@ -1,3 +1,9 @@
+body {
+    background-image: url("https://api.paugram.com/wallpaper/");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 h3 {
     color: pink;
 }

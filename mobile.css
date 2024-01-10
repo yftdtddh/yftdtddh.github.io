@@ -1,4 +1,7 @@
 body {
+    background-image: url("https://api.oick.cn/random/api.php?type=pe");
+    background-size: cover;
+    background-attachment: fixed;
     font-size: 1.5rem;
     font-family: 'Default.woff2'
 }
