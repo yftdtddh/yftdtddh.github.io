@@ -34,22 +34,24 @@ a>.btnbacktop {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 400px;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 20px;
+    text-align: center;
     background-color: #CDEFFA;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     z-index: 9999;
+    user-select: none;
 }
 
 #popup p {
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    color: #666;
+    color: #555;
 }
 
 #notice-button {
@@ -89,13 +91,32 @@ header {
     top: 0;
 }
 
+#time {
+    text-align: center;
+    user-select: none;
+}
+
 #start-time {
-    color: #555
+    color: #a09494;
+    font-weight: normal;
+}
+
+#start-time:hover {
+    color: pink;
+}
+
+#end-time {
+    color: #0077cc;
+}
+
+#end-time:hover {
+    color: #AEAEAE;
 }
 
 #header-container {
     background-color: #E3E3E3;
     height: 50px;
+    user-select: none;
 }
 
 #text-logo {
@@ -163,6 +184,7 @@ summary {
     background-color: #C5C5C5;
     border-radius: 10px;
     font-size: 18px;
+    user-select: none;
 }
 
 .summary::-webkit-details-marker {
@@ -209,6 +231,7 @@ footer {
     color: #AEAEAE;
     text-transform: none;
     padding-top: 5px;
+    user-select: none;
 }
 
 footer a:link {

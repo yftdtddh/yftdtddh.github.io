@@ -15,11 +15,11 @@
     <meta name="author" content="muxiyuj">
     <title>木晞i的资源汇总｜动画｜漫画｜轻小说｜音乐｜游戏｜网站一站汇总</title>
     <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/网站图片.jpg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="mobile.css" media="(orientation: portrait)">
-    <link rel="stylesheet" type="text/css" href="desktop.css" media="(orientation: landscape)">
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" href="images\网站.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="CSS/mobile.css" media="(orientation: portrait)">
+    <link rel="stylesheet" type="text/css" href="CSS\desktop.css" media="(orientation: landscape)">
+    <link rel="stylesheet" type="text/css" href="CSS\base.css">
+    <link rel="stylesheet" type="text/css" href="CSS\index.css">
     <script src="index.js"></script>
     <base target="_blank">
 </head>
@@ -48,10 +48,10 @@
         const backtop = document.querySelector(".backtop");
         backtop.style.display = "none";
 
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const height = window.innerHeight;
 
-            window.onscroll = function() {
+            window.onscroll = function () {
                 if (window.pageYOffset > height) {
                     backtop.style.display = "block";
                 } else {
@@ -59,7 +59,7 @@
                 }
             };
 
-            backtop.onclick = function() {
+            backtop.onclick = function () {
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -72,11 +72,10 @@
     <!-- 弹窗开始 -->
     <div id="popup">
         <h2>通知</h2>
+        <b>页面样式改动</b>
         <br>
-        <a href="https://github.com/yftdtddh/muxizyhz/commits/main">更新历史</a>
-        <p>&nbsp;</p>
-        <p><strong>域名改动</strong></p>
         <br>
+        <p> tip: <b>使用  <code>CTRL+F</code>，进行搜索</b> </p>
         <br>
         <button id="notice-button" onclick="hidePopup()">隐藏</button>
     </div>
@@ -126,29 +125,32 @@
         <!-- 头部部分结束 -->
         <p>&nbsp;</p>
         <div id="header-end" align="center">
+
             <p>以下网站难免会出现广告，综合情况使用。</p>
             <p>有些网站需要魔法才能访问，打不开不一定是网站失效了。</p>
             <p>慢速更新，如果您有我没有列出的网站，可加<a href="https://t.me/muxiyujzyhz">TG</a>分享出来。</p>
             <p>&nbsp;</p>
-            <p>
-                <b>此页创建时间：</b><span id="start-time">2022/12/19</span>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><time><span id="lastUpdated"></span>.</time>
-                <script>
-                    //最后更新网页时间
-                    const lastUpdatedElement = document.getElementById('lastUpdated');
-                    const lastUpdatedDate = new Date(document.lastModified);
-                    const options = {
-                        year: 'numeric',
-                        month: 'numeric',
-                        day: 'numeric',
-                        hour: 'numeric',
-                        minute: 'numeric',
-                        second: 'numeric'
-                    };
-                    const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-                    lastUpdatedElement.innerHTML = formattedDate
-                </script>
-            </p>
+
         </div>
+        <p id="time">
+            <b>此页创建时间：</b><b id="start-time">2022/12/19</b>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><b id="end-time"></b>
+            <script>
+                //最后更新网页时间
+                const lastUpdatedElement = document.getElementById('end-time');
+                const lastUpdatedDate = new Date(document.lastModified);
+                const options = {
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric'
+                };
+                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+                lastUpdatedElement.innerHTML = formattedDate
+            </script>
+        </p>
+        <p>&nbsp;</p>
         <p>&nbsp;</p>
         <h2>① &nbsp;动画</h2>
         <section id="top-anime">
@@ -156,10 +158,13 @@
             <br>
             <ul>
                 <li><a href="https://www.agemys.org/">AGE动漫</a><br><b>体验是不错，极少部分旧番可能搜索不到，新番更新速度尚可，无影响观看的广告存在。</b></li>
-                <li><a href="https://dick.xfani.com">稀饭动漫</a><br><b>前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。 站内存有动画1700部以上。</b></li>
+                <li><a href="https://dick.xfani.com">稀饭动漫</a><br><b>前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。
+                        站内存有动画1700部以上。</b></li>
             </ul>
             <ul>
-                <li><a href="https://www.qkan8.com/">去看吧</a><br><b>看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。</b></li>
+                <li><a
+                        href="https://www.qkan8.com/">去看吧</a><br><b>看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。</b>
+                </li>
                 <li><a href="https://www.gqdm.net/">異世界動畫</a><br><b>天使动漫论坛指定在线动画观看网站)内可能有广告，外有广告，动画存有2300部以上。</b></li>
             </ul>
             <ul>
@@ -167,11 +172,15 @@
                 <li><a href="https://www.edddh4.com/">EDD动漫</a><br><b>解决问题快，播放流畅。</b>
             </ul>
             <ul>
-                <li><a href="https://www.cycdm01.top/">次元城动漫</a><br><b>如出一辙的弹幕功能，没有国漫，部分老番搜索不到，所以适合看新番。视频中无广告存在。站内存有动画3300部以上</b></li>
+                <li><a
+                        href="https://www.cycdm01.top/">次元城动漫</a><br><b>如出一辙的弹幕功能，没有国漫，部分老番搜索不到，所以适合看新番。视频中无广告存在。站内存有动画3300部以上</b>
+                </li>
                 <li><a href="https://www.mgnacg.com">橘子动漫</a><br><b>播放无问题，无内置广告，无需登录。站内存有动画900部以上。</b>
             </ul>
             <ul>
-                <li><a href="http://www.eacg.net/">E-ACG</a><br><b>一些片源是异世界和去看吧的，所以还是比较全的，但不建议用这个，视频中可能有广告存在。此站有一些资讯内容和剧集存在。站内存有动画8600部以上。</b></li>
+                <li><a
+                        href="http://www.eacg.net/">E-ACG</a><br><b>一些片源是异世界和去看吧的，所以还是比较全的，但不建议用这个，视频中可能有广告存在。此站有一些资讯内容和剧集存在。站内存有动画8600部以上。</b>
+                </li>
                 <li><a href="https://www.tucao.cam/">吐槽弹幕网</a><br><b>吐槽是只有新番能看，老番不一定。至于广告，视频内广告我还真没看到。</b>
             </ul>
             <ul>
@@ -179,16 +188,26 @@
                 <li><a href="https://www.5dm.link/">5弹幕</a><br><b>只看新番还是可以的。</b></li>
             </ul>
             <ul>
-                <li><a href="https://www.silisilifun.com/">嘶哩嘶哩</a><br><b>又是一个有账号有弹幕有追番有评论的动画网站。评论和弹幕人数比较多，只要是新番就有些讨论度。动画方面，好像每一个动画都是多源头（至少有三个）。根据其统计信息，有8919部动画。专题分类方面，还主要是分年月份。这个网站不要用梯子，进不去的。</b></li>
-                <li><a href="https://www.ezdmw.site/">E站弹幕网</a><br><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b></li>
+                <li><a
+                        href="https://www.silisilifun.com/">嘶哩嘶哩</a><br><b>又是一个有账号有弹幕有追番有评论的动画网站。评论和弹幕人数比较多，只要是新番就有些讨论度。动画方面，好像每一个动画都是多源头（至少有三个）。根据其统计信息，有8919部动画。专题分类方面，还主要是分年月份。这个网站不要用梯子，进不去的。</b>
+                </li>
+                <li><a
+                        href="https://www.ezdmw.site/">E站弹幕网</a><br><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b>
+                </li>
             </ul>
             <ul>
-                <li><a href="https://www.maigo.cc/">樱之空动漫</a><br><b>网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…</b></li>
-                <li><a href="http://www.2kdm.com/">Mutefun</a><br><b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b></li>
+                <li><a
+                        href="https://www.maigo.cc/">樱之空动漫</a><br><b>网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…</b>
+                </li>
+                <li><a
+                        href="http://www.2kdm.com/">Mutefun</a><br><b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b>
+                </li>
             </ul>
             <ul>
                 <li><a href="https://anime1.cc/">ANIME1</a><br><b>十分简洁，动画可能不太多，但新番肯定有的。</b></li>
-                <li><a href="http://pilipiliw.top/">Pilpili</a><br><b>页面很像bilibili，登录账号可以有追番、评论、下载（网页端应该不能下？）和转发功能。好像留存动画有48900以上。</b></li>
+                <li><a
+                        href="http://pilipiliw.top/">Pilpili</a><br><b>页面很像bilibili，登录账号可以有追番、评论、下载（网页端应该不能下？）和转发功能。好像留存动画有48900以上。</b>
+                </li>
             </ul>
             <ul>
                 <li><a href="https://www.gugufan.com/">咕咕番</a><br><b> 播放什么的测不出来，要登录账号。没有弹窗或横幅广告。站内存有动画3100部以上。</b></li>
@@ -269,7 +288,7 @@
                         <a href="https://www.mitang.tv/">蜜糖动漫</a>
                         <a href="https://www.tinaacg.net/">Tinaacg番剧网</a>
                         <a href="https://07vods.net/">柒之社</a>
-                        
+
                     </p>
                 </div>
             </details>
@@ -417,7 +436,9 @@
         <section id="top-manga">
             <h4>四个推荐站</h4>
             <ul>
-                <li><a href="https://www.soman.com/">搜漫</a><br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b></li>
+                <li><a
+                        href="https://www.soman.com/">搜漫</a><br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b>
+                </li>
                 <li><a href="http://www.mangabz.com/">mangabz</a><br><b>该站与xmanhua是同源，观看漫画上基本能用。</b></li>
             </ul>
 
@@ -515,7 +536,9 @@
             <ul>
                 <li><a href="https://github.com/Haleydu/Cimoc">Cimoc</a></li>
                 <li><a href="https://github.com/niuhuan/daisy/">daisy</a></li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dlithium&pcampaignid=APPU_1_2rWrZZrlD9C">lithium</a></li>
+                <li><a
+                        href="https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dlithium&pcampaignid=APPU_1_2rWrZZrlD9C">lithium</a>
+                </li>
                 <li><a href="https://github.com/KotatsuApp/Kotatsu">Kotatsu</a></li>
 
             </ul>
@@ -1069,6 +1092,7 @@
                 <li> <a href="https://ai.animedb.cn">Animetrace识图引擎</a></li>
             </ul>
     </div>
+    </div>
     </section>
     <!-- 底部部分开始 -->
     <footer>
@@ -1088,17 +1112,19 @@
         </div>
 
         <div align="center">
-           
+
             联系邮箱: <b><a href=mailto:"muxiyuj@gmail.com">muxiyuj@gmail.com</a></b>
             <br>
-            <b>网站为个人收藏用，其中如有不妥请发电子邮件给我。</b>            
+            <b>网站为个人收藏用，其中如有不妥请发电子邮件给我。</b>
             <p>&nbsp;</p>
             &copy;&nbsp;2022<span id="hen">-</span>2023 木晞i的资源汇总
             <br>
             <!-- 网站浏览次数 -->
-            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> <span id="busuanzi_container_site_pv" style='display:none'> 总浏览<span id="busuanzi_value_site_pv"></span>次</span>
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> <span
+                id="busuanzi_container_site_pv" style='display:none'> 总浏览<span
+                    id="busuanzi_value_site_pv"></span>
             <br>
-            <span>本站访客数</span><span id="busuanzi_value_site_uv">人次</span>
+            <b>本站访客数</b><span id="busuanzi_value_site_uv"></span>
         </div>
     </footer>
     <!-- 底部部分结束 -->

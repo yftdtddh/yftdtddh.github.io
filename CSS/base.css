@@ -53,6 +53,7 @@ h6 {
     text-align: center;
     padding: 10px;
     display: block;
+    user-select: none;
 }
 
 h2 {
@@ -73,7 +74,13 @@ del {
     text-decoration-thickness: 8px;
 }
 
+br {
+    user-select: none;
+}
 
+p {
+    user-select: none;
+}
 ul li a {
     font-family: 'Minecraft-Bold';
 
@@ -96,6 +103,10 @@ ul li:hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+code {
+    background-color: #BCB399;
 }
 
 span {
