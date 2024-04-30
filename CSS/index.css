@@ -121,19 +121,24 @@ header {
 
 #text-logo {
     float: left;
-    line-height: 50px;
     color: #27D5CB;
     background: none;
-    font-size: 1.5rem;
+   
     font-weight: 700;
     font-style: italic;
-    text-shadow: 3px 3px 5px #27D5CB;
+    text-shadow: 3px 3px 5px #86ceca;
     display: inline;
+    line-height: 50px;
+    padding-left: 50px;
+}
+
+#text-logo a {
+     font-size: 25px;
 }
 
 #text-logo a:visited {
-    color: #AEFFA2;
-    text-shadow: 3px 3px 5px #27D5CB;
+    color: #6ec465;
+    text-shadow: 3px 3px 5px #30d863;
 }
 
 #text-logo a:hover {
@@ -162,7 +167,7 @@ header {
 .navigator p a:hover {
     background: none;
     border-radius: none;
-    color: white;
+    color: rgb(90, 92, 6);
 }
 
 /* 头部css结束 */

@@ -57,7 +57,7 @@ h6 {
 }
 
 h2 {
-    padding-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 h3 {
@@ -81,6 +81,7 @@ br {
 p {
     user-select: none;
 }
+
 ul li a {
     font-family: 'Minecraft-Bold';
 
@@ -115,7 +116,7 @@ span {
 }
 
 span:hover {
-    color: blue;
+    color: skyblue;
 }
 
 button {
