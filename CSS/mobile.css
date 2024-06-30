@@ -79,10 +79,6 @@ body a {
     color: #090909;
 }
 
-#mobile-navigator a:visited {
-    color: #FFFFFF;
-}
-
 #mobile-navigator a:hover {
     background-color: #A2FFF3;
     border-radius: 0.6rem;
@@ -98,10 +94,6 @@ body a {
     color: rgba(25, 25, 25, .7);
     background-color: #ECFF2E;
     border-radius: 20px;
-}
-
-#menu-toggle:active {
-    background-color: #B3B3B3;
 }
 
 /* 导航css结束 */
