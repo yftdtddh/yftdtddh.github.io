@@ -12,7 +12,7 @@ jobs:
     
       - uses: filiph/linkcheck@3.0.0
         with:
-          arguments: -e https://yftdtddh.github.io/muxizyhz/ > report.txt
+          arguments: -e https://yftdtddh.github.io/ > report.txt
       
       - uses: actions/upload-artifact@v4.0.0
         if: always()
