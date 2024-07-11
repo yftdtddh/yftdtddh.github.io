@@ -43,6 +43,30 @@
             background: linear-gradient(to right, #FFA2AE, #FFA15D);
         }
 
+        #time {
+            text-align: center;
+            user-select: none;
+            padding: 40px;
+        }
+
+        #start-time {
+            color: #a09494;
+            font-weight: normal;
+        }
+
+        #start-time:hover {
+            color: pink;
+        }
+
+        #end-time {
+            color: #0077cc;
+        }
+
+        #end-time:hover {
+            color: #AEAEAE;
+        }
+
+
         ul {
             list-style-type: none;
             display: grid;
@@ -83,6 +107,24 @@
         <h1>网站发布页</h1>
     </header>
     <div id="mySidenav" class="sidenav">
+        <p id="time">
+            <b>此页创建时间：</b><b id="start-time">2023/10/14</b>&nbsp;&nbsp;&nbsp;<b>此页最后更新：</b><b id="end-time"></b>
+            <script>
+                //最后更新网页时间
+                const lastUpdatedElement = document.getElementById('end-time');
+                const lastUpdatedDate = new Date(document.lastModified);
+                const options = {
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric'
+                };
+                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+                lastUpdatedElement.innerHTML = formattedDate
+            </script>
+        </p>
         <br>
         <ul>
             <li> <a href="https://yiso.eu.org/">易搜</a></li>
@@ -119,7 +161,7 @@
             <li> <a href="https://xygalgame.com/">初音的青葱</a></li>
             <li> <a href="https://www.mfan.tv/">亿心网络友情跳转页</a></li>            
             <li> <a href="http://78acgn.com/">78gamego引导页</a></li>
-            <li> <a href="https://www.haoranacg.com/">浩然资源分享</a></li>
+            <li> <a href="https://666haoran.com/">浩然资源分享</a></li>
             <li> <a href="https://www.acgcbk.com/">ACGBUSTER藏宝库</a></li>
             <li> <a href="https://www.dcybk.com/">多次元系列网站引导页</a></li>
 

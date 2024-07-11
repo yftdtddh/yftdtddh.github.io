@@ -72,7 +72,8 @@
     <!-- 弹窗开始 -->
     <div id="popup">
         <h2>通知</h2>
-        <b>仔细清理检查了动画、BT、漫画、轻小说网站并加入更多网站。7、8月可能有大更新。</b>
+        <b>这次是功能更新，主要更新了桌面端导航栏（手机、平板横屏也行），不过移动端（竖屏）未作出更改，使用可能不便。
+新增二级导航，发布页和其它分页也有了“最后更新时间”。</b>
         <br>
         <br>
         <p> tip: <b>使用 <code>CTRL+F</code>，进行搜索</b> </p>
@@ -87,44 +88,136 @@
             <div id="text-logo">
                 <a href="/" target="_self">资源汇总</a>
             </div>
-            <div class="navigator">
-                <p align="center">
-                    <a href="#anime" target="_self">动画</a>
-                    <a href="#BT" target="_self">BT</a>
-                    <a href="#manga" target="_self">漫画</a>
-                    <a href="#novel" target="_self">小说</a>
-                    <a href="#anisong" target="_self">音乐</a>
-                    <a href="#game" target="_self">游戏</a>
-                    <a href="#AcgnNews" target="_self">资讯</a>
-                    <a href="#Community-Forum" target="_self">社区</a>
-                    <a href="#Movie" target="_self">影视</a>
-                    <a href="#comprehensives" target="_self">综合</a>
-                    <a href="#Pictures" target="_self">图站</a>
-                    <a href="#tool" target="_self">工具</a>
-                </p>
+
+            <div class="navbar">
+                <ul class="navlist">
+                    <li class="nav-link">
+                        <a href="#anime" target="_self">动画</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#anime-legal" target="_self">正版</a>
+                                <a href="#anime-apps" target="_self">软件</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#BT" target="_self">BT</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#subtitling" target="_self">字幕</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#manga" target="_self">漫画</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#manga-legal" target="_self">正版</a>
+                                <a href="#manga-apps" target="_self">软件</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#novel" target="_self">小说</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#novel-legal" target="_self">正版</a>
+                                <a href="#novel-apps" target="_self">软件</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#anisong" target="_self">音乐</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#music-legal" target="_self">正版</a>
+                                <a href="#music-apps" target="_self">软件</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#game" target="_self">游戏</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#gamingplatform" target="_self">平台</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#AcgnNews" target="_self">资讯</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#bangumi-forms" target="_self">番组表</a>
+                                <a href="#Marking" target="_self">动画标记</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#Community-Forum" target="_self">社区</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#Movie" target="_self">影视</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#movie-legal" target="_self">正版</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#comprehensives" target="_self">综合</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#Pictures" target="_self">图站</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#tool" target="_self">工具</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#cloud drive" target="_self">云盘</a>
+                                <a href="#other" target="_self">其它</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <label id="menu-toggle" for="menu-checkbox">≡</label>
-            <input id="menu-checkbox" type="checkbox">
-            <div id="mobile-navigator">
-                <a href="#anime" target="_self">动画</a>
-                <a href="#BT" target="_self">BT</a>
-                <a href="#manga" target="_self">漫画</a>
-                <a href="#novel" target="_self">小说</a>
-                <a href="#anisong" target="_self">音乐</a>
-                <a href="#game" target="_self">游戏</a>
-                <a href="#AcgnNews" target="_self">资讯</a>
-                <a href="#Community-Forum" target="_self">社区</a>
-                <a href="#Movie" target="_self">影视</a>
-                <br>
-                <a href="#comprehensives" target="_self">综合</a>
-                <a href="#Pictures" target="_self">图站</a>
-                <a href="#tool" target="_self">工具</a>
-            </div>
+        </div>
+        <label id="menu-toggle" for="menu-checkbox">≡</label>
+        <input id="menu-checkbox" type="checkbox">
+        <div id="mobile-navigator">
+            <a href="#anime" target="_self">动画</a>
+            <a href="#BT" target="_self">BT</a>
+            <a href="#manga" target="_self">漫画</a>
+            <a href="#novel" target="_self">小说</a>
+            <a href="#anisong" target="_self">音乐</a>
+            <a href="#game" target="_self">游戏</a>
+            <a href="#AcgnNews" target="_self">资讯</a>
+            <a href="#Community-Forum" target="_self">社区</a>
+            <a href="#Movie" target="_self">影视</a>
+            <br>
+            <a href="#comprehensives" target="_self">综合</a>
+            <a href="#Pictures" target="_self">图站</a>
+            <a href="#tool" target="_self">工具</a>
+        </div>
         </div>
     </header>
     <hr style="border: dotted 2px #1444;">
     <div id="mySidenav" class="sidenav">
         <!-- 头部部分结束 -->
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <p>&nbsp;</p>
         <div id="header-end" align="center">
 
@@ -135,7 +228,7 @@
 
         </div>
         <p id="time">
-            <b>此页创建时间：</b><b id="start-time">2022/12/19</b>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><b id="end-time"></b>
+            <b>创建时间：</b><b id="start-time">2022/12/19</b>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><b id="end-time"></b>
             <script>
                 //最后更新网页时间
                 const lastUpdatedElement = document.getElementById('end-time');
@@ -245,7 +338,7 @@
             <ul>
                 <li> <a href="http://nnfan.natapp1.cc/">椰羊动漫</a></li>
                 <li> <a href="https://www.acgyaojun.com/">亿萌动漫</a></li>
-                <li> <a href="https://www.yydm1.cc/">丫丫动漫</a></li>
+                <li> <a href="https://www.opacg.com">欧派动漫</a></li>
                 <li> <a href="https://animoe.org/">Animeo动漫</a></li>
             </ul>
             <ul>
@@ -254,49 +347,50 @@
                 <li> <a href="https://www.anfuns.cc/">ANFUNS动漫</a></li>
                 <li> <a href="https://cyfz.vip/">次元方舟动漫网</a></li>
             </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://www.cydmfl.com/">次元福利动漫网</a>
-                        <a href="http://www.995dm.com/">久久动漫</a>
-                        <a href="https://www.vdm8.com/">樱花动漫网</a>
-                        <a href="http://www.qimiqimi.net/">奇米奇米</a>
-                        <a href="https://ebb.io/">ebb动漫</a>
-                        <a href="https://kimani22.com/">金阿尼动画</a>
-                        <a href="https://iafuns.com/">八重樱动漫</a>
-                        <a href="http://halihali1.com/">哈哩哈哩</a>
-                        <a href="http://agefans.top/">age动漫(备)</a>
-                        <a href="http://www.dm3.cc/">风车动漫</a>
-                        <a href="https://www.dongmankk.com/">动漫看看</a>
-                        <a href="https://www.ammmi.com/">Ammmi动漫</a>
-                        <a href="http://www.acglala.cc/">拉拉动漫</a>
-                        <a href="http://www.kamidm.com">卡密动漫</a>
-                        <a href="http://yinghuacd.com/">樱花动漫</a>
-                        <a href="http://74fan.com/">樱花动漫</a>
-                        <a href="http://qdtsdp.com/">樱花动漫</a>
-                        <a href="https://www.yhdmw.cc/">樱花动漫</a>
-                        <a href="http://www.yhdm555.com/">樱花动漫</a>
-                        <a href="http://www.iyinghua.io/">樱花动漫</a>
-                        <a href="https://yhdmoe.com/">樱花动漫</a>
-                        <a href="https://www.opacg.com">欧派动漫</a>
-                        <a href="https://www.dimifun.com/">嘀咪动漫</a>
-                        <a href="https://movie.ecylt.top/">二次元免费影视</a>
-                        <a href="http://ppxdm.com/">PPXDM动漫</a>
-                        <a href="https://www.maxacg.com/">马斯克动漫</a>
-                        <a href="https://anitaku.to/home.html">GOgoanime</a>
-                        <a href="https://acgfta.com/">饭团动漫</a>
-                        <a href="http://ciyuanb.top/">萌鸣动漫</a>
-                        <a href="https://www.tinaacg.net/">Tinaacg番剧网</a>
-                        <a href="https://07vods.net/">柒之社</a>
-                        <a href="https://sp.xn--vzyr4p.top/">acg之王</a>
+        </section>
+        <details>
+            <summary>
+                更多
+            </summary>
+            <div class="more">
+                <p>
+                    <a href="https://www.cydmfl.com/">次元福利动漫网</a>
+                    <a href="http://www.995dm.com/">久久动漫</a>
+                    <a href="https://www.vdm8.com/">樱花动漫网</a>
+                    <a href="http://www.qimiqimi.net/">奇米奇米</a>
+                    <a href="https://ebb.io/">ebb动漫</a>
+                    <a href="https://kimani22.com/">金阿尼动画</a>
+                    <a href="https://iafuns.com/">八重樱动漫</a>
+                    <a href="http://halihali1.com/">哈哩哈哩</a>
+                    <a href="http://agefans.top/">age动漫(备)</a>
+                    <a href="http://www.dm3.cc/">风车动漫</a>
+                    <a href="https://www.dongmankk.com/">动漫看看</a>
+                    <a href="https://www.ammmi.com/">Ammmi动漫</a>
+                    <a href="http://www.acglala.cc/">拉拉动漫</a>
+                    <a href="http://www.kamidm.com">卡密动漫</a>
+                    <a href="http://yinghuacd.com/">樱花动漫</a>
+                    <a href="http://74fan.com/">樱花动漫</a>
+                    <a href="http://qdtsdp.com/">樱花动漫</a>
+                    <a href="https://www.yhdmw.cc/">樱花动漫</a>
+                    <a href="http://www.yhdm555.com/">樱花动漫</a>
+                    <a href="http://www.iyinghua.io/">樱花动漫</a>
+                    <a href="https://yhdmoe.com/">樱花动漫</a>
+                    <a href="https://www.dimifun.com/">嘀咪动漫</a>
+                    <a href="https://movie.ecylt.top/">二次元免费影视</a>
+                    <a href="http://ppxdm.com/">PPXDM动漫</a>
+                    <a href="https://www.maxacg.com/">马斯克动漫</a>
+                    <a href="https://anitaku.to/home.html">GOgoanime</a>
+                    <a href="https://acgfta.com/">饭团动漫</a>
+                    <a href="http://ciyuanb.top/">萌鸣动漫</a>
+                    <a href="https://www.tinaacg.net/">Tinaacg番剧网</a>
+                    <a href="https://07vods.net/">柒之社</a>
+                    <a href="https://sp.xn--vzyr4p.top/">acg之王</a>
 
-                    </p>
-                </div>
-            </details>
-            <p>&nbsp;</p>
+                </p>
+            </div>
+        </details>
+        <p>&nbsp;</p>
+        <section id="anime-legal">
             <h3>本地正版版权动画平台</h3>
             <ul>
                 <li> <a href="https://www.bilibili.com/anime/">Bilibili动画</a></li>
@@ -310,15 +404,17 @@
                 <li> <a href="http://cartoon.pptv.com/">PP动漫</a></li>
                 <li> <a href="https://www.mgtv.com/cartoon/">芒果动漫</a></li>
             </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p><a href="https://ani.gamer.com.tw/">巴哈姆特動畫瘋</a></p>
-                </div>
-            </details>
-            <p>&nbsp;</p>
+        </section>
+        <details>
+            <summary>
+                更多
+            </summary>
+            <div class="more">
+                <p><a href="https://ani.gamer.com.tw/">巴哈姆特動畫瘋</a></p>
+            </div>
+        </details>
+        <p>&nbsp;</p>
+        <section id="anime-apps">
             <h3>动画软件</h3>
             <ul>
                 <li> <a href="https://dick.xfani.com/label/app.html">稀饭动漫</a></li>
@@ -329,6 +425,7 @@
             <ul>
                 <li> <a href="https://www.dangniao.app/">当鸟动漫</a></li>
                 <li> <a href="https://easybangumi.org/">纯纯看番</a></li>
+                <li> <a href="https://www.yydm1.cc/">丫丫动漫</a></li>
             </ul>
         </section>
         <p>&nbsp;</p>
@@ -394,857 +491,882 @@
                 </div>
             </details>
             <p>&nbsp;</p>
-            <h3>字幕</h3>
-            <ul>
-                <li><a href="https://mcar.vip/">耐卡</a></li>
-                <li><a href="https://srtku.com/">字幕库</a></li>
-                <li><a href="http://bbs.sfile2012.com/">伊甸园</a></li>
-                <li><a href="http://www.fanxinzhui.com/">追新番</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://assrt.net/">伪射手</a></li>
-                <li><a href="http://www.mytvbt.net/">tvbt菊花台</a></li>
-                <li><a href="https://www.airota.net/bbs/">千夏町</a></li>
-                <li><a href="https://subhd.tv/">SubHD</a></li>
-            </ul>
-            <ul>
-                <li><a href="http://www.ddzimu.com/">点点字幕</a></li>
-                <li><a href="https://bbs.popgo.org/bbs/">漫游论坛</a></li>
-                <li><a href="https://yysub.net/">人人影视</a></li>
-                <li><a href="https://www.zimuxia.cn/">fix字幕侠</a></li>
-            </ul>
-            <ul>
-                <li><a href="http://www.hysub.net/">幻樱字幕组</a></li>
-                <li><a href="https://www.shenbibi.com/">神叨字幕组</a></li>
-                <li><a href="https://subs.kamigami.org">诸神字幕组</a></li>
-                <li><a href="http://mlsub.net/">梦蓝字幕组</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.zhengmianshang.me">天香字幕社</a></li>
-                <li><a href="https://wanwansub.com">弯弯字幕组</a></li>
-                <li><a href="https://vcb-s.com/">vcb-studio</a></li>
-                <li><a href="https://r3sub.com">R3字幕網</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.dmguo.org/forum.php">动漫国字幕组</a></li>
-                <li><a href="https://bbs.acgrip.com/">Anime字幕论坛</a></li>
-                <li><a href="https://subscene.com">Subscene</a></li>
-                <li><a href="https://www.opensubtitles.org">opensubtitles</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <h2>漫画</h2>
-        <section id="top-manga">
-            <h4>四个推荐站</h4>
-            <ul>
-                <li><a
-                        href="https://www.soman.com/">搜漫</a><br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b>
-                </li>
-                <li><a href="http://www.mangabz.com/">mangabz</a><br><b>该站与xmanhua是同源，观看漫画上基本能用。</b></li>
-            </ul>
-
-            <ul>
-                <li><a href="https://www.zerobywzz.com/">zero搬运网</a><br><b>即有生肉，也有熟肉，满足基本漫画阅览需求！</b></li>
-                <li><a href="https://mox.moe/">mox</a><br><b>专门的漫画下载网站！支持kindle自带浏览器下载</b></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <section id="manga">
-            <h3>在线漫画</h3>
-            <ul>
-                <li> <a href="https://klz9.com/">KL</a></li>
-                <li> <a href="https://moeshare.cc/">萌享</a></li>
-                <li> <a href="https://www.dongman.la/">动漫啦</a></li>
-                <li> <a href="https://rawmanga.cc/">Raw manga</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.dm5.com/">漫画人</a></li>
-                <li> <a href="http://119.23.243.52/#/home">Vomic</a></li>
-                <li> <a href="https://dogemanga.com/">漫画狗</a></li>
-                <li> <a href="http://www.manhualou.com/">漫画楼</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.manshiduo.net/">漫士多</a></li>
-                <li> <a href="https://www.copymanga.tv/">拷贝漫画</a></li>
-                <li> <a href="http://www.1kkk.com/">极速漫画</a></li>
-                <li> <a href="https://www.yymanhua.com/">yymanhua</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://webcomics.jp/">web漫画</a></li>
-                <li> <a href="https://komiic.com/">komiic漫画</a></li>
-                <li> <a href="https://www.idmzj.com/">动漫之家</a></li>
-                <li> <a href="https://www.fffdm.com/">风之动漫</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.ximimanhua.com/rm/">西米漫画</a></li>
-                <li> <a href="https://www.77mh.nl/">新新漫画</a></li>
-                <li> <a href="https://www.591ac.com/">南方漫画网</a></li>
-                <li> <a href="https://welovemanga.one/">welovemanga</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://www.mansou.co/">漫搜</a>
-                        <a href="http://www.manmanju.cc/">漫漫聚</a>
-                        <a href="https://www.manhuagui.com/">漫画柜</a>
-                        <a href="https://www.laimanhua8.com/">来漫画</a>                       
-                        <a href="https://www.omyschool.com">木马动漫</a>
-                        <a href="http://didamh.com/">滴答漫画</a>                        
-                        <a href="https://5ikmh.ink/">吾爱看漫画</a>
-                        <a href="https://rawkuma.com/">rawkuma</a>
-                        <a href="https://rimanb.com/">日漫吧</a>
-                        <a href="https://www.tvbsmh.com/">tvbsmh</a>
-                    </p>
-                </div>
-            </details>
+            <section id="subtitling">
+                <h3>字幕</h3>
+                <ul>
+                    <li><a href="https://mcar.vip/">耐卡</a></li>
+                    <li><a href="https://srtku.com/">字幕库</a></li>
+                    <li><a href="http://bbs.sfile2012.com/">伊甸园</a></li>
+                    <li><a href="http://www.fanxinzhui.com/">追新番</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://assrt.net/">伪射手</a></li>
+                    <li><a href="http://www.mytvbt.net/">tvbt菊花台</a></li>
+                    <li><a href="https://www.airota.net/bbs/">千夏町</a></li>
+                    <li><a href="https://subhd.tv/">SubHD</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.ddzimu.com/">点点字幕</a></li>
+                    <li><a href="https://bbs.popgo.org/bbs/">漫游论坛</a></li>
+                    <li><a href="https://yysub.net/">人人影视</a></li>
+                    <li><a href="https://www.zimuxia.cn/">fix字幕侠</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.hysub.net/">幻樱字幕组</a></li>
+                    <li><a href="https://www.shenbibi.com/">神叨字幕组</a></li>
+                    <li><a href="https://subs.kamigami.org">诸神字幕组</a></li>
+                    <li><a href="http://mlsub.net/">梦蓝字幕组</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.zhengmianshang.me">天香字幕社</a></li>
+                    <li><a href="https://wanwansub.com">弯弯字幕组</a></li>
+                    <li><a href="https://vcb-s.com/">vcb-studio</a></li>
+                    <li><a href="https://r3sub.com">R3字幕網</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.dmguo.org/forum.php">动漫国字幕组</a></li>
+                    <li><a href="https://bbs.acgrip.com/">Anime字幕论坛</a></li>
+                    <li><a href="https://subscene.com">Subscene</a></li>
+                    <li><a href="https://www.opensubtitles.org">opensubtitles</a></li>
+                </ul>
+            </section>
             <p>&nbsp;</p>
-            <h3>引进正版与国创漫画平台</h3>
-            <ul>
-                <li><a href="https://www.dongmanmanhua.cn/">咚漫</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.kanman.com/">看漫画</a></li>
-                <li><a href="https://www.manhuatai.com/">漫画台</a></li>
-                <li><a href="https://www.colamanhua.com/">cola漫画</a></li>
-                <li><a href="https://ac.qq.com/">腾讯漫画</a></li>
-            </ul>
-            <ul>
-                <li><a href="http://manhua.weibo.com">微博动漫</a></li>
-                <li><a href="https://manmanapp.com/">漫漫漫画</a></li>
-                <li><a href="https://www.kuaikanmanhua.com/">快看漫画</a></li>
-                <li><a href="https://manhua.docin.com/">豆丁漫画</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.migudm.cn/">咪咕动漫</a></li>
-                <li><a href="http://qiximh3.com/">七夕漫画</a></li>
-                <li><a href="https://manhua.iqiyi.com/comic/">叭嗒漫画</a></li>
-                <li><a href="https://www.baozimh.com/">包子漫画</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://manga.bilibili.com/">哔哩哔哩漫画</a></li>
-                <li><a href="https://www.zymk.cn/">知音漫客网</a></li>
-                <li><a href="https://www.bkneng.com/">不可能的世界</a></li>
-                <li><a href="https://www.mkzhan.com/">漫画栈</a></li>
-            </ul>
-            <p>&nbsp;</p>
-            <h3>漫画相关软件</h3>
-            <ul>
-                <li><a href="https://github.com/Haleydu/Cimoc">Cimoc</a></li>
-                <li><a href="https://github.com/niuhuan/daisy/">daisy</a></li>
-                <li><a
-                        href="https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dlithium&pcampaignid=APPU_1_2rWrZZrlD9C">lithium</a>
-                </li>
-                <li><a href="https://github.com/KotatsuApp/Kotatsu">Kotatsu</a></li>
+            <h2>漫画</h2>
+            <section id="top-manga">
+                <h4>四个推荐站</h4>
+                <ul>
+                    <li><a
+                            href="https://www.soman.com/">搜漫</a><br><b>漫画搜索引擎可以得到该漫画在多个平台，并跳转观看。其能搜索到的包括大妈之家、腾讯漫画、b漫、漫画人及其他。</b>
+                    </li>
+                    <li><a href="http://www.mangabz.com/">mangabz</a><br><b>该站与xmanhua是同源，观看漫画上基本能用。</b></li>
+                </ul>
 
-            </ul>
-            <ul>
-                <li><a href="https://fairyflower.github.io/">异次元</a></li>
-                <li><a href="https://github.com/NOHNOLIFE/mangaview">mangaview</a></li>
-                <li><a href="https://github.com/youniaogu/MangaReader">MangaReader</a></li>
-                <li><a href="https://tachiyomi.org/download/">Tachiyomi</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://blog.upx8.com/2304">Cimoc 漫画聚合源</a></li>
-                <li><a href="https://github.com/xiaoyaocz/flutter_dmzj">flutter_dmzj</a></li>
-                <li><a href="https://github.com/CrowForKotlin/CopyMangaX">CopyMangaX</a></li>
-                <li><a href="https://github.com/shizheng233/CopyMangaJava">CopyMangaJava</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <h2>小说</h2>
-        <section id="novel">
-            <h3>日轻及其它</h3>
-            <ul>
-                <li> <a href="https://masiro.me/admin">真白萌</a></li>
-                <li> <a href="https://www.lightnovel.app/">轻书架</a></li>
-                <li> <a href="https://www.23qb.net/lightnovel/">铅笔小说</a></li>
-                <li> <a href="https://www.mobinovels.com/">魔笔小说</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.huahuo6.com/">花火文学</a></li>
-                <li> <a href="https://www.esjzone.cc/">ESJZone</a></li>
-                <li> <a href="https://ibooks.org.cn/">读书小站</a></li>
-                <li> <a href="https://www.linovelib.com/">哔哩轻小说</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.wenku8.net/index.php">轻小说文库</a></li>
-                <li> <a href="http://www.shencou.com/">神凑轻小说</a></li>
-                <li> <a href="https://lnovel.tw/">轻小说百科</a></li>
-                <li> <a href="http://ritdon.com/">深夜读书会</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://cijoc.com/">CIJOC轻小说</a></li>
-                <li> <a href="https://www.52doc.com/">我爱电子书</a></li>
-                <li> <a href="https://firebook.store/">炎上书屋</a></li>
-                <li> <a href="https://books.fishhawk.top/">轻小说机翻机器人</a></li>
-            </ul>
-
-            <details>
-                <summary>更多</summary>
-                <div class="more">
-                    <p>
-                        <a href="https://search.yibook.org/">易书</a>                       
-                           
-                    </p>
-                </div>
-            </details>
+                <ul>
+                    <li><a href="https://www.zerobywzz.com/">zero搬运网</a><br><b>即有生肉，也有熟肉，满足基本漫画阅览需求！</b></li>
+                    <li><a href="https://mox.moe/">mox</a><br><b>专门的漫画下载网站！支持kindle自带浏览器下载</b></li>
+                </ul>
+            </section>
             <p>&nbsp;</p>
-            <h3>本地小说</h3>
-            <ul>
-                <li> <a href="https://www.ciweimao.com/">刺猬猫</a></li>
-                <li> <a href="https://www.ciyuanji.com/">次元姬</a></li>
-                <li> <a href="https://www.heiyan.com/all.html">黑岩网</a></li>
-                <li> <a href="https://www.kujiang.com/index">酷匠网</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://book.qq.com/">QQ阅读</a></li>
-                <li> <a href="https://h5.17k.com/">17k小说</a></li>
-                <li> <a href="https://www.linovel.net/">轻之文库</a></li>
-                <li> <a href="https://www.hotread.com/">火星小说</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.penana.com/">penana</a></li>
-                <li> <a href="https://book.tiexue.net/">铁血小说</a></li>
-                <li> <a href="http://www.faloo.com/">飞卢小说</a></li>
-                <li> <a href="https://fanqienovel.com/">番茄小说</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.ireader.com.cn/">掌阅书城</a></li>
-                <li> <a href="https://shuqi.com/">书旗小说</a></li>
-                <li> <a href="https://www.tadu.com/">塔读文学</a></li>
-                <li> <a href="https://www.cmread.com/wenxuenew/">咪咕文学</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.xxsy.net/">潇湘书院</a></li>
-                <li> <a href="https://book.sfacg.com/">SF轻小说</a></li>
-                <li> <a href="https://www.8kana.com/">不可能de世界</a></li>
-                <li> <a href="http://www.iciyuan.com/">趣阅异世界</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.qidian.com/all/">起点中文网</a></li>
-                <li> <a href="https://www.jjwxc.net/">晋江文学城</a></li>
-                <li> <a href="https://www.qimao.com/">七猫中文网</a></li>
-                <li> <a href="https://www.laikan.com/index">磨铁中文网</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.zongheng.com/">纵横中文网</a></li>
-                <li> <a href="https://www.hongshu.com/">红薯中文网</a></li>
-                <li> <a href="https://chuangshi.qq.com/">创世中文网</a></li>
-                <li> <a href="https://wenxue.iqiyi.com/">爱奇艺小说</a></li>
-            </ul>
             <p>&nbsp;</p>
-            <h3>小说相关软件</h3>
-            <ul>
-                <li> <a href="https://gedoor.github.io/">阅读</a></li>
-                <li> <a href="https://wap.ciweimao.com/setting/app_download_1">刺猬猫</a></li>
-                <li> <a href="https://weread.qq.com/">微信读书</a></li>
-                <li> <a href="https://www.moondownload.com/chinese.html">静读天下</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://sfacg.com/">菠萝包轻小说</a></li>
-            
-            </ul>
-
-        </section>
-        <p>&nbsp;</p>
-        <h2>音乐</h2>
-        <section id="anisong">
-            <h3>二次元音声及其它</h3>
-            <ul>
-                <li><a href="https://biu.moe/">Biu~</a></li>
-                <li><a href="https://www.hifini.com/">音乐磁场</a></li>
-                <li><a href="https://music.ecylt.top/">EcyMusic</a></li>
-                <li><a href="http://mergemusic.cn/">MergeMusic</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://eatasmr.com/">Eatasmr</a></li>
-                <li> <a href="https://rainkmc.com/forum.php">雨中小町</a></li>
-                <li> <a href="http://www.acgjc.com/">漫音社</a></li>
-                <li> <a href="https://www.beatstage.com/">Beatstage</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.cdbao.net/forum-173-1.html">CD包音乐网</a></li>
-                <li> <a href="https://www.asmr.one">ASMR在线</a></li>
-                <li> <a href="https://doonroom.blog.jp/">同人音声の部屋</a></li>
-                <li> <a href="https://www.asmrgay.com/">ASMR基佬中心</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://koe-koe.com/">koe-koe</a></li>
-                <li> <a href="https://otobanana.com/">otobanana</a></li>
-                <li> <a href="https://lavaradio.com/">Lava熔岩音乐</a></li>
-                <li> <a href="https://musi.llgal.xyz/">青葱音乐阁 Player</a></li>
-            </ul>
-            <details>
-                <summary>更多</summary>
-                <div class="more">
-                    <a href="https://mora.jp/">mora</a>
-                    <a href="https://rjhome.me/">rj之家</a>
-                    <a href="https://ototoy.jp/top/">ototoy</a>
-                    <a href="https://ifish.fun/">鱼声音乐</a>
-                    <a href="https://www.sl-asmr.com/">sl-asmr</a>
-                    <a href="https://asmr18.fans/">asmr18</a>
-                    <a href="https://www.e-onkyo.com/music/">e-onkyo</a>
-                    <a href="https://www.hentaiasmr.moe/">hentaiASMR</a>
-                    <a href="https://www.voicehub.top/home">voicehub</a>
-                    <a href="https://japaneseasmr.com/">japaneseasmr</a>
-                    <a href="https://minimummusic.com/">minimummusic</a>
-                    <a href="https://downloads.khinsider.com/">VideoGameMusic</a>
-                    
-
-                </div>
-            </details>
-            <p>&nbsp;</p>
-            <h3>正版音娱平台</h3>
-            <ul>
-                <li> <a href="https://www.spotify.com/">Spotify</a></li>
-                <li> <a href="https://y.qq.com/">QQ音乐</a></li>
-                <li> <a href="https://qtfm.cn/">蜻蜓FM</a></li>
-                <li> <a href="https://www.missevan.com">猫耳FM</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.kugou.com">酷狗音乐</a></li>
-                <li> <a href="https://kuwo.cn/">酷我音乐</a></li>
-                <li> <a href="https://bodian.kuwo.cn/">波点音乐</a></li>
-                <li> <a href="https://music.douban.com/">豆瓣音乐</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.ximalaya.com/">喜马拉雅</a></li>
-                <li> <a href="https://www.migu.cn/music.html">咪咕音乐</a></li>
-                <li> <a href="https://music.163.com/">网易云音乐</a></li>
-                <li> <a href="https://www.bilibili.com/audio/home">哔哩哔哩音乐</a></li>
-            </ul>
-
-            <p>&nbsp;</p>
-            <h3>音乐相关软件</h3>
-            <ul>
-                <li> <a href="https://moriafly.xyz/SaltPlayerSource/index.html#/">椒盐音乐</a></li>
-                <li> <a href="https://www.coolapk.com/apk/com.xjcheng.musictageditor">音乐标签</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <section id="game">
-            <h2>游戏</h2>
-            <ul>
-                <li> <a href="https://www.haogal8.com/">好GAL</a></li>
-                <li> <a href="https://post.qingjuacg.top/">青桔网</a></li>
-                <li> <a href="https://www.nekogal.com/">nekogal</a></li>
-                <li> <a href="https://galgamer.moe/">galgamer</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.galzy.eu.org/">紫缘社</a></li>
-                <li> <a href="https://galge.fun/">2Dfun</a></li>
-                <li> <a href="https://steamzg.com/">小叽资源</a></li>
-                <li> <a href="https://blog.reimu.net/">灵梦御所</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.clfans.club/">光坂小镇</a></li>
-                <li> <a href="https://www.ymgal.games/">月幕GAL</a></li>
-                <li> <a href="https://www.galcg.org/">GAL领域</a></li>
-                <li> <a href="https://www.xyg688.com/">小妖怪分享</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://gallibrary.pw/">GAL图书馆</a></li>
-                <li> <a href="https://www.ttloli.com/">忧郁的弟弟</a></li>
-                <li> <a href="https://fufugal.com/">初音的青葱</a></li>
-                <li> <a href="https://shinnku.com/">失落的小站</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://78gamego.com/">78游戏GAL</a></li>
-                <li> <a href="https://ggbases.dlgal.com/">ggbases</a></li>
-                <li> <a href="https://www.touchgal.moe/">TouchGAL</a></li>
-                <li> <a href="https://acgyyg.ru/">ACG嘤嘤怪</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://acgs.one/">绮梦ACG</a>
-                        <a href="https://gdqs.org/">宫代千纱</a>
-                        <a href="https://koyso.com/">koyso</a>
-                        <a href="https://www.sayhuahuo.xyz/member.php?mod=reigsetr">花火学园</a>
-                        <a href="https://www.hgalgamemaster.top/">目标是h游戏大师</a>
-                        <a href="https://www.cngal.org">中文galgame</a>
-                        <a href="https://www.tianshie.com/zh-tw/">天使二次元</a>
-                        <a href="https://www.pymogames.com/">pymo</a>
-                        <a href="https://tuxun.fun/">图寻</a>
-                        <a href="https://mxdjzj.com/">萌新单机之家</a>
-                        <a href="https://haorangame.com/">浩然单机游戏</a>
-                        <a href="https://www.flysheep6.com/">flysheep资源避难所</a>
-                        <a href="https://gartic.io/">你画我猜</a>
-                        <a href="https://sonolus.com/">SONOLUS</a>
-                        <a href="http://mio.natapp1.cc/taiko">mio太鼓</a>
-                        <a href="https://zi0.cc/">梓澪の妙妙屋</a>
-                        <a href="https://www.kungal.com/zh-cn">鲲Galgame论坛</a>
-                    </p>
-                </div>
-            </details>
-            <p>&nbsp;</p>
-            <h3>国内游戏平台</h3>
-            <ul>
-                <li> <a href="https://www.66rpg.com/">橙光</a></li>
-                <li> <a href="https://www.3000.com/">闪艺</a></li>
-                <li> <a href="https://avg.163.com/">易次元</a></li>
-                <li> <a href="http://www.lpengine.cn/">LP文字游戏平台</a></li>
-
-            </ul>
-            <ul>
-                <li> <a href="https://taptap.cn/">taptap</a></li>
-                <li> <a href="https://www.wegame.com.cn/">WeGame</a></li>
-                <li> <a href="https://www.sonkwo.cn/">杉果游戏</a></li>
-                <li> <a href="https://www.cubejoy.com/">方块游戏</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <section id="AcgnNews">
-            <h2>次元资讯</h2>
-            <ul>
-                <li> <a href="https://mangatalk.net/">漫言</a></li>
-                <li> <a href="http://cxacg.com/">橙心社</a></li>
-                <li> <a href="https://www.eroacg.com">艾欧网</a></li>
-                <li> <a href="https://www.hexieshe.cn">和邪社</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://www.zhaimoe.com/">宅萌社</a></li>
-                <li> <a href="https://www.pmjun.com">泡面菌</a></li>
-                <li> <a href="https://acgwiki.tw/">ACG百科</a></li>
-                <li> <a href="https://www.feiyuacg.com/">飞鱼ACG</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.u-acg.com/">u-acg</a></li>
-                <li> <a href="https://www.yimoe.cc">翼萌动漫</a></li>
-                <li> <a href="https://acg.gamersky.com/news/">动漫星空</a></li>
-                <li> <a href="https://www.huijiwiki.com">灰机wiki</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://ciyuanfadian.com/">次元法典</a></li>
-                <li> <a href="https://hkacger.com/">ACGER</a></li>
-                <li> <a href="http://www.zsacg.com/">炽热ACG</a></li>
-                <li> <a href="http://acg.laifucn.com/">ACG资讯</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.c3acg.com/">c3动漫网</a></li>
-                <li> <a href="https://www.xydm.net/">星音动漫网</a></li>
-                <li> <a href="https://www.moejam.com">梦域动漫网</a></li>
-                <li> <a href="https://www.dmacg.net">缘叶二次元</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.acglivefan.com">二次元现场</a></li>
-                <li> <a href="https://news.masadora.net">马猴新闻部</a></li>
-                <li> <a href="https://www.acgmh.com/">ACGN门户</a></li>
-                <li> <a href="https://www.roxylib.com/">洛琪希图书馆</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://mymomoda.com/">末末哒ACG</a></li>
-                <li> <a href="https://www.005.tv/index.html">羁绊动漫网</a></li>
-                <li> <a href="http://www.animetox.com/">Animex动漫社</a></li>
-                <li> <a href="https://moegirl.cyou/Mainpage">萌娘百科镜像</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://acgsecrets.hk/">ACGsecrets.hk</a></li>
-                <li> <a href="https://chncomic.com/">中国国际动漫网</a></li>
-                <li> <a href="http://www.youxiacg.com/">柚栖二次元社区</a></li>
-                <li> <a href="https://www.gamer.com.tw/">巴哈姆特电玩资讯站</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://2chcn.com/">2ch中文网</a></li>
-                <li> <a href="https://www.jpbeta.cc">多元化日本文化资讯站</a></li>
-                <li> <a href="https://ccsx.tw/">CCSX Makes ACG NEWS</a></li>
-                <li> <a href="https://www.animenewsnetwork.com/">animenewsnetwork</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://www.aimanzhan.com/">爱漫展</a>
-                        <a href="https://www.shengyouku.com/">声优库</a>
-                        <a href="https://zh.wikipedia.org/">维基百科</a>
-                    </p>
-                </div>
-            </details>
-            <p>&nbsp;</p>
-            <h3>番组表</h3>
-            <ul>
-                <li> <a href="https://bgmlist.com/">番组放送</a></li>
-                <li> <a href="https://bgm.wiki/">番组wiki</a></li>
-                <li> <a href="https://hmacg.cn/bangumi/">动漫新番表</a></li>
-                <li> <a href="https://acgsecrets.hk/bangumi/">ACGsecrets新番表</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://yuc.wiki/">YuC's AnimeList</a></li>
-                <li> <a href="https://miroko.cn/">miroko新番表</a></li>
-            </ul>
-            <h3 id="Marking">记录动画进度</h3>
-            <ul>
-                <li> <a href="http://anime.acgcon.top/">御宅世界</a></li>
-                <li> <a href="http://bgm.tv/">Bangumi番组计划</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://neodb.social/users/login/">Neodb</a></li>
-                <li> <a href="https://anilist.co/home">Anilist</a></li>
-                <li> <a href="https://github.com/linyi102/anime_trace">漫迹</a></li>
-                <li> <a href="http://www.dudulu.moe/">嘟嘟嘟二次元理想乡</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <section id="Community-Forum">
-            <h2>社区与论坛</h2>
-            <ul>
-                <li> <a href="https://bbs.kfpromax.com/index.php">绯月</a></li>
-                <li> <a href="https://www.mfuns.net/">喵御宅</a></li>
-                <li> <a href="https://za2.org/">杂货屋</a></li>
-                <li> <a href="https://www.fffdann.com/">FFF团</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.53dushu.com/forum.php">读书会</a></li>
-                <li> <a href="https://mcyacg.com/">梦次元</a></li>
-                <li> <a href="https://www.xinqi8888.com/">次元社</a></li>
-                <li> <a href="https://www.diyidan.com/">第一弹</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://bbs.saraba1st.com/2b/forum.php">S1论坛</a></li>
-                <li> <a href="https://bbs2.seikuu.com/">星空论坛</a></li>
-                <li> <a href="https://iirose.com/">蔷薇花园</a></li>
-                <li> <a href="https://acg.is/">灵梦广场</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.nmbxd1.com/Home/Forum.html">X岛揭示版</a></li>
-                <li> <a href="https://acgn.zone/">ACG里世界</a></li>
-                <li> <a href="https://www.ecylt.top/">二次元论坛</a></li>
-                <li> <a href="http://www.sosg.net/">SOGO动漫论坛</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.gn00.com">技术宅社区</a>
-                <li> <a href="https://www.lcyll.com/">零次元社区</a></li>
-                <li> <a href="https://nga.cn/">NGA玩家社区</a></li>
-                <li> <a href="https://piliacg.cn/">霹雳动漫社区</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.tsdm39.com/forum.php">天使动漫论坛</a></li>
-                <li> <a href="https://www.pmxsd.com/">神奇宝贝新生代</a></li>
-                <li> <a href="https://hvhbbs.com/">贞德游戏交流论坛</a></li>
-                <li> <a href="https://www.cycg.xyz/">Sperteの次元茶馆</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://acgu.net/">尤萌</a>
-                        <a href="https://www.v2ex.com/">v2ex</a>
-                        <a href="https://pttweb.tw/">PPTWeb</a>
-                        <a href="https://mirror.chromaso.net/">M系镜像</a>
-                        <a href="https://www.keyfc.net/bbs/index.aspx">keyfansclub 我们的梦想</a>
-                        <a href="http://bbs2.kdays.net/">keydays论坛</a>
-                        <a href="https://www.yukict.com/bbs/index.php">YUKI飛雪之城</a>
-                        <a href="https://www.schub.top/">SC中文社区</a>
-                        <a href="https://www.gtloli.gay/">哥特动漫王国</a>
-                        <a href="https://www.gxdmw.com">高校动漫网</a>
-                        <a href="http://www.otomedream.com/">翼梦舞城</a>
-                        <a href="http://www.tuilixy.net/">贝克街推理学院</a>
-                        <a href="https://bbs.sumisora.net/">澄空学园</a>
-                        <a href="http://www.2cycd.com/">二次元虫洞</a>
-                        <a href="https://bbs.dcybk.com/">多次元社区</a>
-                        <a href="https://www.east-plus.net/">南+ South Plus</a>
-                        <a href="https://bbs.cdbook.info/">cdbook</a>
-                        <a href="https://bbs.fallenark.com/">堕落方舟</a>
-                        <a href="https://mcseas.club/">混沌心海</a>
-                        <a href="https://www.jingjiniao.info/">荆棘鸟学院论坛</a>
-                        <a href="https://bbs4.2djgame.net/home/forum.php">2djgame</a>
-                        <a href="https://cl-acg.com/index.html">御宅同萌</a>
-                        <a href="https://eyny.com/member.php?mod=logging&action=login">伊莉讨论区</a>
-                        <a href="https://www.acgnsq.com/">acgn社区</a>
-                        <a href="https://mcacgsq.com/">喵茶acg社区</a>
-                        <a href="https://www.anime-sharing.com/">Anime-Sharing</a>
-                        
-                    </p>
-                </div>
-            </details>
-        </section>
-        <p>&nbsp;</p>
-        <section id="comprehensives">
-            <h2>综合资源</h2>
-            <ul>
-                <li> <a href="https://www.ghxi.com/">果核剥壳</a></li>
-                <li> <a href="https://dimtown.com/">次元小镇</a></li>
-                <li> <a href="https://gmgard.com/">绅士之庭</a></li>
-                <li> <a href="https://www.i0c0i.com/">一库次元社</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://www.hanbao520.com/">轻之笔记</a></li>
-                <li> <a href="https://lspgal.us/">极点acg</a></li>
-                <li> <a href="https://www.acgnzy.com/">ACG资源网</a></li>
-                <li> <a href="https://teaeee.com/">二次元下午茶</a></li>
-
-            </ul>
-            <ul>
-                <li> <a href="https://www.acgcbk11.vip/">ACGCBK</a></li>
-                <li> <a href="https://www.cywacg.moe/">次元w</a></li>
-                <li> <a href="https://www.acgndog.com/">次元狗</a></li>
-                <li> <a href="https://www.mikuclub.win/">初音社</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://www.kou.moe">萌口组</a></li>
-                <li> <a href="https://www.gkcool.cn/">极客酷</a></li>
-                <li> <a href="https://www.krloli.com/">氪哩氪哩</a></li>
-                <li> <a href="http://hgalgame.com/?cat=4">MAY社-宅の资源</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.dmoe.in/">暗萌</a></li>
-                <li> <a href="http://danmanba.cc/">旦漫吧</a></li>
-                <li> <a href="https://www.hacg.lv/">琉璃神社</a></li>
-                <li> <a href="https://saber.love/">saber酱的抱枕</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.mengzhan23.com/">萌站</a></li>
-                <li> <a href="https://github.com/miru-project/miru-app">miru</a></li>
-                <li> <a href="https://iui.su/">不死鸟</a></li>              
-                <li> <a href="https://dodder01.top/">菟丝子资源社区</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://portbox.lol/">F-ACG</a></li>
-                <li> <a href="https://nav.190829.com/">彧曦导航</a></li>
-                <li> <a href="https://wlcbit.com/">阿良工具集</a></li>
-                <li> <a href="https://www.207788.xyz/">好网站不私藏</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <a href="https://moeli-desu.com/">梦璃</a>
-                    <a href="https://acgdb.de/">acgdb</a>
-                    <a href="https://didisjhs.com/">司机会所</a>
-                    <a href="https://www.ponpomu.com/home">白绒yuri</a>
-                    <a href="https://sky.tkecys1.top/forum.php">天空ACG</a>
-                    <a href="https://mirror.js.org/">你用得上的镜像网站</a>
-                    <a href="https://docs.qq.com/sheet/DYUVBVUVvSUlkSVFE">文姐书籍目录</a>
-                </div>
+            <section id="manga">
+                <h3>在线漫画</h3>
+                <ul>
+                    <li> <a href="https://klz9.com/">KL</a></li>
+                    <li> <a href="https://moeshare.cc/">萌享</a></li>
+                    <li> <a href="https://www.dongman.la/">动漫啦</a></li>
+                    <li> <a href="https://rawmanga.cc/">Raw manga</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://www.dm5.com/">漫画人</a></li>
+                    <li> <a href="http://119.23.243.52/#/home">Vomic</a></li>
+                    <li> <a href="https://dogemanga.com/">漫画狗</a></li>
+                    <li> <a href="http://www.manhualou.com/">漫画楼</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://www.manshiduo.net/">漫士多</a></li>
+                    <li> <a href="https://www.copymanga.tv/">拷贝漫画</a></li>
+                    <li> <a href="http://www.1kkk.com/">极速漫画</a></li>
+                    <li> <a href="https://www.yymanhua.com/">yymanhua</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://webcomics.jp/">web漫画</a></li>
+                    <li> <a href="https://komiic.com/">komiic漫画</a></li>
+                    <li> <a href="https://www.idmzj.com/">动漫之家</a></li>
+                    <li> <a href="https://www.fffdm.com/">风之动漫</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://www.ximimanhua.com/rm/">西米漫画</a></li>
+                    <li> <a href="https://www.77mh.nl/">新新漫画</a></li>
+                    <li> <a href="https://www.591ac.com/">南方漫画网</a></li>
+                    <li> <a href="https://welovemanga.one/">welovemanga</a></li>
+                </ul>
+                <details>
+                    <summary>
+                        更多
+                    </summary>
+                    <div class="more">
+                        <p>
+                            <a href="https://www.mansou.co/">漫搜</a>
+                            <a href="http://www.manmanju.cc/">漫漫聚</a>
+                            <a href="https://www.manhuagui.com/">漫画柜</a>
+                            <a href="https://www.laimanhua8.com/">来漫画</a>
+                            <a href="https://www.omyschool.com">木马动漫</a>
+                            <a href="http://didamh.com/">滴答漫画</a>
+                            <a href="https://5ikmh.ink/">吾爱看漫画</a>
+                            <a href="https://rawkuma.com/">rawkuma</a>
+                            <a href="https://rimanb.com/">日漫吧</a>
+                            <a href="https://www.tvbsmh.com/">tvbsmh</a>
+                        </p>
+                    </div>
                 </details>
-        </section>
-        <p>&nbsp;</p>
-        <section id="Movie">
-            <h2>影视集合</h2>
+                <p>&nbsp;</p>
+                <section id="manga-legal">
+                    <h3>引进正版与国创漫画平台</h3>
+                    <ul>
+                        <li><a href="https://www.dongmanmanhua.cn/">咚漫</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.kanman.com/">看漫画</a></li>
+                        <li><a href="https://www.manhuatai.com/">漫画台</a></li>
+                        <li><a href="https://www.colamanhua.com/">cola漫画</a></li>
+                        <li><a href="https://ac.qq.com/">腾讯漫画</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="http://manhua.weibo.com">微博动漫</a></li>
+                        <li><a href="https://manmanapp.com/">漫漫漫画</a></li>
+                        <li><a href="https://www.kuaikanmanhua.com/">快看漫画</a></li>
+                        <li><a href="https://manhua.docin.com/">豆丁漫画</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.migudm.cn/">咪咕动漫</a></li>
+                        <li><a href="http://qiximh3.com/">七夕漫画</a></li>
+                        <li><a href="https://manhua.iqiyi.com/comic/">叭嗒漫画</a></li>
+                        <li><a href="https://www.baozimh.com/">包子漫画</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://manga.bilibili.com/">哔哩哔哩漫画</a></li>
+                        <li><a href="https://www.zymk.cn/">知音漫客网</a></li>
+                        <li><a href="https://www.bkneng.com/">不可能的世界</a></li>
+                        <li><a href="https://www.mkzhan.com/">漫画栈</a></li>
+                    </ul>
+                </section>
+                <p>&nbsp;</p>
+                <section id="manga-apps">
+                    <h3>漫画相关软件</h3>
+                    <ul>
+                        <li><a href="https://github.com/Haleydu/Cimoc">Cimoc</a></li>
+                        <li><a href="https://github.com/niuhuan/daisy/">daisy</a></li>
+                        <li><a
+                                href="https://play.google.com/store/apps/details?id=com.faultexception.reader&hl=en_US&referrer=utm_source%3Dgoogle%26utm_medium%3Dorganic%26utm_term%3Dlithium&pcampaignid=APPU_1_2rWrZZrlD9C">lithium</a>
+                        </li>
+                        <li><a href="https://github.com/KotatsuApp/Kotatsu">Kotatsu</a></li>
 
-            <ul>
-                <li> <a href="https://soupian.one/">搜片</a></li>
-                <li> <a href="https://www.mypianku.net/">片库</a></li>
-                <li> <a href="http://www.hideystudio.xyz/">隐社</a></li>
-                <li> <a href="https://dianyinggou.com">电影狗</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://cupfox.app/">茶杯狐</a></li>
-                <li> <a href="https://725998.com/">茶杯虎</a></li>
-                <li> <a href="https://www.dadagui.me/">达达龟</a></li>
-                <li> <a href="https://www.mvcat.com">MVCAT</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://cokemv.me/">cokemv</a></li>
-                <li> <a href="https://www.btnull.to/">BTNull</a></li>
-                <li> <a href="https://www.appmovie.vip/">App影院</a></li>
-                <li> <a href="https://miao101.com/">旋风视频</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://gaze.run/">注视影视</a></li>
-                <li> <a href="https://www.juheyingshi.com/">聚合影视</a></li>
-                <li> <a href="https://www.bdys03.com/">哔嘀影视</a></li>
-                <li> <a href="https://ddys.tv/">低端影视</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.olehd.com/">欧乐影院</a></li>
-                <li> <a href="https://dmflm.com/">大米星球</a></li>
-                <li> <a href="https://dianyi.ng/">电影先生</a></li>
-                <li> <a href="https://duck3.top/">小鸭影音</a></li>
-            </ul>
-            <ul>
-                <li> <a href="http://www.gededy.com/">哥的电影网</a></li>
-                <li> <a href="https://toutiao.tudoutudou.top/">高清剧集网</a></li>
-                <li> <a href="https://www.libvio.me/">LIBVIO影视</a></li>
-                <li> <a href="https://www.jxsgssn.com/">大师兄影视</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://gimy.ai/">剧迷</a>
-                        <a href="https://www.rijupao.com/">日剧跑</a>
-                        <a href="https://www.shipinla.com/">视频啦</a>
-                        <a href="https://yoyys1.com/">悠云影视</a>
-                        <a href="https://atym.app/">艾兔影漫</a>
-                        <a href="https://www.dytt360.com/">电影淘淘</a>
-                        <a href="https://www.4khdr.cn/">4k论坛</a>
-                        <a href="https://www.ikanbot.com/">爱看机器人</a>
-                        <a href="https://www.ququmc.com/">扛把子影院</a>
-                        <a href="https://www.k8w.cc/">k8电影网</a>
-                        <a href="https://www.myd02.com/">美益达影视</a>
-                        <a href="https://www.6bt0.com/">不太灵影视</a>
-                    </p>
-                </div>
-            </details>
-            <p>&nbsp;</p>
-            <h3>本地正版版权剧集平台</h3>
-            <ul>
-                <li> <a href="https://www.youku.com/channel/webhome">优酷</a></li>
-                <li> <a href="https://www.le.com/">乐视</a></li>
-                <li> <a href="https://www.iqiyi.com/">爱奇艺</a></li>
-                <li> <a href="https://www.mgtv.com/">芒果TV</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.pptv.com">PP视频</a></li>
-                <li> <a href="https://www.bilibili.com/tv/">bilibili</a></li>
-                <li> <a href="https://v.qq.com/channel/tv">腾讯视频</a></li>
-                <li> <a href="https://tv.sohu.com/">搜狐视频</a></li>
-            </ul>
-        </section>
-        <p>&nbsp;</p>
-        <section id="Pictures">
-            <h2>图站</h2>
-            <ul>
-                <li> <a href="https://yingtall.com/">樱糖</a></li>
-                <li> <a href="http://www.pixiv.net/">pixiv</a></li>
-                <li> <a href="https://pixiviz.xyz/">pixiviz</a></li>
-                <li> <a href="https://pixivel.moe/">Pixivel</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://danbooru.donmai.us/">danbooru</a></li>
-                <li> <a href="https://www.mooyuu.com/">摸鱼网</a></li>
-                <li> <a href="https://yiimii.com/">一米云图</a></li>
-                <li> <a href="https://bizihu.com/">壁纸湖网</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.chnci.cc/">chnci</a></li>
-                <li> <a href="https://www.someacg.top/">someacg</a></li>
-                <li> <a href="https://moepro.cn/">萌娘资源站</a></li>
-                <li> <a href="https://anime-pictures.net/">动漫图片和壁纸</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.evacg.org/">E次元</a></li>
-                <li> <a href="https://www.cosplay1314.com/">萌cos</a></li>
-                <li> <a href="https://bobopic.com/">bobopic</a></li>
-                <li> <a href="https://pixivbox.com/">pixivbox</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://rllacg.com/">啊咧咧</a></li>
-                <li> <a href="https://www.coserhub.net/">coserhub</a></li>
-                <li> <a href="https://cosaav.top/">ailiaili</a></li>
-                <li> <a href="https://yande.re/">/｜yande</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://fairyflower.github.io/">异次元</a></li>
+                        <li><a href="https://github.com/NOHNOLIFE/mangaview">mangaview</a></li>
+                        <li><a href="https://github.com/youniaogu/MangaReader">MangaReader</a></li>
+                        <li><a href="https://tachiyomi.org/download/">Tachiyomi</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://blog.upx8.com/2304">Cimoc 漫画聚合源</a></li>
+                        <li><a href="https://github.com/xiaoyaocz/flutter_dmzj">flutter_dmzj</a></li>
+                        <li><a href="https://github.com/CrowForKotlin/CopyMangaX">CopyMangaX</a></li>
+                        <li><a href="https://github.com/shizheng233/CopyMangaJava">CopyMangaJava</a></li>
+                    </ul>
+                </section>
+                <p>&nbsp;</p>
+                <h2>小说</h2>
+                <section id="novel">
+                    <h3>日轻及其它</h3>
+                    <ul>
+                        <li> <a href="https://masiro.me/admin">真白萌</a></li>
+                        <li> <a href="https://www.lightnovel.app/">轻书架</a></li>
+                        <li> <a href="https://www.23qb.net/lightnovel/">铅笔小说</a></li>
+                        <li> <a href="https://www.mobinovels.com/">魔笔小说</a></li>
+                    </ul>
+                    <ul>
+                        <li> <a href="https://www.huahuo6.com/">花火文学</a></li>
+                        <li> <a href="https://www.esjzone.cc/">ESJZone</a></li>
+                        <li> <a href="https://ibooks.org.cn/">读书小站</a></li>
+                        <li> <a href="https://www.linovelib.com/">哔哩轻小说</a></li>
+                    </ul>
+                    <ul>
+                        <li> <a href="https://www.wenku8.net/index.php">轻小说文库</a></li>
+                        <li> <a href="http://www.shencou.com/">神凑轻小说</a></li>
+                        <li> <a href="https://lnovel.tw/">轻小说百科</a></li>
+                        <li> <a href="http://ritdon.com/">深夜读书会</a></li>
+                    </ul>
+                    <ul>
+                        <li> <a href="https://cijoc.com/">CIJOC轻小说</a></li>
+                        <li> <a href="https://www.52doc.com/">我爱电子书</a></li>
+                        <li> <a href="https://firebook.store/">炎上书屋</a></li>
+                        <li> <a href="https://books.fishhawk.top/">轻小说机翻机器人</a></li>
+                    </ul>
 
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <a href="https://www.pixivs.cn/">pixivNow</a>
-                    <a href="https://safebooru.org/">safebooru</a>
-                    <a href="https://konachan.net/post">konachan</a>
-                    <a href="https://konachan.wjcodes.com/">konachan-chs</a>
-                    <a href="https://anime-pictures.net/">Anime pictures and wallpapers</a>
-                    <a href="https://www.zerochan.net/">zerochan动漫图像板</a>
-                </div>
-            </details>
-        </section>
-        <p>&nbsp;</p>
-        <section id="tool">
-            <h2>工具</h2>
-            <p>&nbsp;</p>
-            <h3>图床</h3>
-            <ul>
-                <li> <a href="https://imgloc.com/">图床</a></li>
-                <li> <a href="https://sm.ms/">smms</a></li>
-                <li> <a href="https://z4a.net/">Z4A图床</a></li>
-                <li> <a href="https://imgse.com/">路过图床</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://img.gejiba.com/">老王图床</a></li>
-                <li> <a href="https://www.superbed.cn/">聚合图床</a></li>
-                <li> <a href="https://mjj.today/">MjjTOday</a></li>
-                <li> <a href="https://postimages.org/">Postimages</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://img.icepm.top/">ICEPM-img</a></li>
-                <li> <a href="https://p.sda1.dev/">流浪图床</a></li>
-                <li> <a href="https://www.imgurl.org/">ImgURL免费图床</a></li>
-                <li> <a href="https://ai.animedb.cn">Animetrace识图引擎</a></li>
-            </ul>
-            <h3>云盘/网盘</h3>
-            <p>&nbsp;</p>
-            <ul>
-                <li> <a href="https://www.lanzoui.com/">蓝奏云</a></li>
-                <li> <a href="https://mypikpak.com/zh-CN">PikPak</a></li>
-                <li> <a href="https://pan.mczyx.online/login">元素云盘</a></li>
-                <li> <a href="https://pan.baidu.com/">百度网盘</a></li>
-                <li> <a href="https://www.aliyundrive.com/">阿里云盘</a></li>
-                <li> <a href="https://cloud.189.cn/">天翼云盘</a></li>
-                <li> <a href="https://www.weiyun.com/index.html">腾讯微云</a></li>
-                <li> <a href="https://yun.139.com/">移动云盘</a></li>
-                <li> <a href="https://pan.xunlei.com/">迅雷云盘</a></li>
-                <li> <a href="https://www.123pan.com/">123云盘</a></li>
-                <li> <a href="https://pan.quark.cn/">夸克云盘</a></li>
-                <li> <a href="https://app.ctfile.com/">城通网盘</a></li>
-                <li> <a href="https://www.google.com/intl/zh-CN/drive/features.html">Google云端硬盘</a></li>
+                    <details>
+                        <summary>更多</summary>
+                        <div class="more">
+                            <p>
+                                <a href="https://search.yibook.org/">易书</a>
 
-            </ul>
-            <p>&nbsp;</p>
-            <h3>其它</h3>
-            <p>&nbsp;</p>
-            <ul>
-                <li> <a href="https://wantquotes.net/">据意查句</a></li>
-                <li> <a href="https://netcut.cn/">网站粘贴版</a></li>
-                <li> <a href="http://cms.jpdazi.com/">JP搭子学日语</a></li>
-                <li> <a href="https://www.gnomic.cn/">Gnomic智能体平台</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://dona.chatyy.org/">ChatAi</a></li>
-                <li> <a href="https://shadows.brumm.af/">Smooth Shadows</a></li>
-                <li> <a href="https://browserleaks.com/ip">My Ip address</a></li>
-                <li> <a href="https://97by.cn/index/">onetool自动化云任务系统</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://marshmallow-qa.com/">棉花糖</a></li>
-                <li> <a href="https://saucenao.com/">saucenao</a></li>
-                <li> <a href="https://bibigpt.co/airss/home">Bibi gpt</a></li>
-                <li> <a href="https://samtoki.github.io/KanaMaster/">假名征服者</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://mubu.com/">幕布</a></li>
-                <li> <a href="https://www.sxl.cn/">上线了</a></li>
-                <li> <a href="https://epub.liumingye.cn/">library</a></li>
-                <li> <a href="https://tool.liumingye.cn/">刘明野的工具箱</a></li>
-            </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://www.aicu.cc/">AICU</a>
-                        <a href="https://wbot.ecylt.top/">wbot</a>
-                        <a href="https://hzj.wiki/">汇总酱</a>
-                        <a href="https://ai-sfc.yunyoujun.cn/">AI春联</a>
-                        <a href="https://demo.unlock-music.dev/">音乐解锁</a>
-                        <a href="https://exercism.org/">Exercism</a>
-                        <a href="https://music.liuzhijin.cn/">音乐直链搜索</a>
-                        <a href="https://listen1.github.io/listen1/">listen1音乐播放器</a>
-                        <a href="https://www.arealme.com/cn">A Real Me</a>
-                        <a href="http://cn.virtualdj.com/">virtualdj</a>
-                        <a href="https://api.yimian.xyz/">Ushio API</a>
-                        <a href="https://stay206.github.io/image/photos">随机动漫图片</a>
+                            </p>
+                        </div>
+                    </details>
+                    <p>&nbsp;</p>
+                    <section id="novel-legal">
+                        <h3>本地小说</h3>
+                        <ul>
+                            <li> <a href="https://www.ciweimao.com/">刺猬猫</a></li>
+                            <li> <a href="https://www.ciyuanji.com/">次元姬</a></li>
+                            <li> <a href="https://www.heiyan.com/all.html">黑岩网</a></li>
+                            <li> <a href="https://www.kujiang.com/index">酷匠网</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://book.qq.com/">QQ阅读</a></li>
+                            <li> <a href="https://h5.17k.com/">17k小说</a></li>
+                            <li> <a href="https://www.linovel.net/">轻之文库</a></li>
+                            <li> <a href="https://www.hotread.com/">火星小说</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.penana.com/">penana</a></li>
+                            <li> <a href="https://book.tiexue.net/">铁血小说</a></li>
+                            <li> <a href="http://www.faloo.com/">飞卢小说</a></li>
+                            <li> <a href="https://fanqienovel.com/">番茄小说</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.ireader.com.cn/">掌阅书城</a></li>
+                            <li> <a href="https://shuqi.com/">书旗小说</a></li>
+                            <li> <a href="https://www.tadu.com/">塔读文学</a></li>
+                            <li> <a href="https://www.cmread.com/wenxuenew/">咪咕文学</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.xxsy.net/">潇湘书院</a></li>
+                            <li> <a href="https://book.sfacg.com/">SF轻小说</a></li>
+                            <li> <a href="https://www.8kana.com/">不可能de世界</a></li>
+                            <li> <a href="http://www.iciyuan.com/">趣阅异世界</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.qidian.com/all/">起点中文网</a></li>
+                            <li> <a href="https://www.jjwxc.net/">晋江文学城</a></li>
+                            <li> <a href="https://www.qimao.com/">七猫中文网</a></li>
+                            <li> <a href="https://www.laikan.com/index">磨铁中文网</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.zongheng.com/">纵横中文网</a></li>
+                            <li> <a href="https://www.hongshu.com/">红薯中文网</a></li>
+                            <li> <a href="https://chuangshi.qq.com/">创世中文网</a></li>
+                            <li> <a href="https://wenxue.iqiyi.com/">爱奇艺小说</a></li>
+                        </ul>
+                    </section>
+                    <p>&nbsp;</p>
+                    <section id="novel-apps">
+                        <h3>小说相关软件</h3>
+                        <ul>
+                            <li> <a href="https://gedoor.github.io/">阅读</a></li>
+                            <li> <a href="https://wap.ciweimao.com/setting/app_download_1">刺猬猫</a></li>
+                            <li> <a href="https://weread.qq.com/">微信读书</a></li>
+                            <li> <a href="https://www.moondownload.com/chinese.html">静读天下</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://sfacg.com/">菠萝包轻小说</a></li>
 
-                    </p>
-                </div>
-            </details>
-        </section>
+                        </ul>
+                    </section>
+                    <p>&nbsp;</p>
+                    <h2>音乐</h2>
+                    <section id="anisong">
+                        <h3>二次元音声及其它</h3>
+                        <ul>
+                            <li><a href="https://biu.moe/">Biu~</a></li>
+                            <li><a href="https://www.hifini.com/">音乐磁场</a></li>
+                            <li><a href="https://music.ecylt.top/">EcyMusic</a></li>
+                            <li><a href="http://mergemusic.cn/">MergeMusic</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://eatasmr.com/">Eatasmr</a></li>
+                            <li> <a href="https://rainkmc.com/forum.php">雨中小町</a></li>
+                            <li> <a href="http://www.acgjc.com/">漫音社</a></li>
+                            <li> <a href="https://www.beatstage.com/">Beatstage</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://www.cdbao.net/forum-173-1.html">CD包音乐网</a></li>
+                            <li> <a href="https://www.asmr.one">ASMR在线</a></li>
+                            <li> <a href="https://doonroom.blog.jp/">同人音声の部屋</a></li>
+                            <li> <a href="https://www.asmrgay.com/">ASMR基佬中心</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="https://koe-koe.com/">koe-koe</a></li>
+                            <li> <a href="https://otobanana.com/">otobanana</a></li>
+                            <li> <a href="https://lavaradio.com/">Lava熔岩音乐</a></li>
+                            <li> <a href="https://musi.llgal.xyz/">青葱音乐阁 Player</a></li>
+                        </ul>
+                        <details>
+                            <summary>更多</summary>
+                            <div class="more">
+                                <a href="https://mora.jp/">mora</a>
+                                <a href="https://rjhome.me/">rj之家</a>
+                                <a href="https://ototoy.jp/top/">ototoy</a>
+                                <a href="https://ifish.fun/">鱼声音乐</a>
+                                <a href="https://www.sl-asmr.com/">sl-asmr</a>
+                                <a href="https://asmr18.fans/">asmr18</a>
+                                <a href="https://www.e-onkyo.com/music/">e-onkyo</a>
+                                <a href="https://www.hentaiasmr.moe/">hentaiASMR</a>
+                                <a href="https://www.voicehub.top/home">voicehub</a>
+                                <a href="https://japaneseasmr.com/">japaneseasmr</a>
+                                <a href="https://minimummusic.com/">minimummusic</a>
+                                <a href="https://downloads.khinsider.com/">VideoGameMusic</a>
+
+                            </div>
+                        </details>
+                        <p>&nbsp;</p>
+                        <section id="music-legal">
+                            <h3>正版音娱平台</h3>
+                            <ul>
+                                <li> <a href="https://www.spotify.com/">Spotify</a></li>
+                                <li> <a href="https://y.qq.com/">QQ音乐</a></li>
+                                <li> <a href="https://qtfm.cn/">蜻蜓FM</a></li>
+                                <li> <a href="https://www.missevan.com">猫耳FM</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="https://www.kugou.com">酷狗音乐</a></li>
+                                <li> <a href="https://kuwo.cn/">酷我音乐</a></li>
+                                <li> <a href="https://bodian.kuwo.cn/">波点音乐</a></li>
+                                <li> <a href="https://music.douban.com/">豆瓣音乐</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="https://www.ximalaya.com/">喜马拉雅</a></li>
+                                <li> <a href="https://www.migu.cn/music.html">咪咕音乐</a></li>
+                                <li> <a href="https://music.163.com/">网易云音乐</a></li>
+                                <li> <a href="https://www.bilibili.com/audio/home">哔哩哔哩音乐</a></li>
+                            </ul>
+                        </section>
+                        <p>&nbsp;</p>
+                        <section id="music-apps">
+                            <h3>音乐相关软件</h3>
+                            <ul>
+                                <li> <a href="https://moriafly.xyz/SaltPlayerSource/index.html#/">椒盐音乐</a></li>
+                                <li> <a href="https://www.coolapk.com/apk/com.xjcheng.musictageditor">音乐标签</a></li>
+                            </ul>
+                        </section>
+                        <p>&nbsp;</p>
+                        <section id="game">
+                            <h2>游戏</h2>
+                            <ul>
+                                <li> <a href="https://www.haogal8.com/">好GAL</a></li>
+                                <li> <a href="https://post.qingjuacg.top/">青桔网</a></li>
+                                <li> <a href="https://www.nekogal.com/">nekogal</a></li>
+                                <li> <a href="https://galgamer.moe/">galgamer</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="https://www.galzy.eu.org/">紫缘社</a></li>
+                                <li> <a href="https://galge.fun/">2Dfun</a></li>
+                                <li> <a href="https://steamzg.com/">小叽资源</a></li>
+                                <li> <a href="https://blog.reimu.net/">灵梦御所</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="https://www.clfans.club/">光坂小镇</a></li>
+                                <li> <a href="https://www.ymgal.games/">月幕GAL</a></li>
+                                <li> <a href="https://www.galcg.org/">GAL领域</a></li>
+                                <li> <a href="https://www.xyg688.com/">小妖怪分享</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="https://gallibrary.pw/">GAL图书馆</a></li>
+                                <li> <a href="https://www.ttloli.com/">忧郁的弟弟</a></li>
+                                <li> <a href="https://fufugal.com/">初音的青葱</a></li>
+                                <li> <a href="https://shinnku.com/">失落的小站</a></li>
+                            </ul>
+                            <ul>
+                                <li> <a href="http://78gamego.com/">78游戏GAL</a></li>
+                                <li> <a href="https://ggbases.dlgal.com/">ggbases</a></li>
+                                <li> <a href="https://www.touchgal.moe/">TouchGAL</a></li>
+                                <li> <a href="https://acgyyg.ru/">ACG嘤嘤怪</a></li>
+                            </ul>
+                            <details>
+                                <summary>
+                                    更多
+                                </summary>
+                                <div class="more">
+                                    <p>
+                                        <a href="https://acgs.one/">绮梦ACG</a>
+                                        <a href="https://gdqs.org/">宫代千纱</a>
+                                        <a href="https://koyso.com/">koyso</a>
+                                        <a href="https://www.sayhuahuo.xyz/member.php?mod=reigsetr">花火学园</a>
+                                        <a href="https://www.hgalgamemaster.top/">目标是h游戏大师</a>
+                                        <a href="https://www.cngal.org">中文galgame</a>
+                                        <a href="https://www.tianshie.com/zh-tw/">天使二次元</a>
+                                        <a href="https://www.pymogames.com/">pymo</a>
+                                        <a href="https://tuxun.fun/">图寻</a>
+                                        <a href="https://mxdjzj.com/">萌新单机之家</a>
+                                        <a href="https://haorangame.com/">浩然单机游戏</a>
+                                        <a href="https://www.flysheep6.com/">flysheep资源避难所</a>
+                                        <a href="https://gartic.io/">你画我猜</a>
+                                        <a href="https://sonolus.com/">SONOLUS</a>
+                                        <a href="http://mio.natapp1.cc/taiko">mio太鼓</a>
+                                        <a href="https://zi0.cc/">梓澪の妙妙屋</a>
+                                        <a href="https://www.kungal.com/zh-cn">鲲Galgame论坛</a>
+                                    </p>
+                                </div>
+                            </details>
+                            <p>&nbsp;</p>
+                            <section id="gamingplatform">
+                                <h3>国内游戏平台</h3>
+                                <ul>
+                                    <li> <a href="https://www.66rpg.com/">橙光</a></li>
+                                    <li> <a href="https://www.3000.com/">闪艺</a></li>
+                                    <li> <a href="https://avg.163.com/">易次元</a></li>
+                                    <li> <a href="http://www.lpengine.cn/">LP文字游戏平台</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://taptap.cn/">taptap</a></li>
+                                    <li> <a href="https://www.wegame.com.cn/">WeGame</a></li>
+                                    <li> <a href="https://www.sonkwo.cn/">杉果游戏</a></li>
+                                    <li> <a href="https://www.cubejoy.com/">方块游戏</a></li>
+                                </ul>
+                            </section>
+                            <p>&nbsp;</p>
+                            <section id="AcgnNews">
+                                <h2>次元资讯</h2>
+                                <ul>
+                                    <li> <a href="https://mangatalk.net/">漫言</a></li>
+                                    <li> <a href="http://cxacg.com/">橙心社</a></li>
+                                    <li> <a href="https://www.eroacg.com">艾欧网</a></li>
+                                    <li> <a href="https://www.hexieshe.cn">和邪社</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="http://www.zhaimoe.com/">宅萌社</a></li>
+                                    <li> <a href="https://www.pmjun.com">泡面菌</a></li>
+                                    <li> <a href="https://acgwiki.tw/">ACG百科</a></li>
+                                    <li> <a href="https://www.feiyuacg.com/">飞鱼ACG</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://www.u-acg.com/">u-acg</a></li>
+                                    <li> <a href="https://www.yimoe.cc">翼萌动漫</a></li>
+                                    <li> <a href="https://acg.gamersky.com/news/">动漫星空</a></li>
+                                    <li> <a href="https://www.huijiwiki.com">灰机wiki</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://ciyuanfadian.com/">次元法典</a></li>
+                                    <li> <a href="https://hkacger.com/">ACGER</a></li>
+                                    <li> <a href="http://www.zsacg.com/">炽热ACG</a></li>
+                                    <li> <a href="http://acg.laifucn.com/">ACG资讯</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://www.c3acg.com/">c3动漫网</a></li>
+                                    <li> <a href="https://www.xydm.net/">星音动漫网</a></li>
+                                    <li> <a href="https://www.moejam.com">梦域动漫网</a></li>
+                                    <li> <a href="https://www.dmacg.net">缘叶二次元</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://www.acglivefan.com">二次元现场</a></li>
+                                    <li> <a href="https://news.masadora.net">马猴新闻部</a></li>
+                                    <li> <a href="https://www.acgmh.com/">ACGN门户</a></li>
+                                    <li> <a href="https://www.roxylib.com/">洛琪希图书馆</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="http://mymomoda.com/">末末哒ACG</a></li>
+                                    <li> <a href="https://www.005.tv/index.html">羁绊动漫网</a></li>
+                                    <li> <a href="http://www.animetox.com/">Animex动漫社</a></li>
+                                    <li> <a href="https://moegirl.cyou/Mainpage">萌娘百科镜像</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://acgsecrets.hk/">ACGsecrets.hk</a></li>
+                                    <li> <a href="https://chncomic.com/">中国国际动漫网</a></li>
+                                    <li> <a href="http://www.youxiacg.com/">柚栖二次元社区</a></li>
+                                    <li> <a href="https://www.gamer.com.tw/">巴哈姆特电玩资讯站</a></li>
+                                </ul>
+                                <ul>
+                                    <li> <a href="https://2chcn.com/">2ch中文网</a></li>
+                                    <li> <a href="https://www.jpbeta.cc">多元化日本文化资讯站</a></li>
+                                    <li> <a href="https://ccsx.tw/">CCSX Makes ACG NEWS</a></li>
+                                    <li> <a href="https://www.animenewsnetwork.com/">animenewsnetwork</a></li>
+                                </ul>
+                                <details>
+                                    <summary>
+                                        更多
+                                    </summary>
+                                    <div class="more">
+                                        <p>
+                                            <a href="https://www.aimanzhan.com/">爱漫展</a>
+                                            <a href="https://www.shengyouku.com/">声优库</a>
+                                            <a href="https://zh.wikipedia.org/">维基百科</a>
+                                            <a href="https://www.acgrenwu.com">ACG人物网</a>
+                                            <a href="http://www.2cyxw.com/">二次元小窝</a>
+                                            <a href="https://cppc.cc/#/rank/all/">动画评分排行榜</a>
+                                        </p>
+                                    </div>
+                                </details>
+                                <p>&nbsp;</p>
+                                <section id="bangumi-forms">
+                                    <h3>番组表</h3>
+                                    <ul>
+                                        <li> <a href="https://bgmlist.com/">番组放送</a></li>
+                                        <li> <a href="https://bgm.wiki/">番组wiki</a></li>
+                                        <li> <a href="https://hmacg.cn/bangumi/">动漫新番表</a></li>
+                                        <li> <a href="https://acgsecrets.hk/bangumi/">ACGsecrets新番表</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="http://yuc.wiki/">YuC's AnimeList</a></li>
+                                        <li> <a href="https://miroko.cn/">miroko新番表</a></li>
+                                    </ul>
+                                </section>
+                                <section id="Marking">
+                                    <h3>记录动画进度</h3>
+                                    <ul>
+                                        <li> <a href="http://anime.acgcon.top/">御宅世界</a></li>
+                                        <li> <a href="http://bgm.tv/">Bangumi番组计划</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://neodb.social/users/login/">Neodb</a></li>
+                                        <li> <a href="https://anilist.co/home">Anilist</a></li>
+                                        <li> <a href="https://github.com/linyi102/anime_trace">漫迹</a></li>
+                                        <li> <a href="http://www.dudulu.moe/">嘟嘟嘟二次元理想乡</a></li>
+                                    </ul>
+                                </section>
+                                <p>&nbsp;</p>
+                                <section id="Community-Forum">
+                                    <h2>社区与论坛</h2>
+                                    <ul>
+                                        <li> <a href="https://bbs.kfpromax.com/index.php">绯月</a></li>
+                                        <li> <a href="https://www.mfuns.net/">喵御宅</a></li>
+                                        <li> <a href="https://za2.org/">杂货屋</a></li>
+                                        <li> <a href="https://www.fffdann.com/">FFF团</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.53dushu.com/forum.php">读书会</a></li>
+                                        <li> <a href="https://mcyacg.com/">梦次元</a></li>
+                                        <li> <a href="https://www.xinqi8888.com/">次元社</a></li>
+                                        <li> <a href="https://www.diyidan.com/">第一弹</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://bbs.saraba1st.com/2b/forum.php">S1论坛</a></li>
+                                        <li> <a href="https://bbs2.seikuu.com/">星空论坛</a></li>
+                                        <li> <a href="https://iirose.com/">蔷薇花园</a></li>
+                                        <li> <a href="https://acg.is/">灵梦广场</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.nmbxd1.com/Home/Forum.html">X岛揭示版</a></li>
+                                        <li> <a href="https://acgn.zone/">ACG里世界</a></li>
+                                        <li> <a href="https://www.ecylt.top/">二次元论坛</a></li>
+                                        <li> <a href="http://www.sosg.net/">SOGO动漫论坛</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.gn00.com">技术宅社区</a>
+                                        <li> <a href="https://www.lcyll.com/">零次元社区</a></li>
+                                        <li> <a href="https://nga.cn/">NGA玩家社区</a></li>
+                                        <li> <a href="https://piliacg.cn/">霹雳动漫社区</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.tsdm39.com/forum.php">天使动漫论坛</a></li>
+                                        <li> <a href="https://www.pmxsd.com/">神奇宝贝新生代</a></li>
+                                        <li> <a href="https://hvhbbs.com/">贞德游戏交流论坛</a></li>
+                                        <li> <a href="https://www.cycg.xyz/">Sperteの次元茶馆</a></li>
+                                    </ul>
+                                    <details>
+                                        <summary>
+                                            更多
+                                        </summary>
+                                        <div class="more">
+                                            <p>
+                                                <a href="https://acgu.net/">尤萌</a>
+                                                <a href="https://www.v2ex.com/">v2ex</a>
+                                                <a href="https://pttweb.tw/">PPTWeb</a>
+                                                <a href="https://bbs.yamibo.com/">百合会</a>
+                                                <a href="https://mirror.chromaso.net/">M系镜像</a>
+                                                <a href="https://www.keyfc.net/bbs/index.aspx">keyfansclub 我们的梦想</a>
+                                                <a href="http://bbs2.kdays.net/">keydays论坛</a>
+                                                <a href="https://www.yukict.com/bbs/index.php">YUKI飛雪之城</a>
+                                                <a href="https://www.schub.top/">SC中文社区</a>
+                                                <a href="https://www.gtloli.gay/">哥特动漫王国</a>
+                                                <a href="https://www.gxdmw.com">高校动漫网</a>
+                                                <a href="http://www.otomedream.com/">翼梦舞城</a>
+                                                <a href="http://www.tuilixy.net/">贝克街推理学院</a>
+                                                <a href="https://bbs.sumisora.net/">澄空学园</a>
+                                                <a href="http://www.2cycd.com/">二次元虫洞</a>
+                                                <a href="https://bbs.dcybk.com/">多次元社区</a>
+                                                <a href="https://www.east-plus.net/">南+ South Plus</a>
+                                                <a href="https://bbs.cdbook.info/">cdbook</a>
+                                                <a href="https://bbs.fallenark.com/">堕落方舟</a>
+                                                <a href="https://mcseas.club/">混沌心海</a>
+                                                <a href="https://www.jingjiniao.info/">荆棘鸟学院论坛</a>
+                                                <a href="https://bbs4.2djgame.net/home/forum.php">2djgame</a>
+                                                <a href="https://cl-acg.com/index.html">御宅同萌</a>
+                                                <a href="https://eyny.com/member.php?mod=logging&action=login">伊莉讨论区</a>
+                                                <a href="https://www.acgnsq.com/">acgn社区</a>
+                                                <a href="https://mcacgsq.com/">喵茶acg社区</a>
+                                                <a href="https://www.anime-sharing.com/">Anime-Sharing</a>
+
+                                            </p>
+                                        </div>
+                                    </details>
+                                </section>
+                                <p>&nbsp;</p>
+                                <section id="comprehensives">
+                                    <h2>综合资源</h2>
+                                    <ul>
+                                        <li> <a href="https://www.ghxi.com/">果核剥壳</a></li>
+                                        <li> <a href="https://dimtown.com/">次元小镇</a></li>
+                                        <li> <a href="https://gmgard.com/">绅士之庭</a></li>
+                                        <li> <a href="https://www.i0c0i.com/">一库次元社</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="http://www.hanbao520.com/">轻之笔记</a></li>
+                                        <li> <a href="https://lspgal.us/">极点acg</a></li>
+                                        <li> <a href="https://www.acgnzy.com/">ACG资源网</a></li>
+                                        <li> <a href="https://teaeee.com/">二次元下午茶</a></li>
+
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.acgcbk11.vip/">ACGCBK</a></li>
+                                        <li> <a href="https://www.cywacg.moe/">次元w</a></li>
+                                        <li> <a href="https://www.acgndog.com/">次元狗</a></li>
+                                        <li> <a href="https://www.mikuclub.win/">初音社</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="http://www.kou.moe">萌口组</a></li>
+                                        <li> <a href="https://www.gkcool.cn/">极客酷</a></li>
+                                        <li> <a href="https://www.krloli.com/">氪哩氪哩</a></li>
+                                        <li> <a href="http://hgalgame.com/?cat=4">MAY社-宅の资源</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.dmoe.in/">暗萌</a></li>
+                                        <li> <a href="http://danmanba.cc/">旦漫吧</a></li>
+                                        <li> <a href="https://www.hacg.lv/">琉璃神社</a></li>
+                                        <li> <a href="https://saber.love/">saber酱的抱枕</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.mengzhan23.com/">萌站</a></li>
+                                        <li> <a href="https://github.com/miru-project/miru-app">miru</a></li>
+                                        <li> <a href="https://iui.su/">不死鸟</a></li>
+                                        <li> <a href="https://dodder01.top/">菟丝子资源社区</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://portbox.lol/">F-ACG</a></li>
+                                        <li> <a href="https://nav.190829.com/">彧曦导航</a></li>
+                                        <li> <a href="https://wlcbit.com/">阿良工具集</a></li>
+                                        <li> <a href="https://www.207788.xyz/">好网站不私藏</a></li>
+                                    </ul>
+                                    <details>
+                                        <summary>
+                                            更多
+                                        </summary>
+                                        <div class="more">
+                                            <a href="https://moeli-desu.com/">梦璃</a>
+                                            <a href="https://acgdb.de/">acgdb</a>
+                                            <a href="https://didisjhs.com/">司机会所</a>
+                                            <a href="https://www.ponpomu.com/home">白绒yuri</a>
+                                            <a href="https://sky.tkecys1.top/forum.php">天空ACG</a>
+                                            <a href="https://1ov3.top/">Puppet Studio</a>
+                                            <a href="https://al.chirmyram.com/">七米蓝的仓库</a>
+                                            <a href="https://sunshineboy.top/">SunshineBoy的杂乱仓库</a>
+                                            <a href="https://mirror.js.org/">你用得上的镜像网站</a>
+                                            <a href="https://docs.qq.com/sheet/DYUVBVUVvSUlkSVFE">文姐书籍目录</a>
+                                        </div>
+                                    </details>
+                                </section>
+                                <p>&nbsp;</p>
+                                <section id="Movie">
+                                    <h2>影视集合</h2>
+
+                                    <ul>
+                                        <li> <a href="https://soupian.one/">搜片</a></li>
+                                        <li> <a href="https://www.mypianku.net/">片库</a></li>
+                                        <li> <a href="http://www.hideystudio.xyz/">隐社</a></li>
+                                        <li> <a href="https://dianyinggou.com">电影狗</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://cupfox.app/">茶杯狐</a></li>
+                                        <li> <a href="https://725998.com/">茶杯虎</a></li>
+                                        <li> <a href="https://www.dadagui.me/">达达龟</a></li>
+                                        <li> <a href="https://www.mvcat.com">MVCAT</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://cokemv.me/">cokemv</a></li>
+                                        <li> <a href="https://www.btnull.to/">BTNull</a></li>
+                                        <li> <a href="https://www.appmovie.vip/">App影院</a></li>
+                                        <li> <a href="https://miao101.com/">旋风视频</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://gaze.run/">注视影视</a></li>
+                                        <li> <a href="https://www.juheyingshi.com/">聚合影视</a></li>
+                                        <li> <a href="https://www.bdys03.com/">哔嘀影视</a></li>
+                                        <li> <a href="https://ddys.tv/">低端影视</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://www.olehd.com/">欧乐影院</a></li>
+                                        <li> <a href="https://dmflm.com/">大米星球</a></li>
+                                        <li> <a href="https://dianyi.ng/">电影先生</a></li>
+                                        <li> <a href="https://duck3.top/">小鸭影音</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="http://www.gededy.com/">哥的电影网</a></li>
+                                        <li> <a href="https://toutiao.tudoutudou.top/">高清剧集网</a></li>
+                                        <li> <a href="https://www.libvio.me/">LIBVIO影视</a></li>
+                                        <li> <a href="https://www.jxsgssn.com/">大师兄影视</a></li>
+                                    </ul>
+                                    <details>
+                                        <summary>
+                                            更多
+                                        </summary>
+                                        <div class="more">
+                                            <p>
+                                                <a href="https://gimy.ai/">剧迷</a>
+                                                <a href="https://www.rijupao.com/">日剧跑</a>
+                                                <a href="https://www.shipinla.com/">视频啦</a>
+                                                <a href="https://yoyys1.com/">悠云影视</a>
+                                                <a href="https://atym.app/">艾兔影漫</a>
+                                                <a href="https://www.dytt360.com/">电影淘淘</a>
+                                                <a href="https://www.4khdr.cn/">4k论坛</a>
+                                                <a href="https://www.ikanbot.com/">爱看机器人</a>
+                                                <a href="https://www.ququmc.com/">扛把子影院</a>
+                                                <a href="https://www.k8w.cc/">k8电影网</a>
+                                                <a href="https://www.myd02.com/">美益达影视</a>
+                                                <a href="https://www.6bt0.com/">不太灵影视</a>
+                                            </p>
+                                        </div>
+                                    </details>
+                                    <p>&nbsp;</p>
+                                    <section id="movie-legal">
+                                        <h3>本地正版版权剧集平台</h3>
+                                        <ul>
+                                            <li> <a href="https://www.youku.com/channel/webhome">优酷</a></li>
+                                            <li> <a href="https://www.le.com/">乐视</a></li>
+                                            <li> <a href="https://www.iqiyi.com/">爱奇艺</a></li>
+                                            <li> <a href="https://www.mgtv.com/">芒果TV</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://www.pptv.com">PP视频</a></li>
+                                            <li> <a href="https://www.bilibili.com/tv/">bilibili</a></li>
+                                            <li> <a href="https://v.qq.com/channel/tv">腾讯视频</a></li>
+                                            <li> <a href="https://tv.sohu.com/">搜狐视频</a></li>
+                                        </ul>
+                                    </section>
+                                    <p>&nbsp;</p>
+                                    <section id="Pictures">
+                                        <h2>图站</h2>
+                                        <ul>
+                                            <li> <a href="https://yingtall.com/">樱糖</a></li>
+                                            <li> <a href="http://www.pixiv.net/">pixiv</a></li>
+                                            <li> <a href="https://pixiviz.xyz/">pixiviz</a></li>
+                                            <li> <a href="https://pixivel.moe/">Pixivel</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://danbooru.donmai.us/">danbooru</a></li>
+                                            <li> <a href="https://www.mooyuu.com/">摸鱼网</a></li>
+                                            <li> <a href="https://yiimii.com/">一米云图</a></li>
+                                            <li> <a href="https://bizihu.com/">壁纸湖网</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://www.chnci.cc/">chnci</a></li>
+                                            <li> <a href="https://www.someacg.top/">someacg</a></li>
+                                            <li> <a href="https://moepro.cn/">萌娘资源站</a></li>
+                                            <li> <a href="https://anime-pictures.net/">动漫图片和壁纸</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://www.evacg.org/">E次元</a></li>
+                                            <li> <a href="https://www.cosplay1314.com/">萌cos</a></li>
+                                            <li> <a href="https://bobopic.com/">bobopic</a></li>
+                                            <li> <a href="https://pixivbox.com/">pixivbox</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://rllacg.com/">啊咧咧</a></li>
+                                            <li> <a href="https://www.coserhub.net/">coserhub</a></li>
+                                            <li> <a href="https://cosaav.top/">ailiaili</a></li>
+                                            <li> <a href="https://yande.re/">/｜yande</a></li>
+
+                                        </ul>
+                                        <details>
+                                            <summary>
+                                                更多
+                                            </summary>
+                                            <div class="more">
+                                                <a href="https://www.pixivs.cn/">pixivNow</a>
+                                                <a href="https://safebooru.org/">safebooru</a>
+                                                <a href="https://konachan.net/post">konachan</a>
+                                                <a href="https://konachan.wjcodes.com/">konachan-chs</a>
+                                                <a href="https://anime-pictures.net/">Anime pictures and wallpapers</a>
+                                                <a href="https://www.zerochan.net/">zerochan动漫图像板</a>
+                                            </div>
+                                        </details>
+                                    </section>
+                                    <p>&nbsp;</p>
+                                    <section id="tool">
+                                        <h2>工具</h2>
+                                        <p>&nbsp;</p>
+                                        <h3>图床</h3>
+                                        <ul>
+                                            <li> <a href="https://imgloc.com/">图床</a></li>
+                                            <li> <a href="https://sm.ms/">smms</a></li>
+                                            <li> <a href="https://z4a.net/">Z4A图床</a></li>
+                                            <li> <a href="https://imgse.com/">路过图床</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://img.gejiba.com/">老王图床</a></li>
+                                            <li> <a href="https://www.superbed.cn/">聚合图床</a></li>
+                                            <li> <a href="https://mjj.today/">MjjTOday</a></li>
+                                            <li> <a href="https://postimages.org/">Postimages</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li> <a href="https://img.icepm.top/">ICEPM-img</a></li>
+                                            <li> <a href="https://p.sda1.dev/">流浪图床</a></li>
+                                            <li> <a href="https://www.imgurl.org/">ImgURL免费图床</a></li>
+                                            <li> <a href="https://ai.animedb.cn">Animetrace识图引擎</a></li>
+                                        </ul>
+                                    </section>
+                                    <section id="cloud drive"></section>
+                                    <h3>云盘/网盘</h3>
+                                    <p>&nbsp;</p>
+                                    <ul>
+                                        <li> <a href="https://www.lanzoui.com/">蓝奏云</a></li>
+                                        <li> <a href="https://mypikpak.com/zh-CN">PikPak</a></li>
+                                        <li> <a href="https://pan.mczyx.online/login">元素云盘</a></li>
+                                        <li> <a href="https://pan.baidu.com/">百度网盘</a></li>
+                                        <li> <a href="https://www.aliyundrive.com/">阿里云盘</a></li>
+                                        <li> <a href="https://cloud.189.cn/">天翼云盘</a></li>
+                                        <li> <a href="https://www.weiyun.com/index.html">腾讯微云</a></li>
+                                        <li> <a href="https://yun.139.com/">移动云盘</a></li>
+                                        <li> <a href="https://pan.xunlei.com/">迅雷云盘</a></li>
+                                        <li> <a href="https://www.123pan.com/">123云盘</a></li>
+                                        <li> <a href="https://pan.quark.cn/">夸克云盘</a></li>
+                                        <li> <a href="https://app.ctfile.com/">城通网盘</a></li>
+                                        <li> <a
+                                                href="https://www.google.com/intl/zh-CN/drive/features.html">Google云端硬盘</a>
+                                        </li>
+
+                                    </ul>
+                                </section>
+                                <p>&nbsp;</p>
+                                <section id="other">
+                                    <h3>其它</h3>
+                                    <p>&nbsp;</p>
+                                    <ul>
+                                        <li> <a href="https://wantquotes.net/">据意查句</a></li>
+                                        <li> <a href="https://netcut.cn/">网站粘贴版</a></li>
+                                        <li> <a href="http://cms.jpdazi.com/">JP搭子学日语</a></li>
+                                        <li> <a href="https://www.gnomic.cn/">Gnomic智能体平台</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://dona.chatyy.org/">ChatAi</a></li>
+                                        <li> <a href="https://shadows.brumm.af/">Smooth Shadows</a></li>
+                                        <li> <a href="https://browserleaks.com/ip">My Ip address</a></li>
+                                        <li> <a href="https://97by.cn/index/">onetool自动化云任务系统</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://marshmallow-qa.com/">棉花糖</a></li>
+                                        <li> <a href="https://saucenao.com/">saucenao</a></li>
+                                        <li> <a href="https://bibigpt.co/airss/home">Bibi gpt</a></li>
+                                        <li> <a href="https://samtoki.github.io/KanaMaster/">假名征服者</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li> <a href="https://mubu.com/">幕布</a></li>
+                                        <li> <a href="https://www.sxl.cn/">上线了</a></li>
+                                        <li> <a href="https://epub.liumingye.cn/">library</a></li>
+                                        <li> <a href="https://tool.liumingye.cn/">刘明野的工具箱</a></li>
+                                    </ul>
+                                </section>
+                                <details>
+                                    <summary>
+                                        更多
+                                    </summary>
+                                    <div class="more">
+                                        <p>
+                                            <a href="https://www.aicu.cc/">AICU</a>
+                                            <a href="https://wbot.ecylt.top/">wbot</a>
+                                            <a href="https://hzj.wiki/">汇总酱</a>
+                                            <a href="https://ai-sfc.yunyoujun.cn/">AI春联</a>
+                                            <a href="https://demo.unlock-music.dev/">音乐解锁</a>
+                                            <a href="https://exercism.org/">Exercism</a>
+                                            <a href="https://music.liuzhijin.cn/">音乐直链搜索</a>
+                                            <a href="https://listen1.github.io/listen1/">listen1音乐播放器</a>
+                                            <a href="https://www.arealme.com/cn">A Real Me</a>
+                                            <a href="http://cn.virtualdj.com/">virtualdj</a>
+                                            <a href="https://api.yimian.xyz/">Ushio API</a>
+                                            <a href="https://stay206.github.io/image/photos">随机动漫图片</a>
+
+                                        </p>
+                                    </div>
+                                </details>
     </div>
     </div>
 

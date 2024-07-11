@@ -15,6 +15,24 @@
         <h1>里世界</h1>
     </header>
     <div id="mySidenav" class="sidenav">
+        <p id="time">
+        <b>此页创建时间：</b><b id="start-time">2023/10/14</b>&nbsp;&nbsp;&nbsp;<b>此页最后更新：</b><b id="end-time"></b>
+        <script>
+            //最后更新网页时间
+            const lastUpdatedElement = document.getElementById('end-time');
+            const lastUpdatedDate = new Date(document.lastModified);
+            const options = {
+                year: 'numeric',
+                month: 'numeric',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
+            };
+            const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+            lastUpdatedElement.innerHTML = formattedDate
+        </script>
+        </p>
         <h2>本子漫画</h2>
         <br>
         <h3> 1.在线网站 </h3>
@@ -60,7 +78,6 @@
         <br>
         <h2>里番</h2>
         <br>
-        </summary>
         <ul>
             <li><a href="https://oreno3d.com/">俺の3Dエロ動画</a></li>
             <li><a href="https://anime1.pw/">裏番線上看</a></li>
@@ -100,7 +117,7 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <p>&nbsp;</p>  
+            <p>&nbsp;</p>
         </footder>
     </div>
     <style>
@@ -137,6 +154,30 @@
         header {
             background: linear-gradient(to right, #FF8BCE, #FF2EA0);
         }
+
+        #time {
+            text-align: center;
+            user-select: none;
+            padding: 40px;
+        }
+
+        #start-time {
+            color: #a09494;
+            font-weight: normal;
+        }
+
+        #start-time:hover {
+            color: pink;
+        }
+
+        #end-time {
+            color: #0077cc;
+        }
+
+        #end-time:hover {
+            color: #AEAEAE;
+        }
+
 
         ul {
             list-style-type: none;

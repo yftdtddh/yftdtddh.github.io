@@ -82,12 +82,12 @@ p {
     user-select: none;
 }
 
-ul li a {
+body ul li a {
     font-family: 'Minecraft-Bold';
 
 }
 
-ul li:hover {
+body ul li:hover {
     transform: scale(1.05);
     font-weight: 700;
 }

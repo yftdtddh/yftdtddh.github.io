@@ -123,7 +123,7 @@ header {
     float: left;
     color: #27D5CB;
     background: none;
-   
+
     font-weight: 700;
     font-style: italic;
     text-shadow: 3px 3px 5px #86ceca;
@@ -133,7 +133,7 @@ header {
 }
 
 #text-logo a {
-     font-size: 25px;
+    font-size: 25px;
 }
 
 #text-logo a:visited {
@@ -147,28 +147,89 @@ header {
     color: white;
 }
 
-.navigator {
+.nav-link {
     float: left;
-    line-height: 50px;
+    width: 100px;
+    line-height: 40px;
     padding-left: 50px;
+    text-align: center;
 }
 
-.navigator p a {
-    color: gray;
+.navlist a {
+    color: rgba(1, 0, 0, 0.956);
     font-size: 20px;
+    font-family: 'Default',
+        'Microsoft YaHei',
+        'tahoma',
+        'arial';
     line-height: 20px;
-    display: inline-block;
+    display: block;
+    animation: none;
 }
 
-.navigator p a:visited {
+.nav-link:hover {
+    background-color: #fff;
+}
+
+.navbar a {
+    padding: 15px;
+}
+
+.navbar a:visited {
     display: none;
 }
 
-.navigator p a:hover {
+.navbar a:hover {
     background: none;
     border-radius: none;
     color: rgb(90, 92, 6);
 }
+
+.navbar ul {
+    display: block;
+    flex-wrap: none;
+    justify-content: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
+
+.navbar li {
+    list-style: none;
+    float: left;
+    background-color: inherit;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    width: inherit;
+    animation: none;
+    cursor: pointer;
+
+}
+
+.navbar ul li:hover {
+    transform: none;
+    font-weight: inherit;
+}
+
+.droplist a {
+   display: none;
+}
+
+.nav-link:hover .droplist a {
+    display: block;
+}
+
+
+
+
+
+
+
+
 
 /* 头部css结束 */
 #header-end {

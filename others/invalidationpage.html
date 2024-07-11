@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="../images/网站图片.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/网站图片.jpg" type="image/x-icon">
     <title>木晞i的资源汇总 - 失效页</title>
     <base target="_blank">
 </head>
@@ -14,7 +14,26 @@
     <header>
         <h1>失效的网站</h1>
     </header>
+
     <div id="mySidenav" class="sidenav">
+        <p id="time">
+            <b>此页创建时间：</b><b id="start-time">2023/10/14</b>&nbsp;&nbsp;&nbsp;<b>此页最后更新：</b><b id="end-time"></b>
+            <script>
+                //最后更新网页时间
+                const lastUpdatedElement = document.getElementById('end-time');
+                const lastUpdatedDate = new Date(document.lastModified);
+                const options = {
+                    year: 'numeric',
+                    month: 'numeric',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric'
+                };
+                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+                lastUpdatedElement.innerHTML = formattedDate
+            </script>
+        </p>
         <ol>
             <li> <a href="https://sunfun.net/">森之屋动漫</a></li>
             <li> <a href="http://ci.moefz.cc/">萌语动漫</a></li>
@@ -58,13 +77,11 @@
             <li> <a href="https://jyacg.com">鲸云小说</a></li>
             <li> <a href="https://zz123.com">ZZ123</a></li>
             <li> <a href="https://ercygame.com/">幽隐恋梦</a></li>
-            <li> <a href="https://krkr.xyz/">花咲雨町</a></li>            
+            <li> <a href="https://krkr.xyz/">花咲雨町</a></li>
             <li> <a href="https://www.iwzyx.com/">蝶梦</a></li>
             <li> <a href="https://www.dongmanzx.com">漫资讯</a></li>
             <li> <a href="https://www.comicst.com">漫社堂</a></li>
             <li> <a href="https://www.heitaifun.com/">好耶追番</a></li>
-            <li> <a href="http://www.2cyxw.com/">二次元小窝</a></li>
-            <li> <a href="https://www.acgrenwu.com">ACG人物网</a></li>
             <li> <a href="https://www.xinqi088.com/">星期八</a></li>
             <li> <a href="https://www.acgke.org/">次元客</a></li>
             <li> <a href="https://www.xinqi088.com/">阅次元论坛</a></li>
@@ -72,7 +89,6 @@
             <li> <a href="http://xblm.tk/">芥子侠</a></li>
             <li> <a href="https://www.ecysj.net/">二次元世界</a></li>
             <li> <a href="https://www.wobbay.xyz/">Wobbay的资源小屋</a></li>
-            <li> <a href="https://666haoran.com/">浩然acg</a></li>
             <li> <a href="https://miaotudmw.com/">漫兔动漫社</a></li>
             <li> <a href="https://www.hmoe12.com/">萌幻之乡</a></li>
             <li> <a href="https://gkdworld.cf/">资源统筹局</a></li>
@@ -88,7 +104,7 @@
             <li> <a href="https://www.manhuadb.com/">漫画DB</a></li>
             <li> <a href="https://epub.love/wp/">图书馆的无限回廊</a></li>
             <li> <a href="https://voidlord.com/">虚空文学旅团</a></li>
-            
+
         </ol>
     </div>
     <style>
@@ -146,6 +162,30 @@
             text-align: center;
             padding: 20px 0;
         }
+
+        #time {
+            text-align: center;
+            user-select: none;
+            padding: 40px;
+        }
+
+        #start-time {
+            color: #a09494;
+            font-weight: normal;
+        }
+
+        #start-time:hover {
+            color: pink;
+        }
+
+        #end-time {
+            color: #0077cc;
+        }
+
+        #end-time:hover {
+            color: #AEAEAE;
+        }
+
 
         ol {
             list-style-type: none;
