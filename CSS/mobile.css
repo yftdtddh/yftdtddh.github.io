@@ -43,15 +43,6 @@ body a {
     font-size: 2rem;
 }
 
-.navigator,
-#menu-checkbox {
-    display: none;
-}
-
-#menu-checkbox:checked~div {
-    display: block;
-}
-
 #header-container {
     height: 30vh;
 }
