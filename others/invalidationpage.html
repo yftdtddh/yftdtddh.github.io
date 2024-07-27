@@ -17,22 +17,7 @@
 
     <div id="mySidenav" class="sidenav">
         <p id="time">
-            <b>此页创建时间：</b><b id="start-time">2023/10/14</b>&nbsp;&nbsp;&nbsp;<b>此页最后更新：</b><b id="end-time"></b>
-            <script>
-                //最后更新网页时间
-                const lastUpdatedElement = document.getElementById('end-time');
-                const lastUpdatedDate = new Date(document.lastModified);
-                const options = {
-                    year: 'numeric',
-                    month: 'numeric',
-                    day: 'numeric',
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    second: 'numeric'
-                };
-                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-                lastUpdatedElement.innerHTML = formattedDate
-            </script>
+            <b>此页创建时间：</b><b id="start-time">2023/10/14</b>
         </p>
         <ol>
             <li> <a href="https://sunfun.net/">森之屋动漫</a></li>
@@ -40,7 +25,6 @@
             <li> <a href="http://www.dmdm2020.com/">哆咪动漫网</a></li>
             <li> <a href="https://www.quqidm.com/">曲奇动漫</a></li>
             <li> <a href="http://www.dongman.fm/">动漫FM</a></li>
-            <li> <a href="http://www.36dm.club/">简单动漫</a></li>
             <li> <a href="#">半次元</a></li>
             <li> <a href="https://akdm.cc/">爱看动漫</a></li>
             <li> <a href="https://www.fqfun.com/">番茄动漫</a></li>
@@ -59,7 +43,6 @@
             <li> <a href="https://www.acgndmku.com/">ACG动漫库</a></li>
             <li> <a href="https://www.ktkkt.top/">卡通站</a></li>
             <li> <a href="https://yhuam.cc/">樱花萌ACG</a></li>
-            <li> <a href="https://www.92cj.com/">路漫漫</a></li>
             <li> <a href="https://www.i0m0i.com/">次元窝</a></li>
             <li> <a href="https://www.dmfuli.com/">动漫福利</a></li>
             <li> <a href="https://yhgyhg60.buzz/">移花宫</a></li>
@@ -98,12 +81,13 @@
             <li> <a href="http://www.dmand5.com/">动漫岛</a></li>
             <li> <a href="https://www.elfun.xyz/">ELFUN</a></li>
             <li> <a href="http://www.milimili.tv/">咪哩咪哩</a></li>
-            <li> <a href="https://anime.girigirilove.com/">girlgirl爱动漫~</a></li>
             <li> <a href="https://www.acg23.com/">ACG23</a></li>
             <li> <a href="https://acg02.cc/">次元計劃</a></li>
             <li> <a href="https://www.manhuadb.com/">漫画DB</a></li>
             <li> <a href="https://epub.love/wp/">图书馆的无限回廊</a></li>
             <li> <a href="https://voidlord.com/">虚空文学旅团</a></li>
+            <li> <a href="https://www.gn00.com">技术宅社区</a></li>
+            <li> <a href="https://www.lcyll.com/">零次元社区</a></li>
 
         </ol>
     </div>
@@ -177,15 +161,6 @@
         #start-time:hover {
             color: pink;
         }
-
-        #end-time {
-            color: #0077cc;
-        }
-
-        #end-time:hover {
-            color: #AEAEAE;
-        }
-
 
         ol {
             list-style-type: none;

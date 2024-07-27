@@ -16,30 +16,15 @@
     </header>
     <div id="mySidenav" class="sidenav">
         <p id="time">
-        <b>此页创建时间：</b><b id="start-time">2023/10/14</b>&nbsp;&nbsp;&nbsp;<b>此页最后更新：</b><b id="end-time"></b>
-        <script>
-            //最后更新网页时间
-            const lastUpdatedElement = document.getElementById('end-time');
-            const lastUpdatedDate = new Date(document.lastModified);
-            const options = {
-                year: 'numeric',
-                month: 'numeric',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric'
-            };
-            const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-            lastUpdatedElement.innerHTML = formattedDate
-        </script>
+        <b>此页创建时间：</b><b id="start-time">2023/10/14</b>
         </p>
         <h2>本子漫画</h2>
         <br>
         <h3> 1.在线网站 </h3>
         <ul>
             <li><a href="https://noy1.top/">noyacg</a></li>
-            <li><a href="http://cambiaip.org">禁漫天堂</a></li>
-            <li><a href="https://manhuabika.com/">哔咔漫画</a></li>
+            <li><a href="https://18comic-deadp.org/">禁漫天堂</a></li>
+            <li><a href="https://www.picacomic.com/">哔咔漫画</a></li>
             <li><a href="https://www.wnacg.org/">绅士漫画</a></li>
             <li><a href="https://boylove.cc/">香香腐宅</a></li>
             <li><a href="https://www.acgxmh.com/">acg漫画网</a></li>
@@ -58,6 +43,7 @@
             <li><a href="https://acgbeo.com/">ab站</a></li>
             <li><a href="https://nyahentai.info/">喵绅士</a></li>
             <li><a href="https://www.anix.moe/">anix</a></li>
+            <li><a href="https://www.acgmodel.com/">逆次元ACG</a></li>
         </ul>
         <br>
         <br>
@@ -169,15 +155,6 @@
         #start-time:hover {
             color: pink;
         }
-
-        #end-time {
-            color: #0077cc;
-        }
-
-        #end-time:hover {
-            color: #AEAEAE;
-        }
-
 
         ul {
             list-style-type: none;
