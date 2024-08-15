@@ -45,6 +45,7 @@ body a {
 
 #header-container {
     height: 30vh;
+    width: 100%;
 }
 
 #mobile-navigator {
@@ -89,7 +90,7 @@ body a {
 
 /* 导航css结束 */
 #headerend {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* 头部css结束 */

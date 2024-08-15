@@ -247,6 +247,10 @@ summary {
     display: none;
 }
 
+summary:active {
+    font-style: oblique;
+}
+
 .more a {
     transition: all 0.3s ease-in;
     padding: .4rem;
@@ -283,7 +287,7 @@ summary {
 /* 底部css开始 */
 footer {
     padding-bottom: 10px;
-    background: #1E1E1E;
+    background: #141212;
     color: #AEAEAE;
     text-transform: none;
     padding-top: 5px;
@@ -318,5 +322,6 @@ footer dl dt dd a {
 #hen {
     border-bottom: none;
 }
+
 
 /* 底部css结束 */
