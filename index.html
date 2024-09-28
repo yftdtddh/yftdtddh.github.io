@@ -3,24 +3,26 @@
 <html lang="zh-CN">
 
 <head>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="一个简单的动画、漫画、音乐、游戏、小说二次元综合网站导航。">
-    <meta name="keywords" content="动漫观看,小说阅读,漫画,在线观看,木晞i,免费小说,免费漫画,galgame,网站导航,在线观看,在线漫画,在线小说">
-    <title>动画、漫画、小说、综合资源一站汇总_木晞i的资源汇总</title>
-    <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images\网站.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="CSS/mobile.css" media="(orientation: portrait)">
-    <link rel="stylesheet" type="text/css" href="CSS\desktop.css" media="(orientation: landscape)">
-    <link rel="stylesheet" type="text/css" href="CSS\base.css">
-    <link rel="stylesheet" type="text/css" href="CSS\index.css">
-    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个简单的动画、漫画、音乐、游戏、小说二次元综合网站导航。提供免费小说、免费漫画、免费动画、免费音乐、免费游戏、二次元资料库、番组表、动画标记、免费GALGame等网站。">
+    <meta name="keywords" content="动漫观看,小说阅读,漫画,在线观看,木晞i,免费小说,免费漫画,galgame,网站导航,在线观看,在线漫画,在线小说,资源汇总,木晞i的资源汇总">
+    <meta name="author" content="木晞i">
+    <title>在线动漫、小说、音乐和游戏 - 木晞i的资源汇总导航</title>
     <base target="_blank">
+    <link rel="canonical" href="https://www.muxii.com/index.html">
+    <link rel="shortcut icon" href="images/网站.ico" type="image/x-icon">
+    <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/base.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/desktop.css" media="(orientation: landscape)">
+    <script src="index.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body onload="showPopup()">
@@ -33,9 +35,8 @@
             </button>
         </a>
     </div>
-
+<!--  回到顶部代码开始-->
     <script>
-        //回到顶部
         function showPopup() {
             document.getElementById("popup").style.display = "block";
         }
@@ -47,43 +48,48 @@
         const backtop = document.querySelector(".backtop");
         backtop.style.display = "none";
 
-        window.addEventListener('load', function () {
+        window.addEventListener('load', () => {
             const height = window.innerHeight;
 
-            window.onscroll = function () {
+            function handleScroll() {
                 if (window.pageYOffset > height) {
                     backtop.style.display = "block";
                 } else {
                     backtop.style.display = "none";
                 }
-            };
+            }
 
-            backtop.onclick = function () {
+            function scrollToTop() {
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
                 });
-                return false;
-            };
-        });
-    </script>
+            }
 
+            window.addEventListener('scroll', () => {
+                requestAnimationFrame(handleScroll);
+            });
+
+            backtop.addEventListener('click', scrollToTop);
+        }); 
+        
+    </script>
+<!-- 回到顶部代码结束 -->
     <!-- 弹窗开始 -->
     <div id="popup">
         <h2>通知</h2>
-        <b>普通更新。</b>
+        <b>动画网站维护更新</b>
         <br>
         <br>
-        <p> tip: <b>建议使用最新chrome浏览器访问</b><br>
-            <b>使用 <code>CTRL+F</code>，进行搜索</b>
+        <p> tip: <b>尽量使用最新版浏览器访问</b><br>
+            <b><code>CTRL+F</code>，进行搜索</b>
         </p>
         <br>
         <button id="notice-button" onclick="hidePopup()">隐藏</button>
     </div>
     <!-- 弹窗结束 -->
-
+    <!-- 头部部分开始 -->
     <header>
-        <!-- 头部部分开始 -->
         <div id="header-container">
             <div id="text-logo">
                 <a href="/" target="_self">资源汇总</a>
@@ -125,7 +131,7 @@
                         <ul class="droplist">
                             <li>
                                 <a href="#book-download" target="_self">下载</a>
-                                <a href="#novel-legal" target="_self">正版</a>                                
+                                <a href="#novel-legal" target="_self">正版</a>
                                 <a href="#novel-apps" target="_self">软件</a>
                             </li>
                         </ul>
@@ -206,9 +212,9 @@
         </div>
         </div>
     </header>
+    <!-- 头部部分结束 -->
     <hr style="border: dotted 2px #1444;">
-    <div id="mySidenav" class="sidenav">
-        <!-- 头部部分结束 -->
+    <div id="mySidenav" class="sidenav">     
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
@@ -226,6 +232,7 @@
         </div>
         <p id="time">
             <b>创建时间：</b><b id="start-time">2022/12/19</b>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><b id="end-time"></b>
+            <!-- 更新时间 -->
             <script>
                 //最后更新网页时间
                 const lastUpdatedElement = document.getElementById('end-time');
@@ -246,68 +253,138 @@
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <h2>动画</h2>
-            <h4>二十二个推荐站</h4>
+            <h4>二十个推荐站</h4>
             <br>
             <ul>
-                <li><a href="https://www.agemys.org/">AGE动漫</a><br><b>体验是不错，极少部分旧番可能搜索不到，新番更新速度尚可，无影响观看的广告存在。</b></li>
-                <li><a href="https://dick.xfani.com">稀饭动漫</a><br><b>前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。
-                        站内存有动画1700部以上。</b></li>
-            </ul>
-            <ul>
-                <li><a
-                        href="https://www.qkan8.com/">去看吧</a><br><b>看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。</b>
+                <li>
+                    <a href="https://www.agemys.org/">AGE动漫</a>
+                    <br>
+                    <b>
+                        体验是不错，极少部分旧番可能搜索不到，新番更新速度尚可，无影响观看的广告存在。
+                    </b>
                 </li>
-                <li><a href="https://www.dmmiku.com/">異世界動畫</a><br><b>天使动漫论坛指定在线动画观看网站)内可能有广告，外有广告，动画存有2300部以上。</b></li>
-            </ul>
-            <ul>
-                <li><a href="https://bangumi.online">新番组</a><br><b>专门看新番的网站，无内置广告。</b></li>
-                <li><a href="http://www.edddm.net/">EDD动漫</a><br><b>解决问题快，播放流畅。</b>
-            </ul>
-            <ul>
-                <li><a
-                        href="https://www.cycdm01.top/">次元城动漫</a><br><b>如出一辙的弹幕功能，没有国漫，部分老番搜索不到，所以适合看新番。视频中无广告存在。站内存有动画3300部以上</b>
-                </li>
-                <li><a href="https://www.mgnacg.com">橘子动漫</a><br><b>播放无问题，无内置广告，无需登录。站内存有动画900部以上。</b>
-            </ul>
-            <ul>
-                <li><a
-                        href="http://www.eacg.net/">E-ACG</a><br><b>一些片源是异世界和去看吧的，所以还是比较全的，但不建议用这个，视频中可能有广告存在。此站有一些资讯内容和剧集存在。站内存有动画8600部以上。</b>
-                </li>
-                <li><a href="https://www.tucao.cam/">吐槽弹幕网</a><br><b>吐槽是只有新番能看，老番不一定。至于广告，视频内广告我还真没看到。</b>
-            </ul>
-            <ul>
-                <li><a href="https://www.7sefun.top/">七色番</a><br><b>其他的不多说，视频内广告没有。站内存有动画2200部以上。</b></li>
-                <li><a href="https://www.5dm.link/">5弹幕</a><br><b>只看新番还是可以的。</b></li>
-            </ul>
-            <ul>
-                <li><a
-                        href="https://www.silisilifun.com/">嘶哩嘶哩</a><br><b>又是一个有账号有弹幕有追番有评论的动画网站。评论和弹幕人数比较多，只要是新番就有些讨论度。动画方面，好像每一个动画都是多源头（至少有三个）。根据其统计信息，有8919部动画。专题分类方面，还主要是分年月份。这个网站不要用梯子，进不去的。</b>
-                </li>
-                <li><a
-                        href="https://www.ezdmw.site/">E站弹幕网</a><br><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b>
+                <li>
+                    <a href="https://dick.xfani.com">稀饭动漫</a>
+                    <br>
+                    <b>
+                        前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。
+                        站内存有动画1700部以上。
+                    </b>
                 </li>
             </ul>
             <ul>
-                <li><a
-                        href="https://www.maigo.cc/">樱之空动漫</a><br><b>网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…</b>
+                <li>
+                    <a href="https://www.qkan8.com/">去看吧</a>
+                        <br>
+                        <b>
+                            看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。
+                        </b>
                 </li>
-                <li><a
-                        href="http://www.2kdm.com/">Mutefun</a><br><b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b>
+                <li>
+                    <a href="https://www.dmmiku.com/">異世界動畫</a>
+                    <br>
+                    <b>
+                        天使动漫论坛指定在线动画观看网站,有广告不影响观看。
+                    </b>
                 </li>
             </ul>
             <ul>
-                <li><a href="https://anime1.cc/">ANIME1</a><br><b>十分简洁，动画可能不太多，但新番肯定有的。</b></li>
-                <li><a
-                        href="http://pilipiliw.top/">Pilpili</a><br><b>页面很像bilibili，登录账号可以有追番、评论、下载（网页端应该不能下？）和转发功能。好像留存动画有48900以上。</b>
+                <li>
+                    <a href="https://bangumi.online">新番组</a>
+                    <br>
+                    <b>专门看新番的网站，无内置广告。</b>
+                </li>
+                <li>
+                    <a href="https://www.ntdm9.com/">nt动漫</a>
+                    <br>
+                    <b>动画多，播放流畅</b>
                 </li>
             </ul>
             <ul>
-                <li><a href="https://www.gugufan.com/">咕咕番</a><br><b> 播放什么的测不出来，要登录账号。没有弹窗或横幅广告。站内存有动画3100部以上。</b></li>
-                <li><a href="https://catw.moe/">喵物次元</a><br><b>播放流畅，视频清晰，无广告。别用梯子观看，会加载失败。站内存有动画1500部以上。</b></li>
+                <li>
+                    <a href="https://www.xiyedm.com/">西野动漫</a>
+                    <br>
+                    <b>暂无评价</b>
+                </li>
+                <li>
+                    <a href="https://www.mgnacg.com">橘子动漫</a>
+                    <br>
+                    <b>播放无问题，无内置广告，无需登录。站内存有动画900部以上。</b>
             </ul>
             <ul>
-                <li><a href="https://www.xn--79q440a.xyz/">出差屋</a><br><b>无广。</b></li>
-                <li><a href="https://www.dqsj.top/">打驴动漫</a><br><b>不登录可以看，暂停有广告。就是这个网站除了动画，什么综艺电视剧电影，都有的。</b></li>
+                <li>
+                    <a href="http://www.eacg.net/">E-ACG</a>
+                    <br>
+                    <b>一些片源是异世界和去看吧的，需要VPN才能访问。</b>
+                </li>
+                <li>
+                    <a href="https://www.tucao.cam/">吐槽弹幕网</a>
+                    <br>
+                    <b>吐槽是只有新番能看，老番不一定。至于广告，视频内广告我还真没看到。</b>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.7sefun.top/">七色番</a>
+                    <br>
+                    <b>其他的不多说，视频内广告没有。站内存有动画2200部以上。</b>
+                </li>
+                <li>
+                    <a href="https://www.5dm.link/">5弹幕</a>
+                    <br>
+                    <b>只看新番还是可以的。</b>
+                </li>
+            </ul>
+            <ul>
+                    <li>
+                        <a href="https://www.dqsj.top/">打驴动漫</a>
+                        <br>
+                        <b>不登录可以看，暂停有广告。就是这个网站除了动画，什么综艺电视剧电影，都有的。</b>
+                    </li>
+                <li>
+                    <a href="https://www.ezdmw.site/">E站弹幕网</a>
+                    <br>
+                    <b>
+                        拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。
+                    </b>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://www.maigo.cc/">樱之空动漫</a>
+                    <br>
+                    <b>
+                        网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…
+                    </b>
+                </li>
+                <li>
+                    <a href="http://www.2kdm.com/">Mutefun</a>
+                        <br>
+                        <b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="https://anime1.cc/">ANIME1</a>
+                    <br>
+                    <b>十分简洁，动画可能不太多，但新番肯定有的。</b>
+                </li>
+               <li>
+                    <a href="https://www.gugufan.com/">咕咕番</a>
+                    <br>
+                    <b> 播放什么的测不出来，要登录账号。没有弹窗或横幅广告。站内存有动画3100部以上。</b>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="http://www.acgnya.com/">ACGnya</a>
+                    <br>
+                    <b>暂无评价</b>
+                </li>
+                <li>
+                    <a href="https://www.nyafun.net/">nyafun</a>
+                    <br>
+                    <b>暂无评价</b>
+                </li>
             </ul>
         </section>
         <section id="anime">
@@ -318,31 +395,31 @@
                 <li> <a href="http://bilfun.cc/">萌番</a></li>
                 <li> <a href="https://www.dmdm0.com/">动漫蛋</a></li>
                 <li> <a href="http://www.kelatv.com/">克拉TV</a></li>
-                <li> <a href="https://www.mitang.tv/">蜜糖动漫</a></li>
+                <li> <a href="https://www.akianime.cc/">akianime</a></li>
             </ul>
-            <ul>
-                <li> <a href="https://www.ntdm9.com/">nt动漫</a></li>
-                <li> <a href="http://www.acgnya.com/">ACGnya</a></li>
-                <li> <a href="https://www.nyafun.net/">nyafun</a></li>
-                <li> <a href="https://nicohub.cc/">Nico Project</a></li>
+            <ul>     
+                <li> <a href="https://www.mxdm.xyz/">mx动漫</a></li>
+                <li> <a href="https://www.huazidm.com/">花子动漫</a></li>
+                <li> <a href="http://ppxdm.com/">PPXDM动漫</a></li>
+                <li> <a href="https://www.ssrfun.com/">SSRFun动漫</a></li>
             </ul>
             <ul>
                 <li> <a href="https://xuandm.com/">XDM动漫</a></li>
-                <li> <a href="http://www.nicotv.club/">妮可动漫</a></li>
+                <li> <a href="https://www.mitaodm.com/">蜜桃动漫</a></li>
                 <li> <a href="https://www.iyxdm.cc">怡萱动漫</a></li>
                 <li> <a href="http://www.xxmanmi.com/">小小漫迷</a></li>
             </ul>
             <ul>
-                <li> <a href="http://nnfan.natapp1.cc/">椰羊动漫</a></li>
-                <li> <a href="https://www.acgyaojun.com/">亿萌动漫</a></li>
+                <li> <a href="https://www.ziyedm.com/">子夜动漫</a></li>
+                <li> <a href="https://www.fsdm02.com/">番薯动漫</a></li>
                 <li> <a href="https://www.opacg.com">欧派动漫</a></li>
                 <li> <a href="https://animoe.org/">Animeo动漫</a></li>
             </ul>
             <ul>
                 <li> <a href="https://dm84.tv/">动漫巴士</a></li>
                 <li> <a href="https://myself-bbs.com/portal.php">myself动漫</a></li>
-                <li> <a href="https://www.anfuns.cc/">ANFUNS动漫</a></li>
-                <li> <a href="https://anime.girigirilove.com/">girlgirl爱动漫~</a></li>               
+                <li> <a href="https://www.acg.party/">次元派对动漫</a></li>
+                <li> <a href="https://anime.girigirilove.com/">girlgirl爱动漫~</a></li>
             </ul>
         </section>
         <details>
@@ -357,7 +434,6 @@
                     <a href="https://cyfz.vip/">次元方舟动漫网</a>
                     <a href="https://www.vdm8.com/">樱花动漫网</a>
                     <a href="http://www.qimiqimi.net/">奇米奇米</a>
-                    <a href="https://www.mxdm.xyz/">mx动漫</a>
                     <a href="https://www.clicli.cc/">clicli弹幕网</a>
                     <a href="https://www.invbo.top/home">invboTv</a>
                     <a href="https://ebb.io/">ebb动漫</a>
@@ -368,7 +444,6 @@
                     <a href="https://www.dongmankk.com/">动漫看看</a>
                     <a href="http://www.acglala.cc/">拉拉动漫</a>
                     <a href="https://www.xiuluodm.com/">修罗动漫</a>
-                    <a href="https://www.fsdm02.com/">番薯动漫</a>
                     <a href="http://yinghuacd.com/">樱花动漫</a>
                     <a href="http://74fan.com/">樱花动漫</a>
                     <a href="http://qdtsdp.com/">樱花动漫</a>
@@ -381,29 +456,19 @@
                     <a href="https://www.857yhw.com/">樱花动漫</a>
                     <a href="http://m.yinghua8.io/">樱花动漫</a>
                     <a href="https://www.dk95.com/">大咖动漫</a>
-                    <a href="http://ppxdm.com/">PPXDM动漫</a>
                     <a href="https://www.maxacg.com/">马斯克动漫</a>
                     <a href="https://anitaku.to/home.html">GOgoanime</a>
-                    <a href="https://www.ziyedm.com/">子夜动漫</a>
                     <a href="https://www.tinaacg.net/">Tinaacg番剧网</a>
                     <a href="https://sp.xn--vzyr4p.top/">acg之王</a>
-                    <a href="https://tsdm.cc/latest">天使动漫</a>
-                    <a href="https://www.akianime.cc/">akianime</a>
-                    <a href="https://www.ssrfun.com/">SSRFun动漫</a>
-                    <a href="https://www.huazidm.com/">花子动漫</a>
-                    <a href="https://www.acg.party/">次元派对动漫</a>
-                    <a href="https://www.fre321.com/anime/s">FRE123 动漫搜索引擎</a>
-                    <a href="https://manhua.xiguatv.cn/">西瓜动漫</a>
-                    <a href="https://www.mitaodm.com/">蜜桃动漫</a>
-                    <a href="https://msousou.vip/">漫搜搜</a>
-                    <a href="https://www.xiyedm.com/">西野动漫</a>
+                    <a href="https://tsdm.cc/latest">天使动漫</a>                                                                            
+                    <a href="https://www.fre321.com/anime/s">FRE123 动漫搜索引擎</a>                 
+                    <a href="https://msousou.vip/">漫搜搜</a>                   
                     <a href="https://www.aaeza.com/">age动漫</a>
                     <a href="https://www.acgvod.com/">ACG动漫网</a>
                     <a href="https://www.dora-video.cn/">哆啦新番社</a>
                     <a href="https://www.9dm.top/">童年国语社</a>
                     <a href="https://www.zmsub.top/">织梦字幕组发布站</a>
                     <a href="https://yysub.top/">夜莺家族字幕组</a>
-
 
                 </p>
             </div>
@@ -450,6 +515,7 @@
                 <li> <a href="https://www.yydm1.cc/">丫丫动漫</a></li>
             </ul>
             <ul>
+                <li> <a href="https://catw.moe/">喵物次元</a></li>
                 <li> <a href="https://www.dandanplay.com/">弹弹play</a></li>
                 <li> <a href="https://www.autobangumi.org/">autobangumi</a></li>
             </ul>
@@ -688,7 +754,7 @@
                     <a href="https://www.zhongguomanhua.com/">中国漫画</a>
                     <a href="https://www.meirimanhua.com/">每日漫画</a>
                     <a href="https://www.manhuajingxuan.com/">漫画精选</a>
-                    
+
                 </p>
             </div>
         </details>
@@ -779,13 +845,13 @@
             <p>&nbsp;</p>
             <h2>小说</h2>
             <h3>线上读</h3>
-            <ul>    
+            <ul>
                 <li> <a href="https://www.luoshu1.com/">洛书</a></li>
                 <li> <a href="https://masiro.me/admin">真白萌</a></li>
-                <li> <a href="https://www.lightnovel.app/">轻书架</a></li>               
+                <li> <a href="https://www.lightnovel.app/">轻书架</a></li>
                 <li> <a href="https://books.fishhawk.top/">轻小说机翻机器人</a></li>
             </ul>
-            <ul>         
+            <ul>
                 <li> <a href="https://ibooks.org.cn/">读书小站</a></li>
                 <li> <a href="https://www.wenku8.net/index.php">轻小说文库</a></li>
                 <li> <a href="https://www.linovelib.com/">哔哩轻小说</a></li>
@@ -801,7 +867,7 @@
         <details>
             <summary>更多</summary>
             <div class="more">
-                <p>                   
+                <p>
                     <a href="https://m.ituishu.com/">爱推书</a>
                 </p>
             </div>
@@ -1146,7 +1212,7 @@
             <div class="more">
                 <p>
                     <a href="https://mirai-mad.com/cn/welcome">MMGC</a>
-                    <a href="http://mymomoda.com/">末末哒ACG</a>  
+                    <a href="http://mymomoda.com/">末末哒ACG</a>
                     <a href="https://www.005.tv/index.html">羁绊动漫网</a>
                     <a href="https://madproducer.com/">MAD综合信息平台</a>
                 </p>
@@ -1389,7 +1455,7 @@
                 <a href="https://www.gkcool.cn/">极客酷</a>
                 <a href="https://www.z888t.com/">源盘熊</a>
                 <a href="https://www.krloli.com/">氪哩氪哩</a>
-                <a href="https://didisjhs.com/">司机会所</a> 
+                <a href="https://didisjhs.com/">司机会所</a>
                 <a href="https://portbox.lol/">F-ACG</a>
                 <a href="https://www.ponpomu.com/home">白绒yuri</a>
                 <a href="https://sky.tkecys1.top/forum.php">天空ACG</a>
@@ -1426,7 +1492,7 @@
                 <li> <a href="https://jkecy.top/">jk二次元导航</a></li>
                 <li> <a href="https://www.acgcyc.com/">ACG次元窗导航</a></li>
             </ul>
-            <ul> 
+            <ul>
                 <li> <a href="https://www.shandiandh.com/">闪电导航</a></li>
                 <li> <a href="https://www.rrnav.com/">萌导航网</a></li>
                 <li> <a href="https://moecy.org/">萌次元导航</a></li>
@@ -1741,7 +1807,7 @@
         <div id="footer-link" align="center">
             <dl>
                 <dt>相关网站</dt>
-                <dd><a href="https://muxiyuj.bangumi.cyou/">blog</a></dd>
+                <dd><a href="https://muxiyuj.github.io/">blog</a></dd>
                 <dd><a href="https://webcull.com/w/muxiyuj">备份</a></dd>
                 <dd><a href="https://stay206.github.io">墨云导航</a></dd>
             </dl>

@@ -35,40 +35,51 @@ a>.btnbacktop {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    padding: 20px;
     text-align: center;
-    background-color: #CDEFFA;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    background: linear-gradient(135deg, rgba(205, 239, 250, 0.9), rgba(163, 217, 255, 0.9));
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     z-index: 9999;
     user-select: none;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 #popup p {
     margin-bottom: 20px;
     font-size: 18px;
-    line-height: 1.5;
-    color: #555;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgba(51, 51, 51, 0.9);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 #notice-button {
     display: block;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #0077cc;
     color: #fff;
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     cursor: pointer;
-    transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #notice-button:hover {
     background-color: #005fa3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#notice-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 弹窗公告css结束 */
@@ -84,6 +95,7 @@ body {
 }
 
 /* 背景图片css结束 */
+/* 头部css开始 */
 header {
     padding: 0;
     margin: 0;
@@ -220,7 +232,6 @@ header {
 .nav-link:hover .droplist a {
     display: block;
 }
-
 /* 头部css结束 */
 #header-end {
     padding-top: 15px;
