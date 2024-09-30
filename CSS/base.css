@@ -110,15 +110,6 @@ code {
     background-color: #BCB399;
 }
 
-span {
-    border-bottom: solid 1px black;
-    margin-top: 1em;
-}
-
-span:hover {
-    color: skyblue;
-}
-
 button {
     display: block;
     margin: 0 auto;
