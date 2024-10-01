@@ -45,6 +45,7 @@ menu {
     src: url(fonts/Minecraft-Bold.otf)
 }
 
+h1,
 h2,
 h3,
 h4,
@@ -56,17 +57,15 @@ h6 {
     user-select: none;
 }
 
-h2 {
-    padding-bottom: 30px;
-}
+
 
 h3 {
-    border-bottom: solid 1px black;
+    color: rgb(204, 127, 140);
+    border-bottom: solid 4px rgb(173, 171, 171);
 }
 
 dl {
     display: inline-block;
-
 }
 
 del {
@@ -80,16 +79,6 @@ br {
 
 p {
     user-select: none;
-}
-
-ul li a {
-    font-family: 'Minecraft-Bold';
-
-}
-
-ul li:hover {
-    transform: scale(1.05);
-    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -167,7 +156,6 @@ span::selection {
     background-color: red;
 
 }
-
 /* 链接样式结束 */
 /*  备用背景
 body {
