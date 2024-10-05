@@ -35,54 +35,52 @@
             </button>
         </a>
     </div>
-    <!--  回到顶部代码开始-->
+    <!--回到顶部代码开始-->
     <script>
+        // 显示弹窗的函数
         function showPopup() {
             document.getElementById("popup").style.display = "block";
         }
 
+        // 隐藏弹窗的函数，并记录隐藏时间
         function hidePopup() {
-            document.getElementById("popup").style.display = "none";
+            const hideDuration = 12 * 60 * 60 * 1000; // 12小时的毫秒数
+            const hiddenUntil = Date.now() + hideDuration; // 当前时间加上隐藏时间
+            localStorage.setItem("popupHiddenUntil", hiddenUntil); // 存储隐藏时间
+            document.getElementById("popup").style.display = "none"; // 隐藏弹窗
         }
 
-        const backtop = document.querySelector(".backtop");
-        backtop.style.display = "none";
-
+        // 页面加载时检查是否应显示弹窗
         window.addEventListener('load', () => {
-            const height = window.innerHeight;
+            const hiddenUntil = localStorage.getItem("popupHiddenUntil");
+            const now = Date.now(); // 当前时间戳
 
-            function handleScroll() {
-                if (window.pageYOffset > height) {
-                    backtop.style.display = "block";
-                } else {
-                    backtop.style.display = "none";
-                }
+            // 如果存在隐藏时间，并且当前时间小于隐藏时间，则不显示弹窗
+            if (hiddenUntil && now < hiddenUntil) {
+                document.getElementById("popup").style.display = "none";
+            } else {
+                showPopup(); // 否则显示弹窗
             }
 
-            function scrollToTop() {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
+            // 假设弹窗内有一个关闭按钮，点击后隐藏弹窗
+            const closeButton = document.getElementById("close-popup");
+            if (closeButton) {
+                closeButton.addEventListener('click', hidePopup);
             }
-
-            window.addEventListener('scroll', () => {
-                requestAnimationFrame(handleScroll);
-            });
-
-            backtop.addEventListener('click', scrollToTop);
         });
-
     </script>
     <!-- 回到顶部代码结束 -->
     <!-- 弹窗开始 -->
     <div id="popup">
         <h2>通知</h2>
-        <b>国庆第四天：社区、资源论坛、综合、源头维护更新。</b>
+        <b>国庆第五天：影视、图站、工具维护更新。</b>
         <br>
         <br>
-        <p> tip: <b>尽量使用最新版浏览器访问</b><br>
-            <b><code>CTRL+F</code>，进行搜索</b>
+        <p>TIPS:</p>
+        <p>  
+            <b>弹窗关闭12小时后，将再次显示</b><br>
+            <b>尽量使用最新版浏览器访问</b><br>
+            <b><code><u>CTRL+F</u></code>进行搜索</b>
         </p>
         <br>
         <button id="notice-button" onclick="hidePopup()">隐藏</button>
@@ -1323,9 +1321,9 @@
                     <a href="https://bbs.xkacg.com/">夏空社</a>
                     <a href="https://bbs.memowind.org/">回忆之风</a>
                     <a href="https://www.skyrivers.org/">天河学园</a>
-                    <a href="http://www.tokimekiclub.org/">心跳回忆网络</a>                                      
+                    <a href="http://www.tokimekiclub.org/">心跳回忆网络</a>
                     <a href="https://www.keyfc.net/bbs/index.aspx">keyfansclub 我们的梦想</a>
-                   
+
                     <a href="https://www.schub.top/">SC中文社区</a>
                     <a href="https://www.gtloli.gay/">哥特动漫王国</a>
                     <a href="http://www.otomedream.com/">翼梦舞城</a>
@@ -1384,7 +1382,7 @@
                 <p>
                     <a href="https://www.panleyuan.com/">盘乐园</a>
                     <a href="http://www.pcmoe.net/forum.php">萌研社</a>
-                    <a href="http://danmanba.cc/">旦漫吧</a>                   
+                    <a href="http://danmanba.cc/">旦漫吧</a>
                     <a href="http://b.2cy.in/">风度论坛</a>
                     <a href="http://bbs2.kdays.net/">keydays论坛</a>
                     <a href="https://www.27cat.com/forum.php">27cat论坛</a>
@@ -1444,7 +1442,7 @@
                 <a href="http://www.kou.moe">萌口组</a>
                 <a href="https://www.gkcool.cn/">极客酷</a>
                 <a href="https://www.z888t.com/">源盘熊</a>
-                <a href="https://www.krloli.com/">氪哩氪哩</a>  
+                <a href="https://www.krloli.com/">氪哩氪哩</a>
                 <a href="https://portbox.lol/">F-ACG</a>
                 <a href="https://www.ponpomu.com/home">白绒yuri</a>
                 <a href="https://sky.tkecys1.top/forum.php">天空ACG</a>
@@ -1454,7 +1452,7 @@
                 <a href="https://al.chirmyram.com/">七米蓝的仓库</a>
                 <a href="https://sunshineboy.top/">SunshineBoy的杂乱仓库</a>
                 <a href="https://mirror.js.org/">你用得上的镜像网站</a>
-                
+
             </div>
         </details>
         <section id="origin">
@@ -1507,7 +1505,7 @@
                         <a href="https://www.moooyu.com/">墨鱼导航</a>
                         <a href="https://huamao.vip/">花猫导航</a>
                         <a href="https://2sdh.com/">二叔导航</a>
-                        <a href="https://www.akgdh.com/">爱科技导航</a>                        
+                        <a href="https://www.akgdh.com/">爱科技导航</a>
 
                     </p>
                 </div>
@@ -1518,9 +1516,9 @@
             <h2>影视集合</h2>
             <ul>
                 <li> <a href="https://soupian.one/">搜片</a></li>
-                <li> <a href="https://www.mypianku.net/">片库</a></li>
-                <li> <a href="http://www.hideystudio.xyz/">隐社</a></li>
-                <li> <a href="https://dianyinggou.com">电影狗</a></li>
+                <li> <a href="https://gimy.ai/">剧迷</a></li>
+                <li> <a href="https://www.freeok.pro/">FREEOK</a></li>
+                <li> <a href="https://www.voflix.fun/">VOFLIX</a></li>
             </ul>
             <ul>
                 <li> <a href="https://cupfox.app/">茶杯狐</a></li>
@@ -1530,26 +1528,26 @@
             </ul>
             <ul>
                 <li> <a href="https://cokemv.me/">cokemv</a></li>
-                <li> <a href="https://www.btnull.si/">BTNull</a></li>
+                <li> <a href="https://www.gying.org/user/login/">观影 GYING</a></li>
                 <li> <a href="https://www.appmovie.vip/">App影院</a></li>
                 <li> <a href="https://miao101.com/">旋风视频</a></li>
             </ul>
             <ul>
                 <li> <a href="https://gaze.run/">注视影视</a></li>
                 <li> <a href="https://www.juheyingshi.com/">聚合影视</a></li>
-                <li> <a href="https://www.bdys03.com/">哔嘀影视</a></li>
+                <li> <a href="https://www.yjys05.com/">缘觉影视</a></li>
                 <li> <a href="https://ddys.tv/">低端影视</a></li>
             </ul>
             <ul>
                 <li> <a href="https://www.olehd.com/">欧乐影院</a></li>
-                <li> <a href="https://dmflm.com/">大米星球</a></li>
+                <li> <a href="https://dm8p2q6.site/">大米星球</a></li>
                 <li> <a href="https://dianyi.ng/">电影先生</a></li>
                 <li> <a href="https://duck3.top/">小鸭影音</a></li>
             </ul>
             <ul>
                 <li> <a href="http://www.gededy.com/">哥的电影网</a></li>
                 <li> <a href="https://toutiao.tudoutudou.top/">高清剧集网</a></li>
-                <li> <a href="https://www.libvio.me/">LIBVIO影视</a></li>
+                <li> <a href="https://libvio.link/">LIBVIO影视</a></li>
                 <li> <a href="https://iqiyis.com/">奇思影视</a></li>
             </ul>
         </section>
@@ -1559,9 +1557,6 @@
             </summary>
             <div class="more">
                 <p>
-                    <a href="https://gimy.ai/">剧迷</a>
-                    <a href="https://www.freeok.pro/">FREEOK</a>
-                    <a href="https://www.voflix.fun/">VOFLIX</a>
                     <a href="https://vidhub1.cc/">Vidhub</a>
                     <a href="https://www.rijupao.com/">日剧跑</a>
                     <a href="https://www.shipinla.com/">视频啦</a>
@@ -1572,7 +1567,6 @@
                     <a href="https://www.bdys2020.com/">BD影视</a>
                     <a href="https://www.flixflop.com/">飞流视频</a>
                     <a href="https://ibaopian.com/">宝片视频</a>
-                    <a href="https://www.yjys02.com/">缘觉影视</a>
                     <a href="https://yoyys1.com/">悠云影视</a>
                     <a href="https://atym.app/">艾兔影漫</a>
                     <a href="https://www.dytt360.com/">电影淘淘</a>
@@ -1618,7 +1612,7 @@
             <p>&nbsp;</p>
             <h2>图站</h2>
             <ul>
-                <li> <a href="https://yingtall.com/">樱糖</a></li>
+                <li> <a href="https://konachan.net/post">konachan</a></li>
                 <li> <a href="http://www.pixiv.net/">pixiv</a></li>
                 <li> <a href="https://pixiviz.xyz/">pixiviz</a></li>
                 <li> <a href="https://pixivel.moe/">Pixivel</a></li>
@@ -1637,12 +1631,12 @@
             </ul>
             <ul>
                 <li> <a href="https://www.evacg.org/">E次元</a></li>
-                <li> <a href="https://www.cosplay1314.com/">萌cos</a></li>
+                <li> <a href="https://www.pixivs.cn/">pixivNow</a></li>
                 <li> <a href="https://bobopic.com/">bobopic</a></li>
                 <li> <a href="https://pixivbox.com/">pixivbox</a></li>
             </ul>
             <ul>
-                <li> <a href="https://rllacg.com/">啊咧咧</a></li>
+                <li> <a href="https://safebooru.org/">safebooru</a></li>
                 <li> <a href="https://www.coserhub.net/">coserhub</a></li>
                 <li> <a href="https://cosaav.top/">ailiaili</a></li>
                 <li> <a href="https://yande.re/">/｜yande</a></li>
@@ -1654,9 +1648,6 @@
                 更多
             </summary>
             <div class="more">
-                <a href="https://www.pixivs.cn/">pixivNow</a>
-                <a href="https://safebooru.org/">safebooru</a>
-                <a href="https://konachan.net/post">konachan</a>
                 <a href="https://konachan.wjcodes.com/">konachan-chs</a>
                 <a href="https://anime-pictures.net/">Anime pictures and wallpapers</a>
                 <a href="https://www.zerochan.net/">zerochan动漫图像板</a>
@@ -1669,19 +1660,17 @@
             <p>&nbsp;</p>
             <h3>图床</h3>
             <ul>
-                <li> <a href="https://imgloc.com/">图床</a></li>
                 <li> <a href="https://sm.ms/">smms</a></li>
                 <li> <a href="https://z4a.net/">Z4A图床</a></li>
                 <li> <a href="https://imgse.com/">路过图床</a></li>
             </ul>
             <ul>
-                <li> <a href="https://img.gejiba.com/">老王图床</a></li>
                 <li> <a href="https://www.superbed.cn/">聚合图床</a></li>
                 <li> <a href="https://mjj.today/">MjjTOday</a></li>
                 <li> <a href="https://postimages.org/">Postimages</a></li>
             </ul>
             <ul>
-                <li> <a href="https://img.icepm.top/">ICEPM-img</a></li>
+
                 <li> <a href="https://p.sda1.dev/">流浪图床</a></li>
                 <li> <a href="https://www.imgurl.org/">ImgURL免费图床</a></li>
                 <li> <a href="https://ai.animedb.cn">Animetrace识图引擎</a></li>
@@ -1711,7 +1700,6 @@
                 <li> <a href="https://app.ctfile.com/">城通网盘</a></li>
             </ul>
             <ul>
-                <li> <a href="http://www.xunniuyun.com/">讯牛网盘</a></li>
                 <li> <a href="https://www.feijipan.com/">小飞机网盘</a></li>
                 <li> <a href="https://www.google.com/intl/zh-CN/drive/features.html">Google云端硬盘</a></li>
 
