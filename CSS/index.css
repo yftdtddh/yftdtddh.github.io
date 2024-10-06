@@ -2,368 +2,555 @@
 /* 回到顶部css开始 */
 .backtop {
     position: fixed;
+    /* 固定定位 */
     right: 2rem;
+    /* 右侧距离 */
     bottom: 2rem;
+    /* 底部距离 */
     z-index: 3000;
+    /* z轴顺序 */
 }
 
 .backtop a:hover {
     background: none;
+    /* 悬停时无背景 */
 }
 
 a>.btnbacktop {
     font-size: 3rem;
+    /* 字体大小 */
     margin: 1rem 0 0;
+    /* 上、右、下、左边距 */
     padding: 0;
+    /* 内边距为0 */
     width: 3.33rem;
+    /* 宽度 */
     height: 3.33rem;
+    /* 高度 */
     line-height: 0;
+    /* 行高 */
     color: #333;
-    background-color: #EEA5A5;
+    /* 字体颜色 */
+    background-color: #cceae5;
+    /* 背景颜色 */
     border: 1px solid #e3e8ee;
-    border-radius: 60%;
+    /* 边框 */
+    border-radius: 90%;
+    /* 边角圆滑 */
     box-shadow: 0 0 5px rgba(0, 0, 0, .05);
-
+    /* 阴影效果 */
 }
 
 /* 回到顶部css结束 */
+
 /* 弹窗公告css开始 */
 #popup {
     position: fixed;
+    /* 固定定位 */
     display: none;
+    /* 默认不显示 */
     top: 50%;
+    /* 顶部距离 */
     left: 50%;
+    /* 左侧距离 */
     transform: translate(-50%, -50%);
+    /* 居中对齐 */
     width: 400px;
+    /* 宽度 */
     padding: 20px;
+    /* 内边距 */
     text-align: center;
+    /* 文字居中 */
     background: linear-gradient(135deg, rgba(205, 239, 250, 0.9), rgba(163, 217, 255, 0.9));
+    /* 背景渐变 */
     border-radius: 20px;
+    /* 边角圆滑 */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* 阴影效果 */
     z-index: 9999;
+    /* z轴顺序 */
     user-select: none;
+    /* 禁止用户选择 */
     animation: fadeIn 0.5s ease-in-out;
+    /* 动画效果 */
 }
 
 #popup p {
     margin-bottom: 20px;
+    /* 下边距 */
     font-size: 18px;
+    /* 字体大小 */
     font-weight: bold;
+    /* 粗体 */
     line-height: 1.6;
+    /* 行高 */
     color: rgba(51, 51, 51, 0.9);
+    /* 字体颜色 */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* 文字阴影 */
 }
 
 #notice-button {
     display: block;
+    /* 块级显示 */
     margin: 0 auto;
+    /* 水平居中 */
     padding: 12px 24px;
+    /* 内边距 */
     background-color: #0077cc;
+    /* 背景颜色 */
     color: #fff;
+    /* 字体颜色 */
     border: none;
+    /* 无边框 */
     border-radius: 25px;
+    /* 边角圆滑 */
     font-size: 18px;
+    /* 字体大小 */
     font-weight: bold;
+    /* 粗体 */
     text-transform: uppercase;
+    /* 字母大写 */
     letter-spacing: 1px;
+    /* 字母间距 */
     cursor: pointer;
+    /* 鼠标指针样式 */
     transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+    /* 过渡效果 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
 }
 
 #notice-button:hover {
     background-color: #005fa3;
+    /* 悬停时背景颜色 */
     transform: translateY(-2px);
+    /* 向上移动 */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* 阴影效果 */
 }
 
 #notice-button:active {
     transform: translateY(1px);
+    /* 按下时向下移动 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影效果 */
 }
 
 /* 弹窗公告css结束 */
+
 /* 背景图片css开始 */
 body {
     font-family: 'Default.woff2';
+    /* 字体 */
     background-image: url("https://www.dmoe.cc/random.php");
+    /* 背景图片 */
     background-size: cover;
+    /* 背景覆盖 */
     background-attachment: fixed;
+    /* 背景固定 */
 }
 
 #mySidenav {
-    background-color:rgba(241, 241, 241, 0.8);
+    background-color: rgba(241, 241, 241, 0.8);
+    /* 背景颜色 */
     padding: 1em;
+    /* 内边距 */
     border-radius: 0px;
+    /* 边角圆滑 */
 }
 
-
 /* 背景图片css结束 */
+
 /* 头部css开始 */
 header {
     padding: 0;
+    /* 内边距 */
     margin: 0;
+    /* 外边距 */
     position: sticky;
+    /* 固定定位 */
     top: 0;
+    /* 顶部距离 */
 }
 
 #time {
     text-align: center;
+    /* 文字居中 */
     user-select: none;
+    /* 禁止用户选择 */
 }
 
 #start-time {
     color: #a09494;
+    /* 字体颜色 */
     font-weight: normal;
+    /* 正常字体粗细 */
 }
 
 #start-time:hover {
     color: pink;
+    /* 悬停时字体颜色 */
 }
 
 #end-time {
     color: #0077cc;
+    /* 字体颜色 */
 }
 
 #end-time:hover {
     color: #AEAEAE;
+    /* 悬停时字体颜色 */
 }
 
 #header-container {
     background-color: #E3E3E3;
+    /* 背景颜色 */
     height: 50px;
+    /* 高度 */
     user-select: none;
+    /* 禁止用户选择 */
 }
 
 #text-logo {
     float: left;
+    /* 左浮动 */
     color: #27D5CB;
+    /* 字体颜色 */
     background: none;
+    /* 无背景 */
     font-weight: 700;
+    /* 粗体 */
     font-style: italic;
+    /* 斜体 */
     text-shadow: 3px 3px 5px #86ceca;
+    /* 文字阴影 */
     display: inline;
+    /* 行内显示 */
     line-height: 50px;
+    /* 行高 */
     padding-left: 50px;
+    /* 左内边距 */
 }
 
 #text-logo a {
     font-size: 25px;
+    /* 字体大小 */
 }
 
 #text-logo a:visited {
     color: #6ec465;
+    /* 已访问链接颜色 */
     text-shadow: 3px 3px 5px #30d863;
+    /* 文字阴影 */
 }
 
 #text-logo a:hover {
     background: none;
+    /* 悬停时无背景 */
     border-radius: none;
+    /* 无边角 */
     color: white;
+    /* 悬停时字体颜色 */
 }
 
 .nav-link {
     float: left;
+    /* 左浮动 */
     line-height: 40px;
+    /* 行高 */
     padding-left: 50px;
+    /* 左内边距 */
     text-align: center;
+    /* 文字居中 */
 }
 
 .navlist a {
     color: rgba(1, 0, 0, 0.956);
+    /* 字体颜色 */
     font-size: 20px;
-    font-family: 'Default',
-        'Microsoft YaHei',
-        'tahoma',
-        'arial';
+    /* 字体大小 */
+    font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
+    /* 字体系列 */
     line-height: 20px;
+    /* 行高 */
     display: block;
+    /* 块级显示 */
     animation: none;
+    /* 无动画 */
 }
 
 .nav-link:hover {
     background-color: #fff;
+    /* 悬停时背景颜色 */
 }
 
 .navbar a {
     padding: 15px;
+    /* 内边距 */
 }
 
 .navbar a:visited {
     display: none;
+    /* 已访问链接不显示 */
 }
 
 .navbar a:hover {
     background: none;
+    /* 悬停时无背景 */
     border-radius: none;
+    /* 无边角 */
     color: rgb(90, 92, 6);
+    /* 悬停时字体颜色 */
 }
 
 .navbar ul {
     display: block;
+    /* 块级显示 */
     flex-wrap: none;
+    /* 不换行 */
     justify-content: none;
+    /* 不对齐 */
     list-style: none;
+    /* 去掉列表样式 */
     margin: 0;
+    /* 外边距 */
     padding: 0;
+    /* 内边距 */
     text-transform: none;
+    /* 无字母转换 */
 }
 
 .navbar li {
     list-style: none;
+    /* 去掉列表样式 */
     float: left;
+    /* 左浮动 */
     background-color: inherit;
+    /* 继承背景颜色 */
     border-radius: 0px;
+    /* 边角圆滑 */
     box-shadow: none;
+    /* 无阴影 */
     margin: 0;
+    /* 外边距 */
     padding: 0;
+    /* 内边距 */
     text-align: inherit;
+    /* 继承文本对齐 */
     width: inherit;
+    /* 继承宽度 */
     animation: none;
+    /* 无动画 */
     cursor: pointer;
-
+    /* 鼠标指针样式 */
 }
 
 .navbar ul li:hover {
     transform: none;
+    /* 悬停时不变 */
     font-weight: inherit;
+    /* 继承字体粗细 */
 }
 
 .droplist a {
     display: none;
+    /* 默认不显示 */
 }
 
 .nav-link:hover .droplist a {
     display: block;
+    /* 悬停时显示 */
 }
 
 /* 头部css结束 */
+
 #header-end {
     padding-top: 15px;
+    /* 上内边距 */
     padding-bottom: 15px;
+    /* 下内边距 */
 }
 
 ul {
     display: flex;
+    /* 使用弹性布局 */
     flex-wrap: wrap;
+    /* 启用换行 */
     justify-content: center;
+    /* 居中对齐 */
     list-style: none;
+    /* 去掉列表样式 */
     margin: 0 auto;
+    /* 水平居中 */
     padding: 0;
+    /* 去掉内边距 */
     text-transform: capitalize;
+    /* 首字母大写 */
 }
 
 li {
     background-color: #ffffff;
+    /* 背景颜色 */
     border-radius: 10px;
+    /* 边角圆滑 */
     box-shadow: 0px 0px 10px #cccccc;
+    /* 阴影效果 */
     margin: 20px;
+    /* 外边距 */
     padding: 20px;
+    /* 内边距 */
     text-align: center;
-    width: 300px;
+    /* 文字居中 */
+    flex: 1 1 calc(25% - 40px);
+    /* 根据父容器的宽度自适应，默认为4个一行 */
     animation: fadeIn 1s ease-in-out;
+    /* 动画效果 */
     cursor: pointer;
+    /* 鼠标指针样式 */
 }
 
 ul li a {
     font-family: 'Minecraft-Bold';
-
+    /* 字体 */
 }
 
 ul li:hover {
     transform: scale(1.05);
+    /* 悬停时放大 */
     font-weight: 700;
+    /* 悬停时加粗 */
 }
 
 section {
     padding-bottom: 30px;
+    /* 下内边距 */
     padding-left: 40px;
+    /* 左内边距 */
 }
 
 summary {
     list-style: none;
+    /* 去掉列表样式 */
     display: grid;
+    /* 使用网格布局 */
     place-items: center;
+    /* 中心对齐 */
     color: rgb(8, 8, 8);
+    /* 字体颜色 */
     background-color: #c3bca1;
+    /* 背景颜色 */
     border-radius: 10px;
+    /* 边角圆滑 */
     font-size: 18px;
+    /* 字体大小 */
     user-select: none;
+    /* 禁止用户选择 */
 }
 
 .summary::-webkit-details-marker {
     display: none;
+    /* 隐藏默认标记 */
 }
 
 summary:active {
     font-style: oblique;
+    /* 激活时斜体 */
 }
 
 .more a {
     transition: all 0.3s ease-in;
+    /* 过渡效果 */
     padding: .4rem;
+    /* 内边距 */
     display: inline-block;
+    /* 行内块级显示 */
     font-size: 18px;
+    /* 字体大小 */
     line-height: 27px;
+    /* 行高 */
     word-wrap: break-word;
+    /* 单词换行 */
 }
 
 .more a:link {
     color: #cc05f3;
+    /* 字体颜色 */
 }
 
 .more a:visited {
     color: rgb(6, 153, 13);
+    /* 已访问链接颜色 */
 }
 
 .more a:hover {
     background: blue;
+    /* 悬停时背景颜色 */
     border-radius: 0.8rem;
+    /* 边角圆滑 */
     color: #f1f1f1ee;
+    /* 悬停时字体颜色 */
 }
 
 .more a:active {
     color: red;
+    /* 按下时字体颜色 */
     font-size: 20px;
+    /* 按下时字体大小 */
 }
 
 .more::selection {
     color: #f1f1f1ee;
+    /* 选中文本颜色 */
     background-color: pink;
+    /* 选中文本背景颜色 */
 }
 
 /* 底部css开始 */
 footer {
     padding-bottom: 10px;
+    /* 下内边距 */
     background: #141212;
+    /* 背景颜色 */
     color: #AEAEAE;
+    /* 字体颜色 */
     text-transform: none;
+    /* 无字母转换 */
     padding-top: 5px;
+    /* 上内边距 */
     user-select: none;
+    /* 禁止用户选择 */
 }
 
 footer a:link {
     color: white;
+    /* 字体颜色 */
     font-size: 20px;
+    /* 字体大小 */
 }
 
 footer a:hover {
     background: #EAEAEA;
+    /* 悬停时背景颜色 */
     color: #FF1723;
+    /* 悬停时字体颜色 */
 }
 
 #footer-link {
     padding-bottom: 3rem;
+    /* 下内边距 */
 }
 
 footer dl dt {
     font-size: 20px;
+    /* 字体大小 */
     font-weight: 700;
-
+    /* 粗体 */
 }
 
 footer dl dt dd a {
     padding-bottom: .2px;
+    /* 下内边距 */
 }
 
 /* 底部css结束 */

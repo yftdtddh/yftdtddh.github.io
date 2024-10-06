@@ -15,3 +15,11 @@ function checkDeviceAndRedirect() {
 
 // 初始检测
 checkDeviceAndRedirect();
+
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        document.title = "欢迎你回来 - 资源汇总"; // 标签页不可见时修改标题
+    } else {
+        document.title = "资源汇总"; // 标签页可见时恢复标题
+    }
+});
