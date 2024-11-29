@@ -151,6 +151,13 @@ body {
     /* 背景固定 */
 }
 
+/* 滚动条的隐藏 */
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari */
+}
+
+
 #mySidenav {
     background-color: rgba(241, 241, 241, 0.8);
     /* 背景颜色 */
