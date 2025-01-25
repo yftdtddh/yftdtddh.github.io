@@ -4,5 +4,4 @@ https://yftdtddh.github.io/
 ![1](images/1.png  "1")
 ![2](images/2.png  "2")
 ![3](images/3.png  "3")
-### 网站说明
-有时可能需要VPN访问。
+
