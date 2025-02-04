@@ -64,6 +64,9 @@ h3 {
     border-bottom: solid 4px rgb(173, 171, 171);
 }
 
+li {
+    list-style: none;
+}
 dl {
     display: inline-block;
 }
@@ -95,9 +98,28 @@ html {
     scroll-behavior: smooth;
 }
 
+
 code {
-    background-color: #BCB399;
-}
+        background-color: #f1f1f1;
+        /* 浅灰色背景 */
+        border: 1px solid #ccc;
+        /* 浅灰色边框 */
+        padding: 3px 5px;
+        /* 内边距 */
+        font-family: monospace;
+        /* 等宽字体 */
+        color: #333;
+        /* 深灰色文字 */
+        border-radius: 4px;
+        /* 圆角边框 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* 阴影效果 */
+        white-space: nowrap;
+        /* 防止内容换行 */
+        overflow: auto;
+        /* 溢出时显示滚动条 */
+    }
+
 
 button {
     display: block;
@@ -117,32 +139,32 @@ a {
     line-height: 27px;
 }
 
-a:link {
+section a:link {
     color: skyblue;
 }
 
-a:visited {
+section a:visited {
     color: #BCB399;
 }
 
-a:hover {
-    background: orange;
+section a:hover {
+    background: rgb(255, 165, 0);
     border-radius: 0.6rem;
     color: white;
 }
 
 ::selection {
-    background: pink;
+    background: rgb(10, 224, 240);
     color: #333;
 }
 
 ::-moz-selection {
-    background: pink;
+    background: rgb(10, 224, 240);
     color: #333;
 }
 
 ::-webkit-selection {
-    background: pink;
+    background: rgb(10, 224, 240);
     color: #333;
 }
 
@@ -152,8 +174,8 @@ a::selection {
 }
 
 span::selection {
-    color: blue;
-    background-color: red;
+    color: rgb(14, 49, 161);
+    background-color: rgb(235, 229, 229);
 
 }
 /* 链接样式结束 */

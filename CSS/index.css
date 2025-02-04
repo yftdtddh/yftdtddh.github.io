@@ -48,14 +48,13 @@ a>.btnbacktop {
     position: fixed;
     /* 固定定位 */
     display: none;
-    /* 默认不显示 */
-    top: 50%;
+    top: 40%;
     /* 顶部距离 */
     left: 50%;
     /* 左侧距离 */
     transform: translate(-50%, -50%);
     /* 居中对齐 */
-    width: 400px;
+    width: 460px;
     /* 宽度 */
     padding: 20px;
     /* 内边距 */
@@ -65,18 +64,19 @@ a>.btnbacktop {
     /* 背景渐变 */
     border-radius: 20px;
     /* 边角圆滑 */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* 阴影效果 */
-    z-index: 9999;
+    z-index: 1000;
     /* z轴顺序 */
     user-select: none;
     /* 禁止用户选择 */
     animation: fadeIn 0.5s ease-in-out;
-    /* 动画效果 */
+    max-width: 400px;
+    border: 1px solid #ccc;
 }
 
 #popup p {
-    margin-bottom: 20px;
+    margin: 10px 0;
     /* 下边距 */
     font-size: 18px;
     /* 字体大小 */
@@ -138,7 +138,6 @@ a>.btnbacktop {
 }
 
 /* 弹窗公告css结束 */
-
 /* 背景图片css开始 */
 body {
     font-family: 'Default.woff2';
@@ -149,12 +148,6 @@ body {
     /* 背景覆盖 */
     background-attachment: fixed;
     /* 背景固定 */
-}
-
-/* 滚动条的隐藏 */
-::-webkit-scrollbar {
-    display: none;
-    /* Chrome Safari */
 }
 
 
@@ -168,7 +161,6 @@ body {
 }
 
 /* 背景图片css结束 */
-
 /* 头部css开始 */
 header {
     padding: 0;
@@ -195,19 +187,9 @@ header {
     /* 正常字体粗细 */
 }
 
-#start-time:hover {
-    color: pink;
-    /* 悬停时字体颜色 */
-}
-
 #end-time {
     color: #0077cc;
     /* 字体颜色 */
-}
-
-#end-time:hover {
-    color: #AEAEAE;
-    /* 悬停时字体颜色 */
 }
 
 #header-container {
@@ -217,6 +199,7 @@ header {
     /* 高度 */
     user-select: none;
     /* 禁止用户选择 */
+    z-index: 1999;
 }
 
 #text-logo {
@@ -373,10 +356,7 @@ header {
 /* 头部css结束 */
 
 #header-end {
-    padding-top: 15px;
-    /* 上内边距 */
-    padding-bottom: 15px;
-    /* 下内边距 */
+    margin-top: 150px;
 }
 
 ul {
@@ -436,26 +416,26 @@ section {
     /* 左内边距 */
 }
 
-summary {
-    list-style: none;
-    /* 去掉列表样式 */
-    display: grid;
-    /* 使用网格布局 */
-    place-items: center;
-    /* 中心对齐 */
-    color: rgb(8, 8, 8);
-    /* 字体颜色 */
-    background-color: #c3bca1;
-    /* 背景颜色 */
-    border-radius: 10px;
-    /* 边角圆滑 */
-    font-size: 18px;
-    /* 字体大小 */
-    user-select: none;
-    /* 禁止用户选择 */
+details {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
 }
 
-.summary::-webkit-details-marker {
+details[open] summary {
+    color: #0056b3;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+summary::-webkit-details-marker {
     display: none;
     /* 隐藏默认标记 */
 }
@@ -465,6 +445,17 @@ summary:active {
     /* 激活时斜体 */
 }
 
+.more {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.more p {
+    margin: 0;
+}
 .more a {
     transition: all 0.3s ease-in;
     /* 过渡效果 */
@@ -491,12 +482,13 @@ summary:active {
 }
 
 .more a:hover {
-    background: blue;
+    background: rgba(176, 176, 189, 0.205);
     /* 悬停时背景颜色 */
     border-radius: 0.8rem;
     /* 边角圆滑 */
-    color: #f1f1f1ee;
+    color: #007BFF;
     /* 悬停时字体颜色 */
+    text-decoration: underline;
 }
 
 .more a:active {

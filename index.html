@@ -4,14 +4,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, height=device-height,initial-scale=1.0, minimum-scale=0.90, maximum-scale=2.0">
-    <meta name="description"
-        content="这是一个简单的动画、漫画、音乐、游戏、小说二次元综合网站导航。提供免费小说、免费漫画、免费动画、免费音乐、免费游戏、二次元资料库、番组表、动画标记、免费GALGame等网站。">
-    <meta name="keywords" content="动漫观看,小说阅读,漫画,在线观看,木晞i,免费小说,免费漫画,galgame,网站导航,在线观看,在线漫画,在线小说,资源汇总,木晞i的资源汇总">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.90, maximum-scale=2.0">
+    <meta name="description" content="这是一个简单的二次元综合网站导航，提供免费的动漫、漫画、音乐、游戏和小说资源。">
+    <meta name="keywords" content="动漫观看,小说阅读,漫画,在线观看,木晞i,免费小说,免费漫画,galgame,网站导航,在线漫画,在线小说,资源汇总">
     <meta name="author" content="木晞i">
     <meta name="copyright" content="muxiyuj">
-    <meta name="robots" content="index, follow"> <!-- 允许索引和跟随链接 -->
+    <meta name="robots" content="index, follow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>在线动漫、小说、音乐和游戏网站 - 木晞i的资源汇总导航</title>
     <base target="_blank">
@@ -20,7 +18,6 @@
     <link rel="stylesheet" type="text/css" href="CSS/base.css">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
     <script src="index.js"></script>
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -43,10 +40,9 @@
         function showPopup() {
             document.getElementById("popup").style.display = "block";
         }
-
         // 隐藏弹窗的函数，并记录隐藏时间
         function hidePopup() {
-            const hideDuration = 24 * 60 * 60 * 1000; // 12小时的毫秒数
+            const hideDuration = 24 * 60 * 60 * 1000; // 24小时的毫秒数
             const hiddenUntil = Date.now() + hideDuration; // 当前时间加上隐藏时间
             localStorage.setItem("popupHiddenUntil", hiddenUntil); // 存储隐藏时间
             document.getElementById("popup").style.display = "none"; // 隐藏弹窗
@@ -75,17 +71,11 @@
     <!-- 弹窗开始 -->
     <div id="popup">
         <h2>通知</h2>
-        <b>【2025-01-25】复活了一些失效网站</b>
-        <br>
-        <br>
-        <p>TIPS:</p>
-        <p>
-            <b>弹窗关闭24小时后，将再次显示</b><br>
-            <b>尽量使用最新版浏览器访问</b><br>
-            <b><code><u>CTRL+F</u></code>进行搜索</b>
-        </p>
-        <br>
-        <button id="notice-button" onclick="hidePopup()">隐藏</button>
+        <p>【2025-01-25】复活了一些失效网站</p>
+        <p><b>弹窗关闭24小时后将再次显示</b></p>
+        <p><b>请尽量使用最新版浏览器访问</b></p>
+        <p><code>CTRL+F</code> 进行搜索</p>
+        <button id="notice-button" type="button" onclick="hidePopup()">隐藏</button>
     </div>
     <!-- 弹窗结束 -->
     <!-- 头部部分开始 -->
@@ -211,41 +201,34 @@
             </div>
         </div>
         </div>
+        </div>
     </header>
     <!-- 头部部分结束 -->
+
     <div id="mySidenav" class="sidenav">
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
         <div id="header-end" align="center">
-            <p>以下网站难免会出现广告，综合情况使用。</p>
-            <p>有些网站需要魔法才能访问，打不开不一定是网站失效了。</p>
-            <p>慢速更新，如果您有我没有列出的网站，可加<a href="https://t.me/muxiyujzyhz">TG</a>分享出来。</p>
-            <p>&nbsp;</p>
+            <p>以下网站难免会出现各种广告，综合情况使用。</p>
+            <p>有些需要魔法才能访问，打不开不一定是网站失效了。</p>
+            <p>慢速更新，如果您有我没有的资源，可加<a href="https://t.me/muxiyujzyhz">TG</a>分享出来。</p>
         </div>
-        <p id="time">
-            <b>创建时间：</b><b id="start-time">2022/12/19</b>&nbsp;&nbsp;&nbsp;<b>最后更新：</b><b id="end-time"></b>
-            <!-- 更新时间 -->
-            <script>
-                //最后更新网页时间
-                const lastUpdatedElement = document.getElementById('end-time');
-                const lastUpdatedDate = new Date(document.lastModified);
-                const options = {
-                    year: 'numeric',
-                    month: 'numeric',
-                    day: 'numeric',
-                    hour: 'numeric',
-                    minute: 'numeric',
-                    second: 'numeric'
-                };
-                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-                lastUpdatedElement.innerHTML = formattedDate
-            </script>
+        <p style="text-align: center;">创建时间：<b id="start-time">2022/12/19</b>&nbsp;&nbsp;最后更新：<b id="end-time"></b>
         </p>
+        <script>
+            // 最后更新网页时间
+            const lastUpdatedElement = document.getElementById('end-time');
+            const lastUpdatedDate = new Date(document.lastModified);
+            const options = {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+            lastUpdatedElement.innerHTML = formattedDate;
+        </script>
+
         <section id="top-anime">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -256,93 +239,82 @@
                 <li>
                     <a href="https://www.agemys.org/">AGE动漫</a>
                     <br>
-                    <b>
-                        体验是不错，极少部分旧番可能搜索不到，新番更新速度尚可，无影响观看的广告存在。
-                    </b>
+                    <span><b>体验是不错，极少部分旧番可能搜索不到，新番更新速度尚可，无影响观看的广告存在。</b></span>
                 </li>
                 <li>
                     <a href="https://dick.xfani.com">稀饭动漫</a>
                     <br>
-                    <b>
-                        前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。
-                        站内存有动画1700部以上。
-                    </b>
+                    <span><b>适合看新番。前身是森之屋动漫，现在也和之前森之屋差不多，还有弹幕功能，视频中无广告存在。</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://www.qkan8.com/">去看吧</a>
                     <br>
-                    <b>
-                        看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。
-                    </b>
+                    <span><b>看起来平平无奇的一个动画网站，也有弹幕，不过有些动画可能塞有广告。（比如澳门威尼斯人）站内存有动画5100部以上。</b></span>
                 </li>
                 <li>
                     <a href="https://www.dmmiku.com/">異世界動畫</a>
                     <br>
-                    <b>
-                        天使动漫论坛指定在线动画观看网站,有广告不影响观看。
-                    </b>
+                    <span><b>天使动漫论坛指定在线动画观看网站,有广告不影响观看。</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://bangumi.online">新番组</a>
                     <br>
-                    <b>专门看新番的网站，无内置广告。</b>
+                    <span><b>专门看新番的网站，无内置广告。</b></span>
                 </li>
                 <li>
                     <a href="https://www.ntdm9.com/">nt动漫</a>
                     <br>
-                    <b>动画多，播放流畅</b>
+                    <span><b>动画多，播放流畅</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://www.xiyedm.com/">西野动漫</a>
                     <br>
-                    <b>暂无评价</b>
+                    <span><b>暂无评价</b></span>
                 </li>
                 <li>
                     <a href="https://www.mgnacg.com">橘子动漫</a>
                     <br>
-                    <b>播放无问题，无内置广告，无需登录。站内存有动画900部以上。</b>
+                    <span><b>播放无问题，无内置广告，无需登录。站内存有动画900部以上。</b></span>
             </ul>
             <ul>
                 <li>
                     <a href="http://www.eacg.net/">E-ACG</a>
                     <br>
-                    <b>一些片源是异世界和去看吧的，需要VPN才能访问。</b>
+                    <span><b>一些片源是异世界和去看吧的，需要VPN才能访问。</b></span>
                 </li>
                 <li>
                     <a href="https://www.tucao.cam/">吐槽弹幕网</a>
                     <br>
-                    <b>吐槽是只有新番能看，老番不一定。至于广告，视频内广告我还真没看到。</b>
+                    <span><b>吐槽是只有新番能看，老番不一定。至于广告，视频内广告我还真没看到。</b></span>
             </ul>
             <ul>
                 <li>
                     <a href="https://www.7sefun.top/">七色番</a>
                     <br>
-                    <b>其他的不多说，视频内广告没有。站内存有动画2200部以上。</b>
+                    <span><b>其他的不多说，视频内广告没有。站内存有动画2200部以上。</b></span>
                 </li>
                 <li>
                     <a href="https://www.5dm.link/">5弹幕</a>
                     <br>
-                    <b>只看新番还是可以的。</b>
+                    <span><b>只看新番还是可以的。</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://www.dqsj.top/">打驴动漫</a>
                     <br>
-                    <b>不登录可以看，暂停有广告。就是这个网站除了动画，什么综艺电视剧电影，都有的。</b>
+                    <span><b>不登录可以看，暂停有广告。就是这个网站除了动画，什么综艺电视剧电影，都有的。</b></span>
                 </li>
                 <li>
                     <a href="https://www.ezdmw.site/">E站弹幕网</a>
                     <br>
-                    <b>
-                        拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。
-                    </b>
+                    <span></span><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b>
                 </li>
             </ul>
             <ul>
@@ -420,9 +392,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.lmm52.com/">路漫漫</a>
@@ -494,9 +464,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p><a href="https://ani.gamer.com.tw/">巴哈姆特動畫瘋</a></p>
             </div>
@@ -533,6 +501,12 @@
             <p>&nbsp;</p>
             <h2>BT/网盘资源</h2>
             <ul>
+                <li> <a href="https://nyaa.si/">Nyaa</a></li>
+                <li> <a href="https://www.acgsen.com/">森之屋动漫</a></li>
+                <li> <a href="https://mikanani.me/">蜜桔计划</a></li>
+                <li> <a href="https://www.kisssub.org/">爱恋动漫</a></li>
+            </ul>
+            <ul>
                 <li> <a href="https://www.btsow.vip/">BTsow</a></li>
                 <li> <a href="https://www.cilixiong.com/">磁力熊</a></li>
                 <li> <a href="https://ali.gitcafe.ink/">小纸条</a></li>
@@ -551,12 +525,6 @@
                 <li> <a href="https://skyeysnow.com/forum.php">天雪☆论坛</a></li>
             </ul>
             <ul>
-                <li> <a href="https://nyaa.si/">Nyaa</a></li>
-                <li> <a href="https://www.acgsen.com/">森之屋动漫</a></li>
-                <li> <a href="https://mikanani.me/">蜜桔计划</a></li>
-                <li> <a href="https://www.kisssub.org/">爱恋动漫</a></li>
-            </ul>
-            <ul>
                 <li> <a href="https://acg.rip/">ACG.RIP</a></li>
                 <li> <a href="https://ouo.si/">NyaaPantsu</a></li>
                 <li> <a href="https://ppxzy.ink/">皮皮虾资源</a></li>
@@ -564,9 +532,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://yiso.fun/">易搜</a>
@@ -736,9 +702,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.mansou.co/">漫搜</a>
@@ -778,7 +742,6 @@
                     <a href="https://www.zhongguomanhua.com/">中国漫画</a>
                     <a href="https://www.meirimanhua.com/">每日漫画</a>
                     <a href="https://www.manhuajingxuan.com/">漫画精选</a>
-
                 </p>
             </div>
         </details>
@@ -819,9 +782,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.manben.com/">漫本</a>
@@ -887,7 +848,7 @@
             </ul>
         </section>
         <details>
-            <summary>更多</summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.yodu.org/">有度中文网</a>
@@ -952,7 +913,7 @@
             </ul>
         </section>
         <details>
-            <summary>更多</summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://yc.ireader.com.cn/">掌阅</a>
@@ -1018,7 +979,7 @@
             </ul>
         </section>
         <details>
-            <summary>更多</summary>
+            <summary>+更多</summary>
             <div class="more">
                 <a href="https://mora.jp/">mora</a>
                 <a href="https://ototoy.jp/top/">ototoy</a>
@@ -1139,9 +1100,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://syzx.me/">神隐之乡</a>
@@ -1246,9 +1205,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://mirai-mad.com/cn/welcome">MMGC</a>
@@ -1288,9 +1245,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://bnacg.com/">白鸟ACG</a>
@@ -1366,9 +1321,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.lkong.com/">龙空</a>
@@ -1477,9 +1430,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.lkong.com/">龙空</a>
@@ -1544,9 +1495,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.panleyuan.com/">盘乐园</a>
@@ -1603,9 +1552,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <a href="https://eyan.cc/acg/">A次元</a>
                 <a href="http://www.kou.moe">萌口组</a>
@@ -1652,42 +1599,40 @@
                 <li> <a href="https://moecy.org/">萌次元导航</a></li>
                 <li> <a href="https://www.lovejay.top/">Jay的资源库</a></li>
             </ul>
-            <details>
-                <summary>
-                    更多
-                </summary>
-                <div class="more">
-                    <p>
-                        <a href="https://heeee.com/">资源网</a>
-                        <a href="https://www.xia365.com/">虾皮网</a>
-                        <a href="https://goldacg.com/">金次元</a>
-                        <a href="https://www.iiice.cn/">下次一定</a>
-                        <a href="https://nav.acgsq.com/">动漫世界</a>
-                        <a href="https://nav.acgnsns.com/">ACGN收集站</a>
-                        <a href="https://d.yimoe.cc/">翼萌导航</a>
-                        <a href="https://www.32xf.com/">稀饭网址</a>
-                        <a href="http://mio.natapp1.cc/">mio澪游圈</a>
-                        <a href="https://dilidili.vip/">dilidili</a>
-                        <a href="https://cilicili.cn/">cilicili</a>
-                        <a href="https://theindex.moe/library/anime">theindex</a>
-                        <a href="https://ai.it200.com/">爱掏AI</a>
-                        <a href="https://www.innacg.cc/">次元秘境</a>
-                        <a href="https://acgmon.net/">次元礼赞</a>
-                        <a href="https://www.jizhihezi.com/">集知盒子</a>
-                        <a href="https://yingheapp.com/">硬核指南</a>
-                        <a href="https://www.wanrenmi8.com/cn/index.html">万人迷吧</a>
-                        <a href="https://www.moooyu.com/">墨鱼导航</a>
-                        <a href="https://huamao.vip/">花猫导航</a>
-                        <a href="https://2sdh.com/">二叔导航</a>
-                        <a href="https://www.xielunyan.com/">写轮眼导航</a>
-                        <a href="https://www.akgdh.com/">爱科技导航</a>
-                        <a href="https://www.xiaobot.so/">小报童导航</a>
-                        <a href="https://www.acgyzsj.top/">ACG御宅世界</a>
-                        <a href="https://www.fre321.com/">FRE123 免费资源共享平台</a>
-
-                    </p>
-                </div>
         </section>
+        <details>
+            <summary>+更多</summary>
+            <div class="more">
+                <p>
+                    <a href="https://heeee.com/">资源网</a>
+                    <a href="https://www.xia365.com/">虾皮网</a>
+                    <a href="https://goldacg.com/">金次元</a>
+                    <a href="https://www.iiice.cn/">下次一定</a>
+                    <a href="https://nav.acgsq.com/">动漫世界</a>
+                    <a href="https://nav.acgnsns.com/">ACGN收集站</a>
+                    <a href="https://d.yimoe.cc/">翼萌导航</a>
+                    <a href="https://www.32xf.com/">稀饭网址</a>
+                    <a href="http://mio.natapp1.cc/">mio澪游圈</a>
+                    <a href="https://dilidili.vip/">dilidili</a>
+                    <a href="https://cilicili.cn/">cilicili</a>
+                    <a href="https://theindex.moe/library/anime">theindex</a>
+                    <a href="https://ai.it200.com/">爱掏AI</a>
+                    <a href="https://www.innacg.cc/">次元秘境</a>
+                    <a href="https://acgmon.net/">次元礼赞</a>
+                    <a href="https://www.jizhihezi.com/">集知盒子</a>
+                    <a href="https://yingheapp.com/">硬核指南</a>
+                    <a href="https://www.wanrenmi8.com/cn/index.html">万人迷吧</a>
+                    <a href="https://www.moooyu.com/">墨鱼导航</a>
+                    <a href="https://huamao.vip/">花猫导航</a>
+                    <a href="https://2sdh.com/">二叔导航</a>
+                    <a href="https://www.xielunyan.com/">写轮眼导航</a>
+                    <a href="https://www.akgdh.com/">爱科技导航</a>
+                    <a href="https://www.xiaobot.so/">小报童导航</a>
+                    <a href="https://www.acgyzsj.top/">ACG御宅世界</a>
+                    <a href="https://www.fre321.com/">FRE123 免费资源共享平台</a>
+                </p>
+            </div>
+        </details>
         <section id="Movie">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
@@ -1730,9 +1675,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.rijupao.com/">日剧跑</a>
@@ -1821,9 +1764,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <a href="http://ciyuandao.com/">次元岛</a>
                 <a href="https://www.ciy8.cn/">次元吧</a>
@@ -1922,9 +1863,7 @@
             </ul>
         </section>
         <details>
-            <summary>
-                更多
-            </summary>
+            <summary>+更多</summary>
             <div class="more">
                 <p>
                     <a href="https://www.030buy.net/">萌购</a>
@@ -1961,7 +1900,6 @@
                     <a href="https://iserinina.com/">井芹仁菜随机图</a>
                     <a href="https://stay206.github.io/image/photos">随机动漫图片</a>
                     <a href="https://mklab.eu.org/">孟坤web实验室</a>
-
                 </p>
             </div>
         </details>
@@ -1998,7 +1936,7 @@
                     本站访客数<span id="busuanzi_value_site_uv"></span>
             </div>
             <br>
-            &copy; 2022 - 2024 木晞i的资源汇总
+            <p>&copy; 木晞i的资源汇总 2025</p>
         </div>
     </footer>
     <!-- 底部部分结束 -->
