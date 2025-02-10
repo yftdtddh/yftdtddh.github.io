@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
->
-
-<url>
- <loc>https://yftdtddh.github.io/</loc>
- <priority>0.3</priority>
- <lastmod>2024-10-25</lastmod>
- <changefreq>weekly</changefreq>
-</url>
-
-<url>
- <loc>https://yftdtddh.github.io/others/innerworld.html</loc>
- <priority>0.3</priority>
- <lastmod>2024-10-25</lastmod>
- <changefreq>weekly</changefreq>
-</url>
-
-<url>
- <loc>https://yftdtddh.github.io/others/publishingpage.html</loc>
- <priority>0.3</priority>
- <lastmod>2024-10-25</lastmod>
- <changefreq>weekly</changefreq>
-</url>
-
-<url>
- <loc>https://yftdtddh.github.io/others/invalidationpage.html</loc>
- <priority>0.3</priority>
- <lastmod>2024-10-25</lastmod>
- <changefreq>weekly</changefreq>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://yftdtddh.github.io/</loc>
+        <priority>1.0</priority>
+        <lastmod>2025-2-5</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://yftdtddh.github.io/others/innerworld.html</loc>
+        <priority>0.3</priority>
+        <lastmod>2024-10-25</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://yftdtddh.github.io/others/publishingpage.html</loc>
+        <priority>0.3</priority>
+        <lastmod>2024-10-25</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://yftdtddh.github.io/others/invalidationpage.html</loc>
+        <priority>0.3</priority>
+        <lastmod>2024-10-25</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>

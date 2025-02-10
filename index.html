@@ -98,12 +98,11 @@
                     </li>
 
                     <li class="nav-link">
-                        <a href="#BT" target="_self">BT</a>
-                        <ul class="droplist">
-                            <li>
-                                <a href="#subtitling" target="_self">字幕</a>
-                            </li>
-                        </ul>
+                        <a href="#BitTorrent" target="_self">磁力</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#subtitling" target="_self">字幕</a>
                     </li>
 
                     <li class="nav-link">
@@ -186,6 +185,11 @@
 
                     <li class="nav-link">
                         <a href="#Pictures" target="_self">图站</a>
+                        <ul class="droplist">
+                            <li>
+                                <a href="#Picture-bed" target="_self">图床</a>
+                            </li>
+                        </ul>                       
                     </li>
 
                     <li class="nav-link">
@@ -193,41 +197,46 @@
                         <ul class="droplist">
                             <li>
                                 <a href="#cloud drive" target="_self">云盘</a>
-                                <a href="#other" target="_self">其它</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
-        </div>
-        </div>
     </header>
+
     <!-- 头部部分结束 -->
 
     <div id="mySidenav" class="sidenav">
         <div id="header-end" align="center">
-            <p>以下网站难免会出现各种广告，综合情况使用。</p>
-            <p>有些需要魔法才能访问，打不开不一定是网站失效了。</p>
-            <p>慢速更新，如果您有我没有的资源，可加<a href="https://t.me/muxiyujzyhz">TG</a>分享出来。</p>
+            <div class="scroll-container">
+                <div class="scroll-text">
+                    <p>
+                        以下网站难免会出现各种广告。&nbsp;&nbsp;有些网站需要魔法才能访问。&nbsp;&nbsp;慢速更新，如果您有我没有的资源欢迎加入<a href="https://t.me/muxiyujzyhz">TG</a>分享。
+                    </p>
+                </div>
+            </div>
+            <pre>               
+                创建时间：<b id="start-time">2022/12/19</b>  最后更新：<b id="end-time"></b>
+            </pre>
+
+
+            <script>
+                // 最后更新网页时间
+                const lastUpdatedElement = document.getElementById('end-time');
+                const lastUpdatedDate = new Date(document.lastModified);
+                const options = {
+                    year: 'numeric',
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
+                };
+                const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
+                lastUpdatedElement.innerHTML = formattedDate;
+            </script>
         </div>
-        <p style="text-align: center;">创建时间：<b id="start-time">2022/12/19</b>&nbsp;&nbsp;最后更新：<b id="end-time"></b>
-        </p>
-        <script>
-            // 最后更新网页时间
-            const lastUpdatedElement = document.getElementById('end-time');
-            const lastUpdatedDate = new Date(document.lastModified);
-            const options = {
-                year: 'numeric',
-                month: '2-digit',
-                day: '2-digit',
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            };
-            const formattedDate = lastUpdatedDate.toLocaleDateString('zh-CN', options);
-            lastUpdatedElement.innerHTML = formattedDate;
-        </script>
 
         <section id="top-anime">
             <p>&nbsp;</p>
@@ -314,45 +323,47 @@
                 <li>
                     <a href="https://www.ezdmw.site/">E站弹幕网</a>
                     <br>
-                    <span></span><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b>
+                    <span><b>拥有较为完整的社区功能，用户可以自行发布各种资源。在每一个动画的观看页有动画的磁力链接，用户还可以选择导入观看！视频下方也有评论，有评论就有弹幕，弹幕发射人数还挺多的。追番、补番推荐、写漫评…这里自成一片小天地！完全就是比b站更好的选择。</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://www.maigo.cc/">樱之空动漫</a>
                     <br>
-                    <b>
-                        网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…
-                    </b>
+                    <span><b>
+                            网站做的挺漂亮的，除此之外也有其它一些与动画无关的小功能。收录动画、电影、电视剧、纪录片，总共有118383部剧集(？)专题分类不错，时间表较全，还有更新时间。这个樱舞似乎还有游戏小说漫画站…
+                        </b>
+                    </span>
                 </li>
                 <li>
                     <a href="https://www.91mute.com/">Mutefun</a>
                     <br>
-                    <b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b>
+                    <span><b>上传有美漫、特摄和日剧(日剧数量较少)无需登录账号也能观看，有弹幕。网站没有发现什么广告，视频内也不大可能。</b></span>
+
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="https://anime1.cc/">ANIME1</a>
                     <br>
-                    <b>十分简洁，动画可能不太多，但新番肯定有的。</b>
+                    <span><b>十分简洁，动画可能不太多，但新番肯定有的。</b></span>
                 </li>
                 <li>
                     <a href="https://www.gugufan.com/">咕咕番</a>
                     <br>
-                    <b> 播放什么的测不出来，要登录账号。没有弹窗或横幅广告。站内存有动画3100部以上。</b>
+                    <span><b> 播放什么的测不出来，要登录账号。没有弹窗或横幅广告。站内存有动画3100部以上。</b></span>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="http://www.acgnya.com/">ACGnya</a>
                     <br>
-                    <b>暂无评价</b>
+                    <span><b>暂无评价</b></span>
                 </li>
                 <li>
                     <a href="https://www.nyafun.net/">nyafun</a>
                     <br>
-                    <b>暂无评价</b>
+                    <span><b>暂无评价</b></span>
                 </li>
             </ul>
         </section>
@@ -487,16 +498,12 @@
             </ul>
             <ul>
                 <li> <a href="https://github.com/Predidit/Kazumi">Kazumi</a></li>
-                <li> <a href="https://catw.moe/">喵物次元</a></li>
+                <li> <a href="https://github.com/Predidit/oneAnime">oneanime</a></li>
                 <li> <a href="https://www.dandanplay.com/">弹弹play</a></li>
                 <li> <a href="https://www.autobangumi.org/">autobangumi</a></li>
             </ul>
-            <ul>
-                <li> <a href="https://xs.cx/app.html">像宿</a></li>
-                <li> <a href="https://github.com/Predidit/oneAnime">oneanime</a></li>
-            </ul>
         </section>
-        <section id="BT">
+        <section id="BitTorrent">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
             <h2>BT/网盘资源</h2>
@@ -508,15 +515,15 @@
             </ul>
             <ul>
                 <li> <a href="https://www.btsow.vip/">BTsow</a></li>
-                <li> <a href="https://www.cilixiong.com/">磁力熊</a></li>
-                <li> <a href="https://ali.gitcafe.ink/">小纸条</a></li>
+                <li> <a href="https://www.36dm.org/">简单动漫</a></li>
+                <li> <a href="https://rargb.to/">rargb</a></li>
                 <li> <a href="https://www.yinfans.me/">音范丝</a></li>
             </ul>
             <ul>
                 <li> <a href="https://bangumi.moe/">萌番组</a></li>
-                <li> <a href="https://www.xiaobaipan.com/">小白盘</a></li>
                 <li> <a href="http://miobt.com/">*miobt*</a></li>
                 <li> <a href="https://fitacg.com/">菲特动漫</a></li>
+                <li> <a href="https://garden.breadio.wiki/">animegarden</a></li>
             </ul>
             <ul>
                 <li> <a href="https://dmhy.org/">动漫花园</a></li>
@@ -540,6 +547,7 @@
                     <a href="https://www.lzpanx.com/">懒盘</a>
                     <a href="https://www.waha.cc/">哇哈</a>
                     <a href="https://www.wo4k.com/">wo4k</a>
+                    <a href="https://ali.gitcafe.ink/">小纸条</a>
                     <a href="https://pan.ifun.cool/">盘云社</a>
                     <a href="https://www.xuebapan.com/">学霸盘</a>
                     <a href="https://www.iizhi.cn/">毕方铺</a>
@@ -558,13 +566,11 @@
                     <a href="https://zyxq.xyz/">资源星球</a>
                     <a href="https://www.sopandas.cn/">熊猫搜盘</a>
                     <a href="https://www.codelicence.cn/">云盘4k</a>
-                    <a href="https://www.36dm.org/">简单动漫</a>
                     <a href="https://www.pansearch.me/">pansearch</a>
                     <a href="https://www.alypw.cn/">云盘分享网</a>
                     <a href="https://share.xfsub.org/">旋风动漫分享站</a>
                     <a href="https://kkxz.vip/">夸克网盘小站</a>
                     <a href="https://wpzy.cc/">AQ网盘资源</a>
-                    <a href="https://garden.breadio.wiki/">animegarden</a>
                     <a href="https://www.alipansou.com/">猫狸盘搜</a>
                     <a href="https://www.kkdy007.com/">资源凌凌漆</a>
                     <a href="https://dmhy.anoneko.com/">动漫花园资源网</a>
@@ -599,7 +605,7 @@
         <section id="subtitling">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3>字幕</h3>
+            <h2>字幕</h2>
             <ul>
                 <li><a href="https://mcar.vip/">耐卡</a></li>
                 <li><a href="https://srtku.com/">字幕库</a></li>
@@ -1679,6 +1685,7 @@
             <div class="more">
                 <p>
                     <a href="https://www.rijupao.com/">日剧跑</a>
+                    <a href="https://www.cilixiong.com/">磁力熊</a>
                     <a href="https://www.shipinla.com/">视频啦</a>
                     <a href="https://www.czzy77.com/">厂长资源</a>
                     <a href="https://www.zxzj.pro/">在线之家</a>
@@ -1713,7 +1720,7 @@
         <section id="movie-legal">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3>本地正版版权剧集平台</h3>
+            <h3>本地版权影剧平台</h3>
             <ul>
                 <li> <a href="https://www.youku.com/channel/webhome">优酷</a></li>
                 <li> <a href="https://www.le.com/">乐视</a></li>
@@ -1725,6 +1732,11 @@
                 <li> <a href="https://www.bilibili.com/tv/">bilibili</a></li>
                 <li> <a href="https://v.qq.com/channel/tv">腾讯视频</a></li>
                 <li> <a href="https://tv.sohu.com/">搜狐视频</a></li>
+            </ul>
+            <ul>
+                <li> <a href="https://tv.cctv.com/yxg/index.shtml">CCTV</a></li>
+                <li> <a href="https://vip.1905.com/">1905电影网</a></li>
+
             </ul>
         </section>
         <section id="Pictures">
@@ -1780,11 +1792,7 @@
                 <a href="https://www.zerochan.net/">zerochan动漫图像板</a>
             </div>
         </details>
-        <section id="tool">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h2>工具</h2>
-            <p>&nbsp;</p>
+        <section id="Picture-bed">
             <h3>图床</h3>
             <ul>
                 <li> <a href="https://sm.ms/">smms</a></li>
@@ -1797,70 +1805,41 @@
                 <li> <a href="https://postimages.org/">Postimages</a></li>
             </ul>
             <ul>
-
+        
                 <li> <a href="https://p.sda1.dev/">流浪图床</a></li>
                 <li> <a href="https://www.imgurl.org/">ImgURL免费图床</a></li>
                 <li> <a href="https://ai.animedb.cn">Animetrace识图引擎</a></li>
             </ul>
         </section>
-        <section id="cloud drive">
+        <section id="tool">
             <p>&nbsp;</p>
             <p>&nbsp;</p>
-            <h3>云盘/网盘</h3>
+            <h2>工具</h2>
             <p>&nbsp;</p>
-            <ul>
-                <li> <a href="https://www.lanzoui.com/">蓝奏云</a></li>
-                <li> <a href="https://mypikpak.com/zh-CN">PikPak</a></li>
-                <li> <a href="https://pan.mczyx.online/login">元素云盘</a></li>
-                <li> <a href="https://pan.baidu.com/">百度网盘</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://www.aliyundrive.com/">阿里云盘</a></li>
-                <li> <a href="https://cloud.189.cn/">天翼云盘</a></li>
-                <li> <a href="https://www.weiyun.com/index.html">腾讯微云</a></li>
-                <li> <a href="https://yun.139.com/">移动云盘</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://pan.xunlei.com/">迅雷云盘</a></li>
-                <li> <a href="https://www.123pan.com/">123云盘</a></li>
-                <li> <a href="https://pan.quark.cn/">夸克云盘</a></li>
-                <li> <a href="https://app.ctfile.com/">城通网盘</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://yunpan.tenfell.cn/">腾飞云盘</a></li>
-                <li> <a href="https://www.feijipan.com/">小飞机网盘</a></li>
-                <li> <a href="https://www.google.com/intl/zh-CN/drive/features.html">Google云端硬盘</a></li>
-            </ul>
-        </section>
-        <section id="other">
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <h3>其它</h3>
-            <p>&nbsp;</p>
-            <ul>
-                <li> <a href="https://wantquotes.net/">据意查句</a></li>
-                <li> <a href="https://netcut.cn/">网站粘贴版</a></li>
-                <li> <a href="http://cms.jpdazi.com/">JP搭子学日语</a></li>
-                <li> <a href="https://www.gnomic.cn/">Gnomic智能体平台</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://dona.chatyy.org/">ChatAi</a></li>
-                <li> <a href="https://shadows.brumm.af/">Smooth Shadows</a></li>
-                <li> <a href="https://browserleaks.com/ip">My Ip address</a></li>
-                <li> <a href="https://97by.cn/index/">onetool自动化云任务系统</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://marshmallow-qa.com/">棉花糖</a></li>
-                <li> <a href="https://saucenao.com/">saucenao</a></li>
-                <li> <a href="https://bibigpt.co/airss/home">Bibi gpt</a></li>
-                <li> <a href="https://samtoki.github.io/KanaMaster/">假名征服者</a></li>
-            </ul>
-            <ul>
-                <li> <a href="https://mubu.com/">幕布</a></li>
-                <li> <a href="https://www.sxl.cn/">上线了</a></li>
-                <li> <a href="https://epub.liumingye.cn/">library</a></li>
-                <li> <a href="https://tool.liumingye.cn/">刘明野的工具箱</a></li>
-            </ul>
+                <ul>
+                    <li> <a href="https://wantquotes.net/">据意查句</a></li>
+                    <li> <a href="https://netcut.cn/">网站粘贴版</a></li>
+                    <li> <a href="http://cms.jpdazi.com/">JP搭子学日语</a></li>
+                    <li> <a href="https://www.gnomic.cn/">Gnomic智能体平台</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://dona.chatyy.org/">ChatAi</a></li>
+                    <li> <a href="https://shadows.brumm.af/">Smooth Shadows</a></li>
+                    <li> <a href="https://browserleaks.com/ip">My Ip address</a></li>
+                    <li> <a href="https://97by.cn/index/">onetool自动化云任务系统</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://marshmallow-qa.com/">棉花糖</a></li>
+                    <li> <a href="https://saucenao.com/">saucenao</a></li>
+                    <li> <a href="https://bibigpt.co/airss/home">Bibi gpt</a></li>
+                    <li> <a href="https://samtoki.github.io/KanaMaster/">假名征服者</a></li>
+                </ul>
+                <ul>
+                    <li> <a href="https://mubu.com/">幕布</a></li>
+                    <li> <a href="https://www.sxl.cn/">上线了</a></li>
+                    <li> <a href="https://epub.liumingye.cn/">library</a></li>
+                    <li> <a href="https://tool.liumingye.cn/">刘明野的工具箱</a></li>
+                </ul>          
         </section>
         <details>
             <summary>+更多</summary>
@@ -1903,6 +1882,36 @@
                 </p>
             </div>
         </details>
+        <section id="cloud drive">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <h3>网盘</h3>
+            <p>&nbsp;</p>
+            <ul>
+                <li> <a href="https://www.lanzoui.com/">蓝奏云</a></li>
+                <li> <a href="https://mypikpak.com/zh-CN">PikPak</a></li>
+                <li> <a href="https://pan.mczyx.online/login">元素云盘</a></li>
+                <li> <a href="https://pan.baidu.com/">百度网盘</a></li>
+            </ul>
+            <ul>
+                <li> <a href="https://www.aliyundrive.com/">阿里云盘</a></li>
+                <li> <a href="https://cloud.189.cn/">天翼云盘</a></li>
+                <li> <a href="https://www.weiyun.com/index.html">腾讯微云</a></li>
+                <li> <a href="https://yun.139.com/">移动云盘</a></li>
+            </ul>
+            <ul>
+                <li> <a href="https://pan.xunlei.com/">迅雷云盘</a></li>
+                <li> <a href="https://www.123pan.com/">123云盘</a></li>
+                <li> <a href="https://pan.quark.cn/">夸克云盘</a></li>
+                <li> <a href="https://app.ctfile.com/">城通网盘</a></li>
+            </ul>
+            <ul>
+                <li> <a href="https://yunpan.tenfell.cn/">腾飞云盘</a></li>
+                <li> <a href="https://www.feijipan.com/">小飞机网盘</a></li>
+                <li> <a href="https://www.google.com/intl/zh-CN/drive/features.html">Google云端硬盘</a></li>
+            </ul>
+        </section>
+        
     </div>
     </div>
 
@@ -1924,10 +1933,10 @@
         </div>
 
         <div align="center">
-            联系邮箱: <b><a href="mailto:muxiyuj@gmail.com">muxiyuj@gmail.com</a></b>
-            <br>
+            <address>
+                联系邮箱: <b><a href="mailto:muxiyuj@gmail.com">muxiyuj@gmail.com</a></b>
+            </address>
             <b>网站为个人收藏，如有不妥请发邮件给我。</b>
-            <p>&nbsp;</p>
             <!-- 网站浏览次数 -->
             <div>
                 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -1935,7 +1944,7 @@
                     ・
                     本站访客数<span id="busuanzi_value_site_uv"></span>
             </div>
-            <br>
+            <p>&nbsp;</p>
             <p>&copy; 木晞i的资源汇总 2025</p>
         </div>
     </footer>

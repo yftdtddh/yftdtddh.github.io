@@ -163,33 +163,9 @@ body {
 /* 背景图片css结束 */
 /* 头部css开始 */
 header {
-    padding: 0;
-    /* 内边距 */
-    margin: 0;
-    /* 外边距 */
+    width: 100%;
     position: sticky;
-    /* 固定定位 */
     top: 0;
-    /* 顶部距离 */
-}
-
-#time {
-    text-align: center;
-    /* 文字居中 */
-    user-select: none;
-    /* 禁止用户选择 */
-}
-
-#start-time {
-    color: #a09494;
-    /* 字体颜色 */
-    font-weight: normal;
-    /* 正常字体粗细 */
-}
-
-#end-time {
-    color: #0077cc;
-    /* 字体颜色 */
 }
 
 #header-container {
@@ -199,7 +175,7 @@ header {
     /* 高度 */
     user-select: none;
     /* 禁止用户选择 */
-    z-index: 1999;
+    z-index: 2000;
 }
 
 #text-logo {
@@ -256,28 +232,19 @@ header {
 }
 
 .navlist a {
-    color: rgba(1, 0, 0, 0.956);
-    /* 字体颜色 */
-    font-size: 20px;
-    /* 字体大小 */
-    font-family: 'Default', 'Microsoft YaHei', 'tahoma', 'arial';
-    /* 字体系列 */
-    line-height: 20px;
-    /* 行高 */
     display: block;
-    /* 块级显示 */
-    animation: none;
-    /* 无动画 */
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 14px 16px;
 }
 
 .nav-link:hover {
-    background-color: #fff;
+    background-color: #f8f6f6;
     /* 悬停时背景颜色 */
 }
 
 .navbar a {
     padding: 15px;
-    /* 内边距 */
 }
 
 .navbar a:visited {
@@ -288,11 +255,11 @@ header {
 .navbar a:hover {
     background: none;
     /* 悬停时无背景 */
-    border-radius: none;
-    /* 无边角 */
-    color: rgb(90, 92, 6);
+    border-radius: 0px;
+    color: rgb(32, 159, 233);
     /* 悬停时字体颜色 */
 }
+
 
 .navbar ul {
     display: block;
@@ -318,7 +285,7 @@ header {
     /* 左浮动 */
     background-color: inherit;
     /* 继承背景颜色 */
-    border-radius: 0px;
+    border-radius: 15px;
     /* 边角圆滑 */
     box-shadow: none;
     /* 无阴影 */
@@ -345,7 +312,11 @@ header {
 
 .droplist a {
     display: none;
-    /* 默认不显示 */
+}
+
+.droplist a:hover {
+    background-color: #86ceca;
+    border-radius: 15px;
 }
 
 .nav-link:hover .droplist a {
@@ -354,12 +325,60 @@ header {
 }
 
 /* 头部css结束 */
-
 #header-end {
-    margin-top: 150px;
+    margin-top: 200px;
+    display: flexbox;
 }
 
-ul {
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 320px;
+}
+
+.scroll-text {
+    display: inline-block;
+    font-weight: bold;
+    color: #86ceca;
+    animation: scroll 20s linear infinite;
+}
+
+.scroll-container:hover .scroll-text {
+    animation-play-state: paused;
+    /* 暂停CSS动画 */
+}
+
+#time {
+    text-align: center;
+    /* 文字居中 */
+    user-select: none;
+    /* 禁止用户选择 */
+}
+
+#start-time {
+    color: #a09494;
+    /* 字体颜色 */
+    font-weight: normal;
+    /* 正常字体粗细 */
+}
+
+#end-time {
+    color: #0077cc;
+    /* 字体颜色 */
+}
+
+
+
+section ul {
     display: flex;
     /* 使用弹性布局 */
     flex-wrap: wrap;
@@ -376,7 +395,7 @@ ul {
     /* 首字母大写 */
 }
 
-li {
+section li {
     background-color: #ffffff;
     /* 背景颜色 */
     border-radius: 10px;
@@ -411,9 +430,7 @@ ul li:hover {
 
 section {
     padding-bottom: 30px;
-    /* 下内边距 */
     padding-left: 40px;
-    /* 左内边距 */
 }
 
 details {
@@ -456,6 +473,7 @@ summary:active {
 .more p {
     margin: 0;
 }
+
 .more a {
     transition: all 0.3s ease-in;
     /* 过渡效果 */
