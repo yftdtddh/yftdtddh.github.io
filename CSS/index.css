@@ -262,8 +262,6 @@ header {
 
 
 .navbar ul {
-    display: block;
-    /* 块级显示 */
     flex-wrap: none;
     /* 不换行 */
     justify-content: none;
@@ -324,6 +322,9 @@ header {
     /* 悬停时显示 */
 }
 
+/* 导航栏部分响应式设计 */
+
+
 /* 头部css结束 */
 #header-end {
     margin-top: 200px;
@@ -334,6 +335,7 @@ header {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -511,63 +513,76 @@ summary:active {
 
 .more a:active {
     color: red;
-    /* 按下时字体颜色 */
     font-size: 20px;
-    /* 按下时字体大小 */
 }
 
-.more::selection {
-    color: #f1f1f1ee;
-    /* 选中文本颜色 */
-    background-color: pink;
-    /* 选中文本背景颜色 */
-}
-
-/* 底部css开始 */
+/* 底部样式开始 */
 footer {
-    padding-bottom: 10px;
-    /* 下内边距 */
-    background: #141212;
-    /* 背景颜色 */
-    color: #AEAEAE;
-    /* 字体颜色 */
-    text-transform: none;
-    /* 无字母转换 */
-    padding-top: 5px;
-    /* 上内边距 */
-    user-select: none;
-    /* 禁止用户选择 */
+    background-color: #f8f9fa;
+    padding: 20px 0;
 }
 
-footer a:link {
-    color: white;
-    /* 字体颜色 */
-    font-size: 20px;
-    /* 字体大小 */
+footer a {
+    color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    background: #EAEAEA;
-    /* 悬停时背景颜色 */
-    color: #FF1723;
-    /* 悬停时字体颜色 */
+    color: #0056b3;
+    font-size: 23px;
+    font-weight: bold;
 }
 
-#footer-link {
-    padding-bottom: 3rem;
-    /* 下内边距 */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer dl dt {
-    font-size: 20px;
-    /* 字体大小 */
-    font-weight: 700;
-    /* 粗体 */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-footer dl dt dd a {
-    padding-bottom: .2px;
-    /* 下内边距 */
+.link-group {
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.link-group h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.link-group ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-group ul li {
+    margin-bottom: 10px;
+}
+
+.link-group h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-contact address,
+.footer-contact .disclaimer {
+    margin-bottom: 10px;
+}
+
+.footer-contact .footer-stats {
+    margin-bottom: 10px;
 }
 
 /* 底部css结束 */
