@@ -324,7 +324,11 @@ header {
 }
 
 /* 导航栏部分响应式设计 */
-
+@media only screen and (max-width: 1042.40px) {
+    #text-logo{
+        display: none;
+    }
+}
 
 /* 头部css结束 */
 #header-end {
